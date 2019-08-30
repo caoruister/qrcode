@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+    <title>{{ config("app.name") }}</title>
 
     <link href="{{ asset("css/app.css") }}" rel="stylesheet">
 </head>
@@ -228,7 +228,7 @@
                                                 </ul>
                                             </nav>
                                             <div class="generator-forms__body">
-                                                <div v-if="isActive == 'website'">
+                                                <div style="display: none" v-show="isActive == 'website'">
                                                     <h2 class="form-header">网站（网址）</h2>
                                                     <form>
                                                         <div class="form-group row">
@@ -251,7 +251,7 @@
                                                                id="show-restriction-tracker" type="hidden">
                                                     </form>
                                                 </div>
-                                                <div v-if="isActive == 'vcard'">
+                                                <div style="display: none" v-show="isActive == 'vcard'">
                                                     <h2 class="form-header">名片二维码</h2>
                                                     <form novalidate="">
                                                         <div class="form-group row"><label
@@ -382,7 +382,7 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <div v-if="isActive == 'text'">
+                                                <div style="display: none" v-show="isActive == 'text'">
                                                     <h2 class="form-header">文本二维码</h2>
                                                     <form novalidate="" class="ng-untouched ng-pristine ng-valid">
                                                         <div class="form-group row"><label
@@ -399,7 +399,7 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <div v-if="isActive == 'email'">
+                                                <div style="display: none" v-show="isActive == 'email'">
                                                     <h2 class="form-header">邮箱二维码</h2>
                                                     <form novalidate="" class="ng-untouched ng-pristine ng-valid">
                                                         <div class="form-group row"><label
@@ -432,7 +432,7 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <div v-if="isActive == 'sms'">
+                                                <div style="display: none"  v-show="isActive == 'sms'">
                                                     <h2 class="form-header">短信息二维码</h2>
                                                     <form novalidate="" class="ng-untouched ng-pristine ng-valid">
                                                         <div class="form-group row"><label
@@ -457,28 +457,28 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <div v-if="isActive == 'facebook'">
+                                                <div style="display: none"  v-show="isActive == 'facebook'">
                                                     <h2 class="form-header">Facebook二维码</h2>
                                                     <p class="text__normal">推广您的Facebook页面，赢得更多点赞和好友。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
                                                             href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-facebook">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
-                                                <div v-if="isActive == 'pdf'">
+                                                <div style="display: none" v-show="isActive == 'pdf'">
                                                     <h2 class="form-header">PDF二维码</h2>
                                                     <p class="text__normal">提供任何PDF文件，例如数字版的手册、杂志、产品目录和电子书。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
                                                             href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-pdf">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
-                                                <div v-if="isActive == 'mp3'">
+                                                <div style="display: none"  v-show="isActive == 'mp3'">
                                                     <h2 class="form-header">MP3二维码</h2>
                                                     <p class="text__normal">在可定制的移动播放器中分享音乐、有声读物或播客。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
                                                             href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-mp3">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
-                                                <div v-if="isActive == 'appstore'">
+                                                <div style="display: none" v-show="isActive == 'appstore'">
                                                     <h2 class="form-header">注册创建应用二维码</h2>
                                                     <p class="text__normal">有了应用二维码，客户可以连接到苹果应用市场、Google
                                                         Play应用市场或亚马逊应用商店，轻松下载您的应用。</p><a
@@ -486,7 +486,7 @@
                                                             href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-app">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
-                                                <div v-if="isActive == 'picture'">
+                                                <div style="display: none" v-show="isActive == 'picture'">
                                                     <h2 class="form-header">相册</h2>
                                                     <p class="text__normal">分享一系列关于产品、公司、活动的图片。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
@@ -742,7 +742,7 @@
 
                 axios.post('/api/v1/create', {
                     frame_name: that.frameName,
-                    qr_code_text: that.qrCodeText,
+                    qr_code_text: that.qrCodeText || 'https://www.example.com',
                     frame_text: 'Scan me',
                     frame_icon_name: 'mobile',
                     frame_color: that.frameColor,
