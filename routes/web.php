@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'IndexController@index')->name('index');
+Route::group(['namespace' => 'Web',], function () {
+    Route::get('/', 'IndexController@index')->name('index');
+});
