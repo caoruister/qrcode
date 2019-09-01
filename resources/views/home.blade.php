@@ -512,7 +512,7 @@
                                         {{--<app-preview>--}}
                                         <div class="generator-preview__noframe-body" id="frameBody"><!---->
                                             <img class="generator-preview__image"
-                                                 src="https://zh.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/basic_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png"
+                                                 src="{{ asset("images/websiteQRCode_noFrame.png") }}"
                                                  v-if="!svgCode">
                                             <div data-js="preview-svgContainer" id="svgContainer" v-html="svgCode"
                                                  v-else></div>
@@ -670,8 +670,8 @@
                                         <div class="generator-preview__download">
                                             <div class="d-flex justify-content-between align-items-center"
                                                  style="width: 100%">
-                                                <button class="btn btn__rounded btn__rounded--green btn__rounded--green--disabled"
-                                                        data-gtm-event="download-button">
+                                                <button class="btn btn__rounded btn__rounded--green"
+                                                        v-bind:class="{ 'btn__rounded--green--disabled': !svgCode }" v-on:click="download">
                                                     <div class="btn__multiline-content"><i
                                                                 class="fa fa-download"></i>
                                                         <div class="btn__multiline-content-wrapper"><span
@@ -692,11 +692,12 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        {{--</app-preview>--}}
                                         <div class="seperator__wrapper">
                                             <div class="seperator__vertical-line"></div>
                                             <div class="seperator__container">
-                                                <i class="fa fa-chevron-right seperator__arrow"></i>
+                                                <div class="seperator__spinner" v-if="qrGenLoading"></div>
+                                                <i class="fa fa-check seperator__arrow" v-if="!qrGenLoading && !!svgCode"></i>
+                                                <i class="fa fa-arrow-right seperator__arrow" v-if="!qrGenLoading && !svgCode"></i>
                                             </div>
                                             <div class="seperator__container-inner"></div>
                                         </div>
@@ -732,13 +733,16 @@
             foregroundColor: '#000000',
             qrCodeLogo: '',
             svgCode: '',
-            isActive: 'website'
+            isActive: 'website',
+            qrGenLoading: false,
         },
         created: function () {
         },
         methods: {
             create: function () {
                 let that = this;
+                that.qrGenLoading = true;
+                that.svgCode = '';
 
                 axios.post('/api/v1/create', {
                     frame_name: that.frameName,
@@ -749,6 +753,7 @@
                     foreground_color: that.foregroundColor,
                     qr_code_logo: that.qrCodeLogo,
                 }).then(res => {
+                    that.qrGenLoading = false;
                     that.svgCode = res.data;
                     console.log(res)
                 }).catch(err => {
@@ -767,6 +772,43 @@
             logoChanged: function (logo) {
                 this.qrCodeLogo = logo;
                 this.create();
+            },
+            download: function () {
+                let that = this;
+
+                axios.post('/api/v1/create', {
+                    frame_name: that.frameName,
+                    qr_code_text: that.qrCodeText || 'https://www.example.com',
+                    frame_text: 'Scan me',
+                    frame_icon_name: 'mobile',
+                    frame_color: that.frameColor,
+                    foreground_color: that.foregroundColor,
+                    qr_code_logo: that.qrCodeLogo,
+                    image_format: 'PNG',
+                    image_width: 300,
+                    download: 1,
+                }, {
+                    responseType: 'blob'
+                }).then(res => {
+                    console.log(res)
+
+                    let blob = new Blob([res.data]);
+                    if (window.navigator.msSaveOrOpenBlob) {
+                        navigator.msSaveBlob(blob, 'frame.png');
+                    } else {
+                        let link = document.createElement("a");
+                        let evt = document.createEvent("HTMLEvents");
+                        evt.initEvent("click", false, false);
+                        link.href = URL.createObjectURL(blob);
+                        link.download = 'frame.png';
+                        link.style.display = "none";
+                        document.body.appendChild(link);
+                        link.click();
+                        window.URL.revokeObjectURL(link.href);
+                    }
+                }).catch(err => {
+                    console.log(err)
+                });
             }
         }
     })

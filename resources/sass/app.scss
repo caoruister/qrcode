@@ -725,10 +725,13 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
   display: block;
 }
 
+.btn__rounded--green:hover {
+  color: #fff;
+}
+
 .generator .seperator__arrow {
-  color: #A4A6A8;
+  color: #90c52d;
   padding: 8px;
-  left: 4px;
 }
 
 .generator .seperator__vertical-line {
@@ -844,4 +847,23 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
 
 .icon--right {
   left: 8px;
+}
+
+.generator .seperator__spinner {
+  border: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-color: #90c52d;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

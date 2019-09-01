@@ -13,10 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
 Route::group([
     'namespace' => 'Api',
     'prefix' => '',
@@ -24,5 +20,5 @@ Route::group([
     'limit' => 300,
     'expires' => 5
 ], function () {
-    Route::post('v1/create', 'QRGeneratorController@create');
+    Route::match(['get', 'post'], 'v1/create', 'QRGeneratorController@create');
 });
