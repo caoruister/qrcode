@@ -5054,7 +5054,8 @@ body, html {
   min-height: 100%;
   position: relative;
   margin: 0;
-  background-color: #FDFEFF
+  //background-color: #FDFEFF;
+  background-color: #F7F7F7;
 }
 
 body {
@@ -8046,7 +8047,7 @@ body {
 
 .generator {
   background-color: #F7F7F7;
-  padding-bottom: 60px
+  //padding-bottom: 60px
 }
 
 @media (min-width: 992px) {
@@ -8075,7 +8076,7 @@ body {
 
 @media (max-width: 991px) {
   .generator {
-    padding-bottom: 30px
+    //padding-bottom: 50px
   }
   .generator__wrapper {
     position: relative;

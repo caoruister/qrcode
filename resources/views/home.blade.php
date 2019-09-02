@@ -7,7 +7,7 @@
 
     <link href="{{ asset("css/app.css") }}" rel="stylesheet">
 </head>
-<body>
+<body class="qrcode-generated">
 <div class="header header-nav-start" data-js="header-container">
     <div class="navigation navigation--startpage">
         <div class="container-fluid">
@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                     <a href="#" class="btn toggle menu-toggle">
-                        <i class="fa fa-bars icon--menu-toggle" data-js="mobile-nav-toggle"></i>
+                        <i class="icon icon--menu-toggle icon-business-fab" data-js="mobile-nav-toggle"></i>
                     </a>
                 </div>
 
@@ -69,15 +69,14 @@
         </div>
         <div class="container">
             <div class="generator__back-icon-wrapper" data-js="generator-back-icon"><i
-                        class="icon icon-arrow-icon generator__back-icon" data-state="rotate-180" hidden=""></i>
-            </div>
+                        class="icon icon-arrow-icon generator__back-icon" data-state="rotate-180" style="display: none" v-show="!isQrCodeTextChanged" v-on:click="goBack"></i></div>
             <div class="generator">
                 <div class="container">
                     <div class="row">
                         <button id="ab-test" style="display: none" type="button"></button>
                         <div class="col-12 generator__main">
                             <div class="row">
-                                <div class="col-xl-8 col-lg-8 generator-forms">
+                                <div class="col-xl-8 col-lg-8 generator-forms" v-show="isQrCodeTextChanged">
                                     <div class="row">
                                         <div class="col-lg-12 generator__radio-btn-container">
                                             <div class="form-group__radio"><label
@@ -481,7 +480,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{--</app-navigation>--}}
                                     </div>
                                     <div class="popover popover--dynamic-code" hidden=""><h4 class="form-header">
                                             创建动态二维码前请先注册</h4><a class="btn btn--blue"
@@ -492,10 +490,8 @@
                                                     href="https://app.qr-code-generator.com/?dynamic_info_login">登录</a>
                                         </p></div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 generator-preview generator-preview--hidden-mobile"
-                                     hidden="">
+                                <div class="col-xl-4 col-lg-4 generator-preview generator-preview--hidden-mobile" v-show="!isQrCodeTextChanged">
                                     <div class="generator-preview__wrapper">
-                                        {{--<app-preview>--}}
                                         <div class="generator-preview__noframe-body" id="frameBody"><!---->
                                             <img class="generator-preview__image"
                                                  src="{{ asset("images/websiteQRCode_noFrame.png") }}"
@@ -663,7 +659,7 @@
                                                                 class="icon icon-icon-download-thin"></i>
                                                         <div class="btn__multiline-content-wrapper"><span
                                                                     class="btn__multiline-content--text-top">下载</span><span
-                                                                    class="btn__multiline-content--text-bottom">JPG</span>
+                                                                    class="btn__multiline-content--text-bottom">PNG</span>
                                                         </div>
                                                     </div>
                                                 </button>
@@ -701,11 +697,13 @@
     </div>
 
     <div class="modal-backdrop fade in" v-bind:class="{'show' : isDownload}" v-if="isDownload"></div>
-    <div class="modal fade" v-bind:class="{'show' : isDownload}" role="dialog" tabindex="-1" aria-modal="true" style="display: block;" v-if="isDownload">
+    <div class="modal fade" v-bind:class="{'show' : isDownload}" role="dialog" tabindex="-1" aria-modal="true"
+         style="display: block;" v-if="isDownload">
         <div role="document" class="modal-dialog download-modal">
             <div class="modal-content">
                 <div class="modal-body download-modal__body"><i aria-label="Close"
-                                                                class="icon icon-close-round generator-modal__close generator-modal__close--outer" v-on:click="isDownload = false;"></i>
+                                                                class="icon icon-close-round generator-modal__close generator-modal__close--outer"
+                                                                v-on:click="isDownload = false;"></i>
                     <div class="download-modal__header-container"><h5 class="header-container__header"><i
                                     class="icon icon-icon-download-thin"></i><span
                                     class="header-container__header-text">几秒钟后自动开始下载</span><img
@@ -799,6 +797,7 @@
                     qr_code_logo: that.qrCodeLogo,
                 }).then(res => {
                     console.log(res)
+                    $(document.body).addClass('body--generator-step-2');
 
                     that.qrGenLoading = false;
                     that.isQrCodeTextChanged = false;
@@ -861,7 +860,11 @@
                     console.log(err)
                 });
             },
-            padScheme: function(website) {
+            goBack: function() {
+                this.isQrCodeTextChanged = true;
+                $(document.body).removeClass('body--generator-step-2');
+            },
+            padScheme: function (website) {
                 return website ? (website.startsWith('http') ? website : 'http://' + website) : 'https://www.example.com';
             }
         }
