@@ -63,12 +63,11 @@
 </div>
 
 <main class="content" id="app">
-
     <div class="generator__wrapper" data-js="generator-wrapper">
-        <div class="generator__background"></div>
+        <div class="generator__background">
+            <h2 class="generator__loading-indicator">Loading ...</h2>
+        </div>
         <div class="container">
-            <!-- start: Generator -->
-            {{--<app-root id="generator" name="generator">--}}
             <div class="generator__back-icon-wrapper" data-js="generator-back-icon"><i
                         class="icon icon-arrow-icon generator__back-icon" data-state="rotate-180" hidden=""></i>
             </div>
@@ -111,7 +110,7 @@
                                                                 v-on:click="isActive = 'website'">
                                                             <div class="generator-navigation__nav-link-inner"
                                                                  data-gtm-event="nav-tab" data-gtm-value="url">
-                                                                <i class="generator-navigation__icon fa fa-chrome"></i>
+                                                                <i class="generator-navigation__icon icon-generator-url"></i>
                                                                 网址 <span
                                                                         class="generator-navigation__tooltip"> 扫描后打开网址 </span>
                                                             </div>
@@ -121,10 +120,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'vcard' }"
                                                                 v-on:click="isActive = 'vcard'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab"
-                                                                 data-gtm-value="vcard"><i
-                                                                        class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner"><i
+                                                                        class="generator-navigation__icon icon-generator-vcard"></i>
                                                                 名片 <span class="generator-navigation__tooltip"> 在手机上保存联系方式 </span>
                                                             </div>
                                                         </a></li>
@@ -133,9 +130,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'text' }"
                                                                 v-on:click="isActive = 'text'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab" data-gtm-value="text">
-                                                                <i class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner">
+                                                                <i class="generator-navigation__icon icon-generator-text"></i>
                                                                 文本 <span
                                                                         class="generator-navigation__tooltip"> 展示任何静态文本 </span>
                                                             </div>
@@ -145,10 +141,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'email' }"
                                                                 v-on:click="isActive = 'email'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab"
-                                                                 data-gtm-value="email"><i
-                                                                        class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner"><i
+                                                                        class="generator-navigation__icon icon-generator-email"></i>
                                                                 邮件 <span class="generator-navigation__tooltip"> 发送带有预定义文本的邮件 </span>
                                                             </div>
                                                         </a></li>
@@ -157,9 +151,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'sms' }"
                                                                 v-on:click="isActive = 'sms'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab" data-gtm-value="sms">
-                                                                <i class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner">
+                                                                <i class="generator-navigation__icon icon-generator-sms"></i>
                                                                 短信息 <span class="generator-navigation__tooltip"> 发送带有预定义文本的短信息 </span>
                                                             </div>
                                                         </a></li>
@@ -168,10 +161,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'facebook' }"
                                                                 v-on:click="isActive = 'facebook'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab"
-                                                                 data-gtm-value="facebook"><i
-                                                                        class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner"><i
+                                                                        class="generator-navigation__icon icon-generator-facebook"></i>
                                                                 Facebook <span
                                                                         class="generator-navigation__tooltip"> 显示Facebook按键 </span>
                                                             </div>
@@ -181,9 +172,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'pdf' }"
                                                                 v-on:click="isActive = 'pdf'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab" data-gtm-value="pdf">
-                                                                <i class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner">
+                                                                <i class="generator-navigation__icon icon-generator-pdf"></i>
                                                                 PDF <span
                                                                         class="generator-navigation__tooltip"> 显示PDF文件 </span>
                                                             </div>
@@ -193,9 +183,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'mp3' }"
                                                                 v-on:click="isActive = 'mp3'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab" data-gtm-value="mp3">
-                                                                <i class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner">
+                                                                <i class="generator-navigation__icon icon-generator-mp3"></i>
                                                                 MP3 <span
                                                                         class="generator-navigation__tooltip"> 播放MP3文件 </span>
                                                             </div>
@@ -205,9 +194,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'appstore' }"
                                                                 v-on:click="isActive = 'appstore'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab" data-gtm-value="app">
-                                                                <i class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner">
+                                                                <i class="generator-navigation__icon icon-generator-app"></i>
                                                                 App stores <span
                                                                         class="generator-navigation__tooltip"> 转到不同的应用市场 </span>
                                                             </div>
@@ -217,10 +205,8 @@
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'picture' }"
                                                                 v-on:click="isActive = 'picture'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab"
-                                                                 data-gtm-value="images"><i
-                                                                        class="generator-navigation__icon fa fa-chrome"></i>
+                                                            <div class="generator-navigation__nav-link-inner"><i
+                                                                        class="generator-navigation__icon icon-generator-images"></i>
                                                                 图片 <span
                                                                         class="generator-navigation__tooltip"> 展示相册 </span>
                                                             </div>
@@ -237,15 +223,15 @@
                                                                                        formcontrolname="websiteUrl"
                                                                                        type="text"
                                                                                        v-model="qrCodeText"
+                                                                                       v-on:keyup="qrCodeTextChanged"
                                                                                        placeholder="https://www.example.com">
                                                             </div>
                                                         </div>
                                                         <button class="btn btn--green btn--green--generator-submit"
-                                                                data-form-btn="url"
-                                                                data-gtm-event="create-button"
+                                                                v-bind:class="{'btn--green--disabled' : !isQrCodeTextChanged}"
                                                                 data-js="generator-submit-btn" type="button"
                                                                 v-on:click="create"><i
-                                                                    class="fa fa-chrome"></i> 创建二维码
+                                                                    class="icon icon-refresh-icon"></i> 创建二维码
                                                         </button>
                                                         <input data-gtm-event="show-restriction"
                                                                id="show-restriction-tracker" type="hidden">
@@ -432,7 +418,7 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <div style="display: none"  v-show="isActive == 'sms'">
+                                                <div style="display: none" v-show="isActive == 'sms'">
                                                     <h2 class="form-header">短信息二维码</h2>
                                                     <form novalidate="" class="ng-untouched ng-pristine ng-valid">
                                                         <div class="form-group row"><label
@@ -457,7 +443,7 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <div style="display: none"  v-show="isActive == 'facebook'">
+                                                <div style="display: none" v-show="isActive == 'facebook'">
                                                     <h2 class="form-header">Facebook二维码</h2>
                                                     <p class="text__normal">推广您的Facebook页面，赢得更多点赞和好友。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
@@ -471,7 +457,7 @@
                                                             href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-pdf">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
-                                                <div style="display: none"  v-show="isActive == 'mp3'">
+                                                <div style="display: none" v-show="isActive == 'mp3'">
                                                     <h2 class="form-header">MP3二维码</h2>
                                                     <p class="text__normal">在可定制的移动播放器中分享音乐、有声读物或播客。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
@@ -491,7 +477,7 @@
                                                     <p class="text__normal">分享一系列关于产品、公司、活动的图片。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
                                                             href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-gallery">
-                                                        立即免费注册 <i class="fa icon--right fa-chevron-right"></i></a>
+                                                        立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -515,7 +501,7 @@
                                                  src="{{ asset("images/websiteQRCode_noFrame.png") }}"
                                                  v-if="!svgCode">
                                             <div data-js="preview-svgContainer" id="svgContainer" v-html="svgCode"
-                                                 v-else></div>
+                                                 v-bind:style="svgStyle"></div>
                                         </div>
                                         <div class="generator-preview__customizer">
                                             <div id="accordion">
@@ -526,7 +512,7 @@
                                                              data-target="#customizer-frame"
                                                              data-toggle="collapse"><span
                                                                     class="generator-preview__customizer-title">边框</span><i
-                                                                    class="fa fa-chevron-down"></i></div>
+                                                                    class="icon icon-chevron-down"></i></div>
                                                     </div>
                                                     <div aria-labelledby="headingOne" class="collapse show"
                                                          data-parent="#accordion" id="customizer-frame">
@@ -534,19 +520,19 @@
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': frameName == 'no-frame' }"
                                                                  v-on:click="frameChanged('no-frame')">
-                                                                <i class="fa fa-times"></i></div>
+                                                                <i class="icon icon-ui-close"></i></div>
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': frameName == 'bottom-frame' }"
                                                                  v-on:click="frameChanged('bottom-frame')">
-                                                                <i class="fa fa-times"></i></div>
+                                                                <i class="icon icon-frame2"></i></div>
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': frameName == 'bottom-tooltip' }"
                                                                  v-on:click="frameChanged('bottom-tooltip')">
-                                                                <i class="fa fa-times"></i></div>
+                                                                <i class="icon icon-frame1"></i></div>
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': frameName == 'top-header' }"
                                                                  v-on:click="frameChanged('top-header')">
-                                                                <i class="fa fa-times"></i></div>
+                                                                <i class="icon icon-frame3"></i></div>
                                                             <div>
                                                                 <a class="generator__modal-open generator__modal-open--underline"
                                                                    data-gtm-event="frame-restriction">定制</a>
@@ -560,7 +546,7 @@
                                                              data-target="#customizer-color"
                                                              data-toggle="collapse"><span
                                                                     class="generator-preview__customizer-title">Color</span><i
-                                                                    class="fa fa-chevron-down"></i></div>
+                                                                    class="icon icon-chevron-down"></i></div>
                                                     </div>
                                                     <div aria-labelledby="headingOne" class="collapse"
                                                          data-parent="#accordion" id="customizer-color">
@@ -638,7 +624,7 @@
                                                              data-target="#customizer-logo"
                                                              data-toggle="collapse"><span
                                                                     class="generator-preview__customizer-title">Logo</span><i
-                                                                    class="fa fa-chevron-down"></i></div>
+                                                                    class="icon icon-chevron-down"></i></div>
                                                     </div>
                                                     <div aria-labelledby="headingOne" class="collapse"
                                                          data-parent="#accordion" id="customizer-logo">
@@ -646,17 +632,17 @@
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': qrCodeLogo == '' }"
                                                                  v-on:click="logoChanged('')"><i
-                                                                        class="fa fa-times"></i>
+                                                                        class="icon icon--customizer-logo icon-ui-close"></i>
                                                             </div>
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': qrCodeLogo == 'scan-me' }"
                                                                  v-on:click="logoChanged('scan-me')"><i
-                                                                        class="fa fa-times"></i>
+                                                                        class="icon icon--customizer-logo icon-scan-me"></i>
                                                             </div>
                                                             <div class="generator-preview__customizer-btn"
                                                                  v-bind:class="{ 'generator-preview__customizer-btn--active': qrCodeLogo == 'scan-me-square' }"
                                                                  v-on:click="logoChanged('scan-me-square')"><i
-                                                                        class="fa fa-times"></i>
+                                                                        class="icon icon--customizer-logo icon-scan-me-square"></i>
                                                             </div>
                                                             <div>
                                                                 <a class="generator__modal-open generator__modal-open--underline"
@@ -671,19 +657,20 @@
                                             <div class="d-flex justify-content-between align-items-center"
                                                  style="width: 100%">
                                                 <button class="btn btn__rounded btn__rounded--green"
-                                                        v-bind:class="{ 'btn__rounded--green--disabled': !svgCode }" v-on:click="download">
+                                                        v-bind:class="{ 'btn__rounded--green--disabled': !svgCode || qrGenLoading }"
+                                                        v-on:click="download">
                                                     <div class="btn__multiline-content"><i
-                                                                class="fa fa-download"></i>
+                                                                class="icon icon-icon-download-thin"></i>
                                                         <div class="btn__multiline-content-wrapper"><span
                                                                     class="btn__multiline-content--text-top">下载</span><span
                                                                     class="btn__multiline-content--text-bottom">JPG</span>
                                                         </div>
                                                     </div>
                                                 </button>
-                                                <button class="btn btn__rounded btn__rounded--transparent btn__rounded--transparent--green-border btn__rounded--transparent--disabled"
-                                                        data-gtm-event-ab="download-vector">
+                                                <button class="btn btn__rounded btn__rounded--transparent btn__rounded--transparent--green-border"
+                                                        v-bind:class="{'btn__rounded--transparent--disabled' : !svgCode || qrGenLoading}">
                                                     <div class="btn__multiline-content"><i
-                                                                class="fa fa-download"></i>
+                                                                class="icon icon-icon-download-thin"></i>
                                                         <div class="btn__multiline-content-wrapper"><span
                                                                     class="btn__multiline-content--text-top">Vector</span><span
                                                                     class="btn__multiline-content--text-bottom">SVG/EPS</span>
@@ -696,8 +683,10 @@
                                             <div class="seperator__vertical-line"></div>
                                             <div class="seperator__container">
                                                 <div class="seperator__spinner" v-if="qrGenLoading"></div>
-                                                <i class="fa fa-check seperator__arrow" v-if="!qrGenLoading && !!svgCode"></i>
-                                                <i class="fa fa-arrow-right seperator__arrow" v-if="!qrGenLoading && !svgCode"></i>
+                                                <i class="icon icon-check-done seperator__check"
+                                                   v-if="!qrGenLoading && !!svgCode"></i>
+                                                <i class="icon icon-chevron-right seperator__arrow"
+                                                   v-if="!qrGenLoading && !svgCode"></i>
                                             </div>
                                             <div class="seperator__container-inner"></div>
                                         </div>
@@ -708,11 +697,55 @@
                     </div>
                 </div>
             </div>
-        {{--</app-root>--}}
-        <!-- end: Generator -->
         </div>
     </div>
 
+    <div class="modal-backdrop fade in" v-bind:class="{'show' : isDownload}" v-if="isDownload"></div>
+    <div class="modal fade" v-bind:class="{'show' : isDownload}" role="dialog" tabindex="-1" aria-modal="true" style="display: block;" v-if="isDownload">
+        <div role="document" class="modal-dialog download-modal">
+            <div class="modal-content">
+                <div class="modal-body download-modal__body"><i aria-label="Close"
+                                                                class="icon icon-close-round generator-modal__close generator-modal__close--outer" v-on:click="isDownload = false;"></i>
+                    <div class="download-modal__header-container"><h5 class="header-container__header"><i
+                                    class="icon icon-icon-download-thin"></i><span
+                                    class="header-container__header-text">几秒钟后自动开始下载</span><img
+                                    class="header-container__loading-img"
+                                    src="{{ asset("images/download_preloader.gif") }}">
+                        </h5></div>
+                    <div class="download-modal__subheader-container"><h5 class="subheader-container__subheader">
+                            希望有更多的人扫描您的二维码？</h5>
+                        <p class="subheader-container__text"> 添加彩色带标志的二维码可以吸引更多的客户。您还可以查看有多少人扫描过二维码。免费注册立即试用。 </p>
+                        <div class="subheader-container__arrow-down subheader-container__arrow-down--front"></div>
+                        <div class="subheader-container__arrow-down subheader-container__arrow-down--back"></div>
+                    </div>
+                    <div class="download-modal__main-container"><h5 class="main-container__header">QR Code Generator
+                            <span class="main-container__header--pro-badge">Pro（专业版）</span></h5>
+                        <ul class="main-container__feature-list">
+                            <li class="main-container__feature"><i
+                                        class="icon main-container__feature-icon icon-checkmark-circled"></i> 定制二维码
+                            </li>
+                            <li class="main-container__feature"><i
+                                        class="icon main-container__feature-icon icon-checkmark-circled"></i>
+                                获取PNG、EPS、SVG版本
+                            </li>
+                            <li class="main-container__feature"><i
+                                        class="icon main-container__feature-icon icon-checkmark-circled"></i> 查看扫描次数
+                            </li>
+                            <li class="main-container__feature"><i
+                                        class="icon main-container__feature-icon icon-checkmark-circled"></i>
+                                即使在打印后仍可编辑内容
+                            </li>
+                        </ul>
+                        <a class="btn btn--green btn--green--signup"
+                           href="https://app.qr-code-generator.com/site/signup/?target=download-dialog">立即免费注册 <i
+                                    class="icon icon--right icon-chevron-right"></i></a></div><!----><!---->
+                    <div class="download-modal__footer-container"><p class="footer-container__text">已经有账户？ <a
+                                    class="anchor--blue" href="https://app.qr-code-generator.com/">在这里登录。</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 
 
@@ -735,30 +768,47 @@
             svgCode: '',
             isActive: 'website',
             qrGenLoading: false,
+            isDownload: false,
+            isQrCodeTextChanged: true
         },
         created: function () {
+        },
+        computed: {
+            svgStyle: function () {
+                return this.qrGenLoading ? {
+                    opacity: 0.1,
+                    display: 'block',
+                } : {
+                    opacity: 1,
+                    display: 'block',
+                }
+            }
         },
         methods: {
             create: function () {
                 let that = this;
                 that.qrGenLoading = true;
-                that.svgCode = '';
 
                 axios.post('/api/v1/create', {
                     frame_name: that.frameName,
-                    qr_code_text: that.qrCodeText || 'https://www.example.com',
+                    qr_code_text: that.padScheme(that.qrCodeText),
                     frame_text: 'Scan me',
                     frame_icon_name: 'mobile',
                     frame_color: that.frameColor,
                     foreground_color: that.foregroundColor,
                     qr_code_logo: that.qrCodeLogo,
                 }).then(res => {
-                    that.qrGenLoading = false;
-                    that.svgCode = res.data;
                     console.log(res)
+
+                    that.qrGenLoading = false;
+                    that.isQrCodeTextChanged = false;
+                    that.svgCode = res.data;
                 }).catch(err => {
                     console.log(err)
                 });
+            },
+            qrCodeTextChanged: function () {
+                this.isQrCodeTextChanged = true;
             },
             frameChanged: function (frameName) {
                 this.frameName = frameName;
@@ -775,10 +825,11 @@
             },
             download: function () {
                 let that = this;
+                that.isDownload = true;
 
                 axios.post('/api/v1/create', {
                     frame_name: that.frameName,
-                    qr_code_text: that.qrCodeText || 'https://www.example.com',
+                    qr_code_text: that.padScheme(that.qrCodeText),
                     frame_text: 'Scan me',
                     frame_icon_name: 'mobile',
                     frame_color: that.frameColor,
@@ -809,6 +860,9 @@
                 }).catch(err => {
                     console.log(err)
                 });
+            },
+            padScheme: function(website) {
+                return website ? (website.startsWith('http') ? website : 'http://' + website) : 'https://www.example.com';
             }
         }
     })
