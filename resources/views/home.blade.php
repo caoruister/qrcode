@@ -846,15 +846,17 @@
                     if (window.navigator.msSaveOrOpenBlob) {
                         navigator.msSaveBlob(blob, 'frame.png');
                     } else {
-                        let link = document.createElement("a");
-                        let evt = document.createEvent("HTMLEvents");
-                        evt.initEvent("click", false, false);
-                        link.href = URL.createObjectURL(blob);
-                        link.download = 'frame.png';
-                        link.style.display = "none";
-                        document.body.appendChild(link);
-                        link.click();
-                        window.URL.revokeObjectURL(link.href);
+                        // 创建隐藏的可下载链接
+                        var eleLink = document.createElement('a');
+                        eleLink.download = 'frame.png';
+                        eleLink.style.display = 'none';
+                        // 字符内容转变成blob地址
+                        eleLink.href = URL.createObjectURL(blob);
+                        // 触发点击
+                        document.body.appendChild(eleLink);
+                        eleLink.click();
+                        // 然后移除
+                        document.body.removeChild(eleLink);
                     }
                 }).catch(err => {
                     console.log(err)
