@@ -51,12 +51,9 @@ class QRGeneratorController extends Controller
                 'query' => $params
             ]);
             $contents = $response->getBody()->getContents();
-
             return response($contents)
                 ->header('Content-Type', 'image/png')
                 ->header('content-disposition', 'attachment; filename="frame.png"');
-        } else if ($download == 2) {
-
         } else {
             $response = $client->request('POST', $url, [
                 'form_params' => $params

@@ -878,6 +878,7 @@
             create: function () {
                 let that = this;
                 that.qrGenLoading = true;
+                that.setQrCodeText();
 
                 let params = {
                     frame_name: that.frameName,
@@ -900,15 +901,10 @@
                     console.log(err)
                 });
             },
-            isActiveChanged: function (isActive) {
-                this.isActive = isActive;
-            },
-            qrCodeTextChanged: function () {
-                this.isQrCodeTextChanged = true;
+            setQrCodeText: function () {
 
                 if (this.isActive == 'website') {
-                    this.qrCodeText = this.padScheme(this.website.url);
-
+                    this.qrCodeText = this._padScheme(this.website.url);
                 } else if (this.isActive == 'vcard') {
                     let {
                         lastName,
@@ -954,6 +950,12 @@
                     this.qrCodeText = qrCodeText;
                 }
             },
+            isActiveChanged: function (isActive) {
+                this.isActive = isActive;
+            },
+            qrCodeTextChanged: function () {
+                this.isQrCodeTextChanged = true;
+            },
             frameChanged: function (frameName) {
                 this.frameName = frameName;
                 this.create();
@@ -989,7 +991,13 @@
 
                     let blob = new Blob([res.data], {type: "image/png;charset=utf-8"});
 
-                    FileSaver.saveAs(blob, "frame.png");
+                    if (that._isMobile()) {
+                        let newPage = window.open();
+                        let url = window.URL.createObjectURL(blob);
+                        newPage.location.href = url;
+                    } else {
+                        FileSaver.saveAs(blob, "frame.png");
+                    }
                     // if (window.navigator.msSaveOrOpenBlob) {
                     //     navigator.msSaveBlob(blob, 'frame.png');
                     // } else {
@@ -1014,8 +1022,11 @@
                 this.isQrCodeTextChanged = true;
                 $(document.body).removeClass('body--generator-step-2');
             },
-            padScheme: function (website) {
+            _padScheme: function (website) {
                 return website ? (website.startsWith('http') ? website : 'http://' + website) : 'https://www.example.com';
+            },
+            _isMobile: function () {
+                return navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
             }
         }
     })
