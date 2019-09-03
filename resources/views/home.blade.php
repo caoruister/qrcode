@@ -67,7 +67,7 @@
         <div class="generator__background">
             <h2 class="generator__loading-indicator">Loading ...</h2>
         </div>
-        <div class="container">
+        <div class="container" style="display: none">
             <div class="generator__back-icon-wrapper" data-js="generator-back-icon"><i
                         class="icon icon-arrow-icon generator__back-icon" data-state="rotate-180" style="display: none"
                         v-show="!isQrCodeTextChanged" v-on:click="goBack"></i></div>
@@ -757,9 +757,9 @@
         </div>
     </div>
 
-    <div class="modal-backdrop fade in" v-bind:class="{'show' : isDownload}" v-if="isDownload"></div>
-    <div class="modal fade" v-bind:class="{'show' : isDownload}" role="dialog" tabindex="-1" aria-modal="true"
-         style="display: block;" v-if="isDownload">
+    <div class="modal-backdrop fade in show" style="display: none" :style="modalStyle"></div>
+    <div class="modal fade show" role="dialog" tabindex="-1" aria-modal="true"
+         :style="modalStyle">
         <div role="document" class="modal-dialog download-modal">
             <div class="modal-content">
                 <div class="modal-body download-modal__body"><i aria-label="Close"
@@ -813,7 +813,7 @@
 <script src="{{ asset("js/vendor.js") }}"></script>
 <script src="{{ asset("js/app.js") }}"></script>
 <script>
-    new Vue({
+    vm = new Vue({
         el: '#app',
         data: {
             isDynamic: false,
@@ -863,6 +863,9 @@
         },
         created: function () {
         },
+        mounted: function () {
+            $('.container').css('display', 'block');
+        },
         computed: {
             svgStyle: function () {
                 return this.qrGenLoading ? {
@@ -872,6 +875,9 @@
                     opacity: 1,
                     display: 'block',
                 }
+            },
+            modalStyle: function () {
+                return this.isDownload ? 'display: block' : 'display: none';
             }
         },
         methods: {
