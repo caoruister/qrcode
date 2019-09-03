@@ -69,7 +69,8 @@
         </div>
         <div class="container">
             <div class="generator__back-icon-wrapper" data-js="generator-back-icon"><i
-                        class="icon icon-arrow-icon generator__back-icon" data-state="rotate-180" style="display: none" v-show="!isQrCodeTextChanged" v-on:click="goBack"></i></div>
+                        class="icon icon-arrow-icon generator__back-icon" data-state="rotate-180" style="display: none"
+                        v-show="!isQrCodeTextChanged" v-on:click="goBack"></i></div>
             <div class="generator">
                 <div class="container">
                     <div class="row">
@@ -106,9 +107,8 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'website' }"
-                                                                v-on:click="isActive = 'website'">
-                                                            <div class="generator-navigation__nav-link-inner"
-                                                                 data-gtm-event="nav-tab" data-gtm-value="url">
+                                                                v-on:click="isActiveChanged('website')">
+                                                            <div class="generator-navigation__nav-link-inner">
                                                                 <i class="generator-navigation__icon icon-generator-url"></i>
                                                                 网址 <span
                                                                         class="generator-navigation__tooltip"> 扫描后打开网址 </span>
@@ -118,7 +118,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'vcard' }"
-                                                                v-on:click="isActive = 'vcard'">
+                                                                v-on:click="isActiveChanged('vcard')">
                                                             <div class="generator-navigation__nav-link-inner"><i
                                                                         class="generator-navigation__icon icon-generator-vcard"></i>
                                                                 名片 <span class="generator-navigation__tooltip"> 在手机上保存联系方式 </span>
@@ -128,7 +128,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'text' }"
-                                                                v-on:click="isActive = 'text'">
+                                                                v-on:click="isActiveChanged('text')">
                                                             <div class="generator-navigation__nav-link-inner">
                                                                 <i class="generator-navigation__icon icon-generator-text"></i>
                                                                 文本 <span
@@ -139,7 +139,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'email' }"
-                                                                v-on:click="isActive = 'email'">
+                                                                v-on:click="isActiveChanged('email')">
                                                             <div class="generator-navigation__nav-link-inner"><i
                                                                         class="generator-navigation__icon icon-generator-email"></i>
                                                                 邮件 <span class="generator-navigation__tooltip"> 发送带有预定义文本的邮件 </span>
@@ -149,7 +149,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'sms' }"
-                                                                v-on:click="isActive = 'sms'">
+                                                                v-on:click="isActiveChanged('sms')">
                                                             <div class="generator-navigation__nav-link-inner">
                                                                 <i class="generator-navigation__icon icon-generator-sms"></i>
                                                                 短信息 <span class="generator-navigation__tooltip"> 发送带有预定义文本的短信息 </span>
@@ -159,7 +159,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'facebook' }"
-                                                                v-on:click="isActive = 'facebook'">
+                                                                v-on:click="isActiveChanged('facebook')">
                                                             <div class="generator-navigation__nav-link-inner"><i
                                                                         class="generator-navigation__icon icon-generator-facebook"></i>
                                                                 Facebook <span
@@ -170,7 +170,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'pdf' }"
-                                                                v-on:click="isActive = 'pdf'">
+                                                                v-on:click="isActiveChanged('pdf')">
                                                             <div class="generator-navigation__nav-link-inner">
                                                                 <i class="generator-navigation__icon icon-generator-pdf"></i>
                                                                 PDF <span
@@ -181,7 +181,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'mp3' }"
-                                                                v-on:click="isActive = 'mp3'">
+                                                                v-on:click="isActiveChanged('mp3')">
                                                             <div class="generator-navigation__nav-link-inner">
                                                                 <i class="generator-navigation__icon icon-generator-mp3"></i>
                                                                 MP3 <span
@@ -192,7 +192,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'appstore' }"
-                                                                v-on:click="isActive = 'appstore'">
+                                                                v-on:click="isActiveChanged('appstore')">
                                                             <div class="generator-navigation__nav-link-inner">
                                                                 <i class="generator-navigation__icon icon-generator-app"></i>
                                                                 App stores <span
@@ -203,7 +203,7 @@
                                                                 href="javascript:void(0);"
                                                                 class="generator-navigation__nav-link"
                                                                 v-bind:class="{ active: isActive == 'picture' }"
-                                                                v-on:click="isActive = 'picture'">
+                                                                v-on:click="isActiveChanged('picture')">
                                                             <div class="generator-navigation__nav-link-inner"><i
                                                                         class="generator-navigation__icon icon-generator-images"></i>
                                                                 图片 <span
@@ -221,15 +221,15 @@
                                                                                        class="form-control form-control--input-primary"
                                                                                        formcontrolname="websiteUrl"
                                                                                        type="text"
-                                                                                       v-model="qrCodeText"
+                                                                                       v-model="website.url"
                                                                                        v-on:keyup="qrCodeTextChanged"
                                                                                        placeholder="https://www.example.com">
                                                             </div>
                                                         </div>
                                                         <button class="btn btn--green btn--green--generator-submit"
                                                                 v-bind:class="{'btn--green--disabled' : !isQrCodeTextChanged}"
-                                                                data-js="generator-submit-btn" type="button"
-                                                                v-on:click="create"><i
+                                                                v-on:click="create" data-js="generator-submit-btn"
+                                                                type="button"><i
                                                                     class="icon icon-refresh-icon"></i> 创建二维码
                                                         </button>
                                                         <input data-gtm-event="show-restriction"
@@ -248,11 +248,15 @@
                                                                                 class="form-control"
                                                                                 formcontrolname="firstname"
                                                                                 id="firstname" type="text"
+                                                                                v-model="vCard.firstName"
+                                                                                v-on:keyup="qrCodeTextChanged"
                                                                                 placeholder="名字："></div>
                                                                     <div class="col-6"><input
                                                                                 class="form-control"
                                                                                 formcontrolname="lastname"
                                                                                 id="lastname" type="text"
+                                                                                v-model="vCard.lastName"
+                                                                                v-on:keyup="qrCodeTextChanged"
                                                                                 placeholder="姓氏："></div>
                                                                 </div>
                                                             </div>
@@ -264,6 +268,8 @@
                                                                         class="form-control"
                                                                         formcontrolname="mobileNumber"
                                                                         id="mobileNumber" type="text"
+                                                                        v-model="vCard.mobile"
+                                                                        v-on:keyup="qrCodeTextChanged"
                                                                         placeholder="手机"></div>
                                                         </div>
                                                         <div class="form-group row"><label
@@ -275,11 +281,15 @@
                                                                                 class="form-control"
                                                                                 formcontrolname="phoneNumber"
                                                                                 id="phoneNumber" type="text"
+                                                                                v-model="vCard.phone"
+                                                                                v-on:keyup="qrCodeTextChanged"
                                                                                 placeholder="电话"></div>
                                                                     <div class="col-6"><input
                                                                                 class="form-control"
                                                                                 formcontrolname="faxNumber"
                                                                                 id="faxNumber" type="text"
+                                                                                v-model="vCard.fax"
+                                                                                v-on:keyup="qrCodeTextChanged"
                                                                                 placeholder="传真"></div>
                                                                 </div>
                                                             </div>
@@ -290,7 +300,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control"
                                                                         formcontrolname="email" id="email"
-                                                                        type="text" placeholder="your@email.com">
+                                                                        type="text"
+                                                                        v-model="vCard.email"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                        placeholder="your@email.com">
                                                             </div>
                                                         </div>
                                                         <div class="form-group row"><label
@@ -302,11 +315,16 @@
                                                                                 class="form-control"
                                                                                 formcontrolname="company"
                                                                                 id="company" type="text"
+                                                                                v-model="vCard.company"
+                                                                                v-on:keyup="qrCodeTextChanged"
                                                                                 placeholder="公司"></div>
                                                                     <div class="col-6"><input
                                                                                 class="form-control"
                                                                                 formcontrolname="job" id="job"
-                                                                                type="text" placeholder="您的职业">
+                                                                                type="text"
+                                                                                v-model="vCard.job"
+                                                                                v-on:keyup="qrCodeTextChanged"
+                                                                                placeholder="您的职业">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -317,7 +335,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control"
                                                                         formcontrolname="street" id="street"
-                                                                        type="text"></div>
+                                                                        type="text"
+                                                                        v-model="vCard.street"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></div>
                                                         </div>
                                                         <div class="form-group row"><label
                                                                     class="col-sm-3 col-form-label"
@@ -327,11 +348,17 @@
                                                                     <div class="col-7"><input
                                                                                 class="form-control"
                                                                                 formcontrolname="city" id="city"
-                                                                                type="text"></div>
+                                                                                type="text"
+                                                                                v-model="vCard.city"
+                                                                                v-on:keyup="qrCodeTextChanged"
+                                                                        ></div>
                                                                     <div class="col-5"><input
                                                                                 class="form-control"
                                                                                 formcontrolname="zip" id="zip"
-                                                                                type="text" placeholder="邮政编码">
+                                                                                type="text"
+                                                                                v-model="vCard.zip"
+                                                                                v-on:keyup="qrCodeTextChanged"
+                                                                                placeholder="邮政编码">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -342,7 +369,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control"
                                                                         formcontrolname="state" id="state"
-                                                                        type="text"></div>
+                                                                        type="text"
+                                                                        v-model="vCard.state"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></div>
                                                         </div>
                                                         <div class="form-group row"><label
                                                                     class="col-sm-3 col-form-label"
@@ -350,7 +380,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control"
                                                                         formcontrolname="country" id="country"
-                                                                        type="text"></div>
+                                                                        type="text"
+                                                                        v-model="vCard.country"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></div>
                                                         </div>
                                                         <div class="form-group row"><label
                                                                     class="col-sm-3 col-form-label"
@@ -359,11 +392,14 @@
                                                                         class="form-control"
                                                                         formcontrolname="website" id="website"
                                                                         type="text"
+                                                                        v-model="vCard.website"
+                                                                        v-on:keyup="qrCodeTextChanged"
                                                                         placeholder="www.your-website.com"></div>
                                                         </div>
                                                         <button class="btn btn--green btn--green--generator-submit"
-                                                                data-gtm-event="create-button" type="submit"><i
-                                                                    class="icon icon-refresh-icon"></i> 创建二维码
+                                                                v-bind:class="{'btn--green--disabled' : !isQrCodeTextChanged}"
+                                                                v-on:click="create" type="button">
+                                                            <i class="icon icon-refresh-icon"></i> 创建二维码
                                                         </button>
                                                     </form>
                                                 </div>
@@ -375,12 +411,17 @@
                                                             <div class="col-sm-9"><textarea
                                                                         class="form-control ng-untouched ng-pristine ng-valid"
                                                                         formcontrolname="textMessage" id="textMessage"
-                                                                        rows="3" placeholder="请输入文本内容"></textarea></div>
+                                                                        rows="3" placeholder="请输入文本内容"
+                                                                        v-model="text.value"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></textarea></div>
                                                         </div>
                                                         <button class="btn btn--green btn--green--generator-submit"
                                                                 data-form-btn="text" data-gtm-event="create-button"
-                                                                data-js="generator-submit-btn" type="submit"><i
-                                                                    class="icon icon-refresh-icon"></i> 创建二维码
+                                                                data-js="generator-submit-btn" type="button"
+                                                                v-bind:class="{'btn--green--disabled' : !isQrCodeTextChanged}"
+                                                                v-on:click="create">
+                                                            <i class="icon icon-refresh-icon"></i> 创建二维码
                                                         </button>
                                                     </form>
                                                 </div>
@@ -393,7 +434,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control ng-untouched ng-pristine ng-valid"
                                                                         formcontrolname="email" id="email" type="text"
-                                                                        placeholder="您的邮箱地址"></div>
+                                                                        placeholder="您的邮箱地址"
+                                                                        v-model="email.to"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></div>
                                                         </div>
                                                         <div class="form-group row"><label
                                                                     class="col-sm-3 col-form-label"
@@ -401,7 +445,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control ng-untouched ng-pristine ng-valid"
                                                                         formcontrolname="subject" id="subject"
-                                                                        type="text" placeholder="产品需求"></div>
+                                                                        type="text" placeholder="产品需求"
+                                                                        v-model="email.sub"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></div>
                                                         </div>
                                                         <div class="form-group row"><label
                                                                     class="col-sm-3 col-form-label" for="emailMessage">信息：</label>
@@ -409,11 +456,16 @@
                                                                         class="form-control ng-untouched ng-pristine ng-valid"
                                                                         formcontrolname="emailMessage" id="emailMessage"
                                                                         rows="3"
-                                                                        placeholder="我想了解更多信息······"></textarea></div>
+                                                                        placeholder="我想了解更多信息······"
+                                                                        v-model="email.body"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></textarea></div>
                                                         </div>
                                                         <button class="btn btn--green btn--green--generator-submit"
-                                                                data-gtm-event="create-button" type="submit"><i
-                                                                    class="icon icon-refresh-icon"></i> 创建二维码
+                                                                data-gtm-event="create-button" type="button"
+                                                                v-bind:class="{'btn--green--disabled' : !isQrCodeTextChanged}"
+                                                                v-on:click="create">
+                                                            <i class="icon icon-refresh-icon"></i> 创建二维码
                                                         </button>
                                                     </form>
                                                 </div>
@@ -426,7 +478,10 @@
                                                             <div class="col-sm-9"><input
                                                                         class="form-control ng-untouched ng-pristine ng-valid"
                                                                         formcontrolname="smsNumber" id="smsNumber"
-                                                                        type="text" placeholder="您的号码"></div>
+                                                                        type="text" placeholder="您的号码"
+                                                                        v-model="sms.to"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></div>
                                                         </div>
                                                         <div class="form-group row"><label
                                                                     class="col-sm-3 col-form-label"
@@ -434,11 +489,16 @@
                                                             <div class="col-sm-9"><textarea
                                                                         class="form-control ng-untouched ng-pristine ng-valid"
                                                                         formcontrolname="smsMessage" id="smsMessage"
-                                                                        rows="3" placeholder="请输入文本内容"></textarea></div>
+                                                                        rows="3" placeholder="请输入文本内容"
+                                                                        v-model="sms.body"
+                                                                        v-on:keyup="qrCodeTextChanged"
+                                                                ></textarea></div>
                                                         </div>
                                                         <button class="btn btn--green btn--green--generator-submit"
-                                                                data-gtm-event="create-button" type="submit"><i
-                                                                    class="icon icon-refresh-icon"></i> 创建二维码
+                                                                data-gtm-event="create-button" type="button"
+                                                                v-bind:class="{'btn--green--disabled' : !isQrCodeTextChanged}"
+                                                                v-on:click="create">
+                                                            <i class="icon icon-refresh-icon"></i> 创建二维码
                                                         </button>
                                                     </form>
                                                 </div>
@@ -490,7 +550,8 @@
                                                     href="https://app.qr-code-generator.com/?dynamic_info_login">登录</a>
                                         </p></div>
                                 </div>
-                                <div class="col-xl-4 col-lg-4 generator-preview generator-preview--hidden-mobile" v-show="!isQrCodeTextChanged">
+                                <div class="col-xl-4 col-lg-4 generator-preview generator-preview--hidden-mobile"
+                                     v-show="!isQrCodeTextChanged">
                                     <div class="generator-preview__wrapper">
                                         <div class="generator-preview__noframe-body" id="frameBody"><!---->
                                             <img class="generator-preview__image"
@@ -767,7 +828,38 @@
             isActive: 'website',
             qrGenLoading: false,
             isDownload: false,
-            isQrCodeTextChanged: true
+            isQrCodeTextChanged: true,
+            website: {
+                url: '',
+            },
+            vCard: {
+                firstName: '',
+                lastName: '',
+                mobile: '',
+                phone: '',
+                tax: '',
+                email: '',
+                company: '',
+                job: '',
+                street: '',
+                city: '',
+                zip: '',
+                state: '',
+                country: '',
+                website: '',
+            },
+            text: {
+                value: '',
+            },
+            email: {
+                to: '',
+                sub: '',
+                body: '',
+            },
+            sms: {
+                to: '',
+                body: '',
+            }
         },
         created: function () {
         },
@@ -787,15 +879,17 @@
                 let that = this;
                 that.qrGenLoading = true;
 
-                axios.post('/api/v1/create', {
+                let params = {
                     frame_name: that.frameName,
-                    qr_code_text: that.padScheme(that.qrCodeText),
+                    qr_code_text: that.qrCodeText,
                     frame_text: 'Scan me',
                     frame_icon_name: 'mobile',
                     frame_color: that.frameColor,
                     foreground_color: that.foregroundColor,
                     qr_code_logo: that.qrCodeLogo,
-                }).then(res => {
+                };
+
+                axios.post('/api/v1/create',  params).then(res => {
                     console.log(res)
                     $(document.body).addClass('body--generator-step-2');
 
@@ -806,8 +900,59 @@
                     console.log(err)
                 });
             },
+            isActiveChanged: function (isActive) {
+                this.isActive = isActive;
+            },
             qrCodeTextChanged: function () {
                 this.isQrCodeTextChanged = true;
+
+                if (this.isActive == 'website') {
+                    this.qrCodeText = this.padScheme(this.website.url);
+
+                } else if (this.isActive == 'vcard') {
+                    let {
+                        lastName,
+                        firstName,
+                        company,
+                        job,
+                        street,
+                        state,
+                        city,
+                        zip,
+                        country,
+                        phone,
+                        mobile,
+                        fax,
+                        email,
+                        website
+                    } = this.vCard;
+
+                    let qrCodeText = 'BEGIN:VCARD';
+                    qrCodeText += '\nVERSION:3.0';
+                    qrCodeText += '\nN:' + lastName + ';' + firstName;
+                    qrCodeText += '\nFN:' + firstName + " " + lastName;
+                    qrCodeText += '\nORG:' + company;
+                    qrCodeText += '\nTITLE:' + job;
+                    qrCodeText += '\nADR:;;' + street + ';' + state + ';' + city + ';' + zip + ';' + country;
+                    qrCodeText += '\nTEL;WORK;VOICE:' + phone;
+                    qrCodeText += '\nTEL;CELL:' + mobile;
+                    qrCodeText += '\nTEL;FAX:' + fax;
+                    qrCodeText += '\nEMAIL;WORK;INTERNET:' + email;
+                    qrCodeText += '\nURL:' + website;
+                    qrCodeText += '\nEND:VCARD\n';
+
+                    this.qrCodeText = qrCodeText;
+                } else if (this.isActive == 'text') {
+                    this.qrCodeText = this.text.value;
+                } else if (this.isActive == 'email') {
+                    let {to, sub, body} = this.email;
+                    let qrCodeText = 'MATMSG:TO:' + to + ';SUB:' + sub + ';BODY:' + body+ ';;';
+                    this.qrCodeText = qrCodeText;
+                } else if (this.isActive == 'sms') {
+                    let {to, body} = this.sms;
+                    let qrCodeText = 'SMSTO:' + to + ':' + body;
+                    this.qrCodeText = qrCodeText;
+                }
             },
             frameChanged: function (frameName) {
                 this.frameName = frameName;
@@ -828,7 +973,7 @@
 
                 axios.post('/api/v1/create', {
                     frame_name: that.frameName,
-                    qr_code_text: that.padScheme(that.qrCodeText),
+                    qr_code_text: that.qrCodeText,
                     frame_text: 'Scan me',
                     frame_icon_name: 'mobile',
                     frame_color: that.frameColor,
@@ -865,7 +1010,7 @@
                     console.log(err)
                 });
             },
-            goBack: function() {
+            goBack: function () {
                 this.isQrCodeTextChanged = true;
                 $(document.body).removeClass('body--generator-step-2');
             },
