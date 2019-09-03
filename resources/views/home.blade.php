@@ -973,50 +973,33 @@
                 let that = this;
                 that.isDownload = true;
 
-                axios.post('/api/v1/create', {
-                    frame_name: that.frameName,
-                    qr_code_text: that.qrCodeText,
-                    frame_text: 'Scan me',
-                    frame_icon_name: 'mobile',
-                    frame_color: that.frameColor,
-                    foreground_color: that.foregroundColor,
-                    qr_code_logo: that.qrCodeLogo,
-                    image_format: 'PNG',
-                    image_width: 300,
-                    download: 1,
-                }, {
-                    responseType: 'blob'
-                }).then(res => {
-                    console.log(res)
+                if (that._isMobile()) {
+                    let url = '/api/v1/create?frame_name='+that.frameName+'&frame_color='+encodeURIComponent(that.frameColor)+'&foreground_color='+encodeURIComponent(that.foregroundColor)+'&qr_code_logo='+that.qrCodeLogo+'&qr_code_text='+that.qrCodeText+'&frame_text='+that.frameText+'&frame_icon_name=mobile&image_format=PNG&image_width=300&download=1';
+                    window.location.href = url;
+                } else {
+                    axios.post('/api/v1/create', {
+                        frame_name: that.frameName,
+                        qr_code_text: that.qrCodeText,
+                        frame_text: 'Scan me',
+                        frame_icon_name: 'mobile',
+                        frame_color: that.frameColor,
+                        foreground_color: that.foregroundColor,
+                        qr_code_logo: that.qrCodeLogo,
+                        image_format: 'PNG',
+                        image_width: 300,
+                        download: 1,
+                    }, {
+                        responseType: 'blob'
+                    }).then(res => {
+                        console.log(res)
 
-                    let blob = new Blob([res.data], {type: "image/png;charset=utf-8"});
+                        let blob = new Blob([res.data], {type: "image/png;charset=utf-8"});
 
-                    if (that._isMobile()) {
-                        let newPage = window.open();
-                        let url = window.URL.createObjectURL(blob);
-                        newPage.location.href = url;
-                    } else {
                         FileSaver.saveAs(blob, "frame.png");
-                    }
-                    // if (window.navigator.msSaveOrOpenBlob) {
-                    //     navigator.msSaveBlob(blob, 'frame.png');
-                    // } else {
-                    //     // 创建隐藏的可下载链接
-                    //     let eleLink = document.createElement('a');
-                    //     eleLink.download = 'frame.png';
-                    //     eleLink.style.display = 'none';
-                    //     // 字符内容转变成blob地址
-                    //     eleLink.href = URL.createObjectURL(blob);
-                    //     // 触发点击
-                    //     document.body.appendChild(eleLink);
-                    //     eleLink.click();
-                    //     // 然后移除
-                    //     document.body.removeChild(eleLink);
-                    //     window.URL.revokeObjectURL(eleLink.href);
-                    // }
-                }).catch(err => {
-                    console.log(err)
-                });
+                    }).catch(err => {
+                        console.log(err)
+                    });
+                }
             },
             goBack: function () {
                 this.isQrCodeTextChanged = true;
