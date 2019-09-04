@@ -11,4 +11,12 @@ class IndexController extends Controller
     {
         return view('home');
     }
+
+    public function signup() {
+        return view('signup');
+    }
+
+    public function signin() {
+        return view('signin');
+    }
 }

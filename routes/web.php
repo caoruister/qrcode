@@ -13,4 +13,6 @@
 
 Route::group(['namespace' => 'Web',], function () {
     Route::get('/', 'IndexController@index')->name('index');
+    Route::get('/signup', 'IndexController@signup')->name('signup');
+    Route::get('/signin', 'IndexController@signin')->name('signin');
 });

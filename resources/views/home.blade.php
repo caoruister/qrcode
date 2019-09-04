@@ -29,25 +29,25 @@
                         </li>
                         <li>
                             <a class="btn btn__rounded btn__rounded--blue"
-                               href="https://www.qr-code-generator.com/solutions/">Solutions</a>
+                               href="/solutions/">Solutions</a>
                         </li>
                         <li>
                             <a class="btn btn__rounded btn__rounded--blue"
-                               href="https://www.qr-code-generator.com/features/">Features</a>
+                               href="/features/">Features</a>
                         </li>
                         <li>
                             <a class="btn btn__rounded btn__rounded--blue"
-                               href="https://www.qr-code-generator.com/customers/">Customers</a>
+                               href="/customers/">Customers</a>
                         </li>
                         <li>
                             <a class="btn btn__rounded btn__rounded--blue"
-                               href="https://www.qr-code-generator.com/qr-code-marketing/">Resources</a>
+                               href="/qr-code-marketing/">Resources</a>
                         </li>
                         <li>
                             <a class="btn btn__rounded btn__rounded--blue" href="/signup?target=topnav">注册</a>
                         </li>
                         <li>
-                            <a class="btn btn__rounded btn__rounded--blue" href="https://app.qr-code-generator.com/en/">登录</a>
+                            <a class="btn btn__rounded btn__rounded--blue" href="/signin">登录</a>
                         </li>
                     </ul>
                     <a href="#" class="btn toggle menu-toggle">
@@ -506,21 +506,21 @@
                                                     <h2 class="form-header">Facebook二维码</h2>
                                                     <p class="text__normal">推广您的Facebook页面，赢得更多点赞和好友。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
-                                                            href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-facebook">
+                                                            href="/signup/?target=promo-dyn-facebook">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
                                                 <div style="display: none" v-show="isActive == 'pdf'">
                                                     <h2 class="form-header">PDF二维码</h2>
                                                     <p class="text__normal">提供任何PDF文件，例如数字版的手册、杂志、产品目录和电子书。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
-                                                            href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-pdf">
+                                                            href="/signup/?target=promo-dyn-pdf">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
                                                 <div style="display: none" v-show="isActive == 'mp3'">
                                                     <h2 class="form-header">MP3二维码</h2>
                                                     <p class="text__normal">在可定制的移动播放器中分享音乐、有声读物或播客。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
-                                                            href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-mp3">
+                                                            href="/signup/?target=promo-dyn-mp3">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
                                                 <div style="display: none" v-show="isActive == 'appstore'">
@@ -528,14 +528,14 @@
                                                     <p class="text__normal">有了应用二维码，客户可以连接到苹果应用市场、Google
                                                         Play应用市场或亚马逊应用商店，轻松下载您的应用。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
-                                                            href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-app">
+                                                            href="/signup/?target=promo-dyn-app">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
                                                 <div style="display: none" v-show="isActive == 'picture'">
                                                     <h2 class="form-header">相册</h2>
                                                     <p class="text__normal">分享一系列关于产品、公司、活动的图片。</p><a
                                                             class="btn btn--blue btn--blue--pull-down"
-                                                            href="https://app.qr-code-generator.com/site/signup/?target=promo-dyn-gallery">
+                                                            href="/signup/?target=promo-dyn-gallery">
                                                         立即免费注册 <i class="icon icon--right icon-chevron-right"></i></a>
                                                 </div>
                                             </div>
@@ -543,7 +543,7 @@
                                     </div>
                                     <div class="popover popover--dynamic-code" hidden=""><h4 class="form-header">
                                             创建动态二维码前请先注册</h4><a class="btn btn--blue"
-                                                                href="https://app.qr-code-generator.com/site/signup/?target=dynamic-code-hint">立即免费注册<i
+                                                                href="/signup/?target=dynamic-code-hint">立即免费注册<i
                                                     class="icon icon--right icon-chevron-right"></i></a>
                                         <p class="text__small text__small--generator-popover"> 已经有账户？ <a
                                                     class="anchor--blue"
@@ -796,10 +796,10 @@
                             </li>
                         </ul>
                         <a class="btn btn--green btn--green--signup"
-                           href="https://app.qr-code-generator.com/site/signup/?target=download-dialog">立即免费注册 <i
+                           href="/signup/?target=download-dialog">立即免费注册 <i
                                     class="icon icon--right icon-chevron-right"></i></a></div><!----><!---->
                     <div class="download-modal__footer-container"><p class="footer-container__text">已经有账户？ <a
-                                    class="anchor--blue" href="https://app.qr-code-generator.com/">在这里登录。</a></p>
+                                    class="anchor--blue" href="/signin">在这里登录。</a></p>
                     </div>
                 </div>
             </div>
@@ -807,13 +807,12 @@
     </div>
 </main>
 
-
 <!-- Scripts -->
 <script src="{{ asset("js/manifest.js") }}"></script>
 <script src="{{ asset("js/vendor.js") }}"></script>
 <script src="{{ asset("js/app.js") }}"></script>
 <script>
-    vm = new Vue({
+    new Vue({
         el: '#app',
         data: {
             isDynamic: false,
