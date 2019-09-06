@@ -16,3 +16,7 @@ Route::group(['namespace' => 'Web',], function () {
     Route::get('/signup', 'IndexController@signup')->name('signup');
     Route::get('/signin', 'IndexController@signin')->name('signin');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
