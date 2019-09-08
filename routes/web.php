@@ -17,6 +17,6 @@ Route::group(['namespace' => 'Web',], function () {
     Route::get('/signin', 'IndexController@signin')->name('signin');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');

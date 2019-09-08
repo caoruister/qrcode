@@ -1,5 +1,6 @@
-/*#region Mixins */
-/*#endregion */
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2375,7 +2376,7 @@ body {
   padding-left: 10px;
 }
 
-#app-signup-form input[type=text], #app-signup-form input[type=password] {
+.form-control {
   border: 1px solid #CBCBCB;
   height: 55px;
   line-height: 30px;
