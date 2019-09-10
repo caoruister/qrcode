@@ -39312,7 +39312,7 @@ var render = function() {
               },
               [
                 _c("span", {
-                  staticClass: "qr-create-code-button__icon fa fa-plus"
+                  staticClass: "qr-create-code-button__icon icon icon-plus-1"
                 }),
                 _vm._v("Create QR Code")
               ]
