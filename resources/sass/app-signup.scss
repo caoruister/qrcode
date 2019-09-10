@@ -3015,15 +3015,6 @@ input::placeholder {
   margin: 0 auto;
 }
 
-@charset "UTF-8";
-//@font-face {
-//  font-family: qrbackend2;
-//  src: url(fonts/qrbackend/fonts/qrbackend2.eot);
-//  src: url(fonts/qrbackend/fonts/qrbackend2.eot?#iefix) format("embedded-opentype"), url(fonts/qrbackend/fonts/qrbackend2.woff) format("woff"), url(fonts/qrbackend/fonts/qrbackend2.ttf) format("truetype"), url(fonts/qrbackend/fonts/qrbackend2.svg#qrbackend2) format("svg");
-//  font-weight: 400;
-//  font-style: normal
-//}
-
 [data-icon]:before {
   font-family: qrbackend2 !important;
   content: attr(data-icon);

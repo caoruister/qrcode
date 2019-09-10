@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config("app.name") }}</title>
 
-    <link href="{{ asset("css/app.css") }}" rel="stylesheet">
+    <link href="{{ asset("css/index.css") }}" rel="stylesheet">
 </head>
 <body class="qrcode-generated">
 <div class="header header-nav-start" data-js="header-container">
@@ -810,7 +810,7 @@
 <!-- Scripts -->
 <script src="{{ asset("js/manifest.js") }}"></script>
 <script src="{{ asset("js/vendor.js") }}"></script>
-<script src="{{ asset("js/app.js") }}"></script>
+<script src="{{ asset("js/index.js") }}"></script>
 <script>
     new Vue({
         el: '#app',
