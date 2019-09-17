@@ -1743,31 +1743,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/App.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Create.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Create.vue?vue&type=script&lang=js& ***!
@@ -2500,12 +2475,437 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       showDynamic: true,
-      showStatic: false
+      showStatic: false,
+      selected: '',
+      isActive: false,
+      secondStep: false
     };
+  },
+  computed: {
+    previewImg: function previewImg() {
+      return this.isActive ? '/images/preview-type-' + (this.selected.indexOf('url') != -1 ? 'url' : this.selected) + '-en.jpg' : '';
+    }
+  },
+  methods: {
+    selectItem: function selectItem(item) {
+      this.selected = item;
+      this.isActive = true;
+    },
+    nextFirstStep: function nextFirstStep() {
+      this.secondStep = true;
+    }
   }
 });
 
@@ -39282,55 +39682,6 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true& ***!
-  \*************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col" }, [
-        _c(
-          "div",
-          { staticClass: "qr-manage-bar__button" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "qr-create-code-button",
-                attrs: { to: { name: "create" } }
-              },
-              [
-                _c("span", {
-                  staticClass: "qr-create-code-button__icon icon icon-plus-1"
-                }),
-                _vm._v("Create QR Code")
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Create.vue?vue&type=template&id=234fd476&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Create.vue?vue&type=template&id=234fd476&scoped=true& ***!
@@ -39346,526 +39697,1721 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    {
-      staticClass:
-        "section-content section-content_generator-add newgenerator row state-generator-codetype addMode  generator_preview"
-    },
-    [
-      _c("div", {
-        staticClass: "backdrop-overlay",
-        attrs: { "data-backdrop-overlay": "" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "grid" }, [
-        _c("div", { staticClass: "col" }, [
-          _c("div", { staticClass: "row-generator-body " }, [
-            _c("div", { staticClass: "section-generator " }, [
-              _c("div", { staticClass: "carousel slide" }, [
-                _c("div", { staticClass: "carousel-inner " }, [
-                  _c(
-                    "div",
-                    { staticClass: "codetype-view item active white-form" },
-                    [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "redesign",
-                          attrs: { "data-new-status": "" }
-                        },
-                        [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "row row-generator-codetype-chooser white-form codetype-menu v1"
-                            },
-                            [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "col-lg-12 content-group mb-40 heading__section"
-                                },
-                                [
-                                  _vm._m(0),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "content-wrapper text-center"
-                                    },
-                                    [
-                                      _vm._m(1),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "tools",
-                                          on: {
-                                            click: function($event) {
-                                              _vm.showDynamic = !_vm.showDynamic
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass:
+          "section-content section-content_generator-add newgenerator row state-generator-codetype addMode  generator_preview",
+        class: { "state-generator-data": _vm.secondStep },
+        staticStyle: { "padding-bottom": "64px" }
+      },
+      [
+        _c("div", { staticClass: "grid" }, [
+          _c("div", { staticClass: "col" }, [
+            _c("div", { staticClass: "row-generator-body " }, [
+              _c("div", { staticClass: "section-generator " }, [
+                _c("div", { staticClass: "carousel slide" }, [
+                  _c("div", { staticClass: "carousel-inner " }, [
+                    _c(
+                      "div",
+                      { staticClass: "codetype-view item active white-form" },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "redesign",
+                            attrs: { "data-new-status": "" }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "row row-generator-codetype-chooser white-form codetype-menu v1"
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "col-lg-12 content-group mb-40 heading__section"
+                                  },
+                                  [
+                                    _vm._m(1),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "content-wrapper text-center"
+                                      },
+                                      [
+                                        _vm._m(2),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass: "tools",
+                                            on: {
+                                              click: function($event) {
+                                                _vm.showDynamic = !_vm.showDynamic
+                                              }
                                             }
-                                          }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass:
-                                              "icon-minus icon-minus-1",
-                                            class: {
-                                              "icon-minus-1": _vm.showDynamic,
-                                              "icon-plus-1": !_vm.showDynamic
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "col-lg-12 content-group mb-40 pl-0 pr-0 industry__search"
-                                },
-                                [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "create__header create__header--position"
-                                    },
-                                    [
-                                      _c(
-                                        "h3",
-                                        { staticClass: "create__heading" },
-                                        [_vm._v("Select your QR Code type")]
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "create-header__search-box"
-                                        },
-                                        [
-                                          _c(
-                                            "div",
-                                            {
+                                          },
+                                          [
+                                            _c("i", {
                                               staticClass:
-                                                "create-header__search-container"
-                                            },
-                                            [
-                                              _c("input", {
+                                                "icon-minus icon-minus-1",
+                                              class: {
+                                                "icon-minus-1": _vm.showDynamic,
+                                                "icon-plus-1": !_vm.showDynamic
+                                              }
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "col-lg-12 content-group mb-40 pl-0 pr-0 industry__search"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "create__header create__header--position"
+                                      },
+                                      [
+                                        _c(
+                                          "h3",
+                                          { staticClass: "create__heading" },
+                                          [_vm._v("Select your QR Code type")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "create-header__search-box"
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
                                                 staticClass:
-                                                  "input__control input_theme_create-search ng-pristine ng-untouched ng-valid ng-valid-maxlength",
-                                                attrs: {
-                                                  type: "search",
-                                                  placeholder:
-                                                    'Try "Educational Institution"',
-                                                  maxlength: "400",
-                                                  tabindex: "1",
-                                                  "data-industry-search": "",
-                                                  "ng-model":
-                                                    "industrySearchKeyword",
-                                                  "ng-model-options":
-                                                    "{ debounce: 500 }",
-                                                  "ng-change":
-                                                    "startSearching(industrySearchKeyword)",
-                                                  "ng-focus":
-                                                    "searchFieldFocus()",
-                                                  "ng-blur":
-                                                    "searchFieldFocusLost($event)"
-                                                }
-                                              }),
-                                              _vm._v(" "),
-                                              _c(
-                                                "button",
-                                                {
+                                                  "create-header__search-container"
+                                              },
+                                              [
+                                                _c("input", {
                                                   staticClass:
-                                                    "button button_theme_reset button_industry",
+                                                    "input__control input_theme_create-search",
                                                   attrs: {
-                                                    type: "button",
-                                                    autocomplete: "off",
-                                                    "aria-pressed": "false",
-                                                    tabindex: "0",
-                                                    "aria-disabled": "false"
+                                                    type: "search",
+                                                    placeholder:
+                                                      'Try "Educational Institution"',
+                                                    maxlength: "400",
+                                                    tabindex: "1",
+                                                    "data-industry-search": ""
                                                   }
-                                                },
-                                                [
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "button__text"
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "svg",
-                                                        {
-                                                          staticClass:
-                                                            "search__icon-view",
-                                                          attrs: {
-                                                            xmlns:
-                                                              "http://www.w3.org/2000/svg",
-                                                            width: "17.811",
-                                                            height: "17.811"
-                                                          }
-                                                        },
-                                                        [
-                                                          _c(
-                                                            "g",
-                                                            {
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "button",
+                                                  {
+                                                    staticClass:
+                                                      "button button_theme_reset button_industry",
+                                                    attrs: {
+                                                      type: "button",
+                                                      autocomplete: "off",
+                                                      "aria-pressed": "false",
+                                                      tabindex: "0",
+                                                      "aria-disabled": "false"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "button__text"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "svg",
+                                                          {
+                                                            staticClass:
+                                                              "search__icon-view",
+                                                            attrs: {
+                                                              xmlns:
+                                                                "http://www.w3.org/2000/svg",
+                                                              width: "17.811",
+                                                              height: "17.811"
+                                                            }
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "g",
+                                                              {
+                                                                attrs: {
+                                                                  transform:
+                                                                    "translate(-1.25 -1.25)",
+                                                                  fill: "none",
+                                                                  "stroke-linecap":
+                                                                    "square",
+                                                                  "stroke-miterlimit":
+                                                                    "10",
+                                                                  "stroke-width":
+                                                                    "1.5"
+                                                                }
+                                                              },
+                                                              [
+                                                                _c("path", {
+                                                                  attrs: {
+                                                                    d:
+                                                                      "M18 18l-4.942-4.942"
+                                                                  }
+                                                                }),
+                                                                _vm._v(" "),
+                                                                _c("circle", {
+                                                                  attrs: {
+                                                                    cx: "6.232",
+                                                                    cy: "6.232",
+                                                                    r: "6.232",
+                                                                    transform:
+                                                                      "translate(2 2)"
+                                                                  }
+                                                                })
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "search__icon-box"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "button",
+                                                      {
+                                                        staticClass:
+                                                          "button button_theme_reset button_left-drop-down",
+                                                        attrs: {
+                                                          type: "button",
+                                                          autocomplete: "off",
+                                                          "aria-pressed":
+                                                            "false",
+                                                          tabindex: "2",
+                                                          "aria-disabled":
+                                                            "false"
+                                                        }
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "svg",
+                                                          {
+                                                            staticClass:
+                                                              "search__icon-arrow-down",
+                                                            attrs: {
+                                                              xmlns:
+                                                                "http://www.w3.org/2000/svg",
+                                                              width: "8.828",
+                                                              height: "14.828"
+                                                            }
+                                                          },
+                                                          [
+                                                            _c("path", {
                                                               attrs: {
-                                                                transform:
-                                                                  "translate(-1.25 -1.25)",
+                                                                "data-name":
+                                                                  "Path 16849",
+                                                                d:
+                                                                  "M1.414 13.414l6-6-6-6",
                                                                 fill: "none",
                                                                 "stroke-linecap":
                                                                   "square",
                                                                 "stroke-miterlimit":
                                                                   "10",
                                                                 "stroke-width":
-                                                                  "1.5"
+                                                                  "2"
                                                               }
-                                                            },
-                                                            [
-                                                              _c("path", {
-                                                                attrs: {
-                                                                  d:
-                                                                    "M18 18l-4.942-4.942"
-                                                                }
-                                                              }),
-                                                              _vm._v(" "),
-                                                              _c("circle", {
-                                                                attrs: {
-                                                                  cx: "6.232",
-                                                                  cy: "6.232",
-                                                                  r: "6.232",
-                                                                  transform:
-                                                                    "translate(2 2)"
-                                                                }
-                                                              })
-                                                            ]
-                                                          )
-                                                        ]
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                {
-                                                  staticClass:
-                                                    "search__icon-box"
-                                                },
-                                                [
-                                                  _c(
-                                                    "button",
-                                                    {
-                                                      staticClass:
-                                                        "button button_theme_reset button_left-drop-down",
-                                                      attrs: {
-                                                        type: "button",
-                                                        autocomplete: "off",
-                                                        "aria-pressed": "false",
-                                                        tabindex: "2",
-                                                        "aria-disabled":
-                                                          "false",
-                                                        "ng-click":
-                                                          "displaySearchSuggestions()"
-                                                      }
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "svg",
-                                                        {
-                                                          staticClass:
-                                                            "search__icon-arrow-down",
-                                                          attrs: {
-                                                            xmlns:
-                                                              "http://www.w3.org/2000/svg",
-                                                            width: "8.828",
-                                                            height: "14.828"
-                                                          }
-                                                        },
-                                                        [
-                                                          _c("path", {
-                                                            attrs: {
-                                                              "data-name":
-                                                                "Path 16849",
-                                                              d:
-                                                                "M1.414 13.414l6-6-6-6",
-                                                              fill: "none",
-                                                              "stroke-linecap":
-                                                                "square",
-                                                              "stroke-miterlimit":
-                                                                "10",
-                                                              "stroke-width":
-                                                                "2"
-                                                            }
-                                                          })
-                                                        ]
-                                                      )
-                                                    ]
-                                                  ),
-                                                  _vm._v(" "),
-                                                  _c(
-                                                    "span",
-                                                    {
-                                                      staticClass:
-                                                        "badge badge_new-search ng-scope",
-                                                      attrs: {
-                                                        "ng-if":
-                                                          "searchBox.newLabelValue <= 0"
-                                                      }
-                                                    },
-                                                    [_vm._v("New")]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _vm._m(2)
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _vm._m(3)
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "col-lg-12 dynamiccodes",
-                                  class: { hidden: !_vm.showDynamic }
-                                },
-                                [
-                                  _vm._m(4),
-                                  _vm._v(" "),
-                                  _vm._m(5),
-                                  _vm._v(" "),
-                                  _vm._m(6),
-                                  _vm._v(" "),
-                                  _vm._m(7),
-                                  _vm._v(" "),
-                                  _vm._m(8),
-                                  _vm._v(" "),
-                                  _vm._m(9),
-                                  _vm._v(" "),
-                                  _vm._m(10),
-                                  _vm._v(" "),
-                                  _vm._m(11),
-                                  _vm._v(" "),
-                                  _vm._m(12),
-                                  _vm._v(" "),
-                                  _vm._m(13),
-                                  _vm._v(" "),
-                                  _vm._m(14),
-                                  _vm._v(" "),
-                                  _vm._m(15),
-                                  _vm._v(" "),
-                                  _vm._m(16),
-                                  _vm._v(" "),
-                                  _vm._m(17)
-                                ]
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "row row-generator-codetype-chooser white-form codetype-menu v2 hidden"
-                            },
-                            [
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "col-lg-12 content-group mb-40"
-                                },
-                                [
-                                  _vm._m(18),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "content-wrapper text-center"
-                                    },
-                                    [
-                                      _vm._m(19),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "tools",
-                                          on: {
-                                            click: function($event) {
-                                              _vm.showDynamic = !_vm.showDynamic
+                                                            })
+                                                          ]
+                                                        )
+                                                      ]
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "span",
+                                                      {
+                                                        staticClass:
+                                                          "badge badge_new-search ng-scope",
+                                                        attrs: {
+                                                          "ng-if":
+                                                            "searchBox.newLabelValue <= 0"
+                                                        }
+                                                      },
+                                                      [_vm._v("New")]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _vm._m(3)
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(4)
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "col-lg-12 dynamiccodes",
+                                    class: { hidden: !_vm.showDynamic }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "code-type-card col-lg-6 col-sm-12"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "durl"
+                                            },
+                                            attrs: {
+                                              "data-type": "url",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/url"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("durl")
+                                              }
                                             }
-                                          }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-url pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Website")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Link to any page on the web"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Link to any page on the web\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "dsocial"
+                                            },
+                                            attrs: {
+                                              "data-type": "dsocial",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dsocial",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("dsocial")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-social pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Social Media")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Link to your social media channels"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Link to your social media channels\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "coupon"
+                                            },
+                                            attrs: {
+                                              "data-type": "coupon",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/coupon",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("coupon")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-coupon pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Coupons")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Share coupons and discounts"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Share coupons and discounts\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "code-type-card col-lg-6 col-sm-12"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "angular"
+                                            },
+                                            attrs: {
+                                              "data-type": "angular",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/angular",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("angular")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-vcard pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("vCard Plus")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Share personalized contact details"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Share personalized contact details\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active:
+                                                _vm.selected == "dbusiness_page"
+                                            },
+                                            attrs: {
+                                              "data-type": "dbusiness_page",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dbusiness_page",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem(
+                                                  "dbusiness_page"
+                                                )
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-manage-code-business-page pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Business Page")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Provide your company information"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Provide your company information\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "feedback"
+                                            },
+                                            attrs: {
+                                              "data-type": "feedback",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/feedback",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem(
+                                                  "feedback"
+                                                )
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-feedback pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Feedback")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Collect feedback and get rated"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Collect feedback and get rated\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "drating"
+                                            },
+                                            attrs: {
+                                              "data-type": "drating",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/drating"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("drating")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-rating pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Rating")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Ask a question and get rated"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Ask a question and get rated\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "dvideo"
+                                            },
+                                            attrs: {
+                                              "data-type": "dvideo",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dvideo",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("dvideo")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-add-video pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Video")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title: "Show the video page"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Share one or more videos\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "devent"
+                                            },
+                                            attrs: {
+                                              "data-type": "devent",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/devent",
+                                              "has-video": "false"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("devent")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-event pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Event")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title: "Promote your event"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Promote your event\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "dpdf"
+                                            },
+                                            attrs: {
+                                              "data-type": "dpdf",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dpdf"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("dpdf")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-pdf pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("PDF")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Link to a mobile-optimized PDF"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Link to a mobile-optimized PDF\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "facebook"
+                                            },
+                                            attrs: {
+                                              "data-type": "facebook",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/facebook"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem(
+                                                  "facebook"
+                                                )
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-facebook pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Facebook")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Get more Likes for your page"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Get more Likes for your page\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "dapp"
+                                            },
+                                            attrs: {
+                                              "data-type": "dapp",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dapp"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("dapp")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-app pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("App")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "View your app on various App Stores"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            View your app on various App Stores\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "dmp3"
+                                            },
+                                            attrs: {
+                                              "data-type": "dmp3",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dmp3"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("dmp3")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-dmp3 pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("MP3")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title: "Play an audio file"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Play an audio file\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "dgallery"
+                                            },
+                                            attrs: {
+                                              "data-type": "dgallery",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/dgallery"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem(
+                                                  "dgallery"
+                                                )
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-gallery pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Images")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "span",
+                                              { staticClass: "badge new" },
+                                              [_vm._v(" updated")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Show a series of photos"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Show a series of photos\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "row row-generator-codetype-chooser white-form codetype-menu v2 hidden"
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "col-lg-12 content-group mb-40"
+                                  },
+                                  [
+                                    _vm._m(5),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "content-wrapper text-center"
+                                      },
+                                      [
+                                        _vm._m(6),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass: "tools",
+                                            on: {
+                                              click: function($event) {
+                                                _vm.showDynamic = !_vm.showDynamic
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon-minus icon-minus-1",
+                                              class: {
+                                                "icon-minus-1": _vm.showDynamic,
+                                                "icon-plus-1": !_vm.showDynamic
+                                              }
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "col-lg-12 dynamiccodes",
+                                    class: { hidden: !_vm.showDynamic }
+                                  },
+                                  [
+                                    _vm._m(7),
+                                    _vm._v(" "),
+                                    _vm._m(8),
+                                    _vm._v(" "),
+                                    _vm._m(9),
+                                    _vm._v(" "),
+                                    _vm._m(10),
+                                    _vm._v(" "),
+                                    _vm._m(11),
+                                    _vm._v(" "),
+                                    _vm._m(12),
+                                    _vm._v(" "),
+                                    _vm._m(13),
+                                    _vm._v(" "),
+                                    _vm._m(14),
+                                    _vm._v(" "),
+                                    _vm._m(15),
+                                    _vm._v(" "),
+                                    _vm._m(16),
+                                    _vm._v(" "),
+                                    _vm._m(17),
+                                    _vm._v(" "),
+                                    _vm._m(18),
+                                    _vm._v(" "),
+                                    _vm._m(19),
+                                    _vm._v(" "),
+                                    _vm._m(20)
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "row row-generator-codetype-chooser white-form codetype-menu mb20 mt-0"
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "col-lg-12 content-group mb-40 mt_10"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "content-wrapper text-center"
+                                      },
+                                      [
+                                        _vm._m(21),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass: "tools",
+                                            on: {
+                                              click: function($event) {
+                                                _vm.showStatic = !_vm.showStatic
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass: "icon-minus",
+                                              class: {
+                                                "icon-minus-1": _vm.showStatic,
+                                                "icon-plus-1": !_vm.showStatic
+                                              }
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "col-lg-12 staticcodes",
+                                    class: { hidden: !_vm.showStatic }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6 "
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "surl"
+                                            },
+                                            attrs: {
+                                              "data-type": "url_static",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/url?action=static"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("surl")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-url pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Website")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Link to any page on the web"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Link to any page on the web\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "vcard"
+                                            },
+                                            attrs: {
+                                              "data-type": "vcard",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/vcard",
+                                              id: "codeFormId_2"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("vcard")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-vcard pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("vCard")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title: "Share contact details"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Share contact details\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "email"
+                                            },
+                                            attrs: {
+                                              "data-type": "email",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/email",
+                                              id: "codeFormId_8"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("email")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-email pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Email")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title: "Get email messages"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Get email messages\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "sms"
+                                            },
+                                            attrs: {
+                                              "data-type": "sms",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/sms",
+                                              id: "codeFormId_9"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("sms")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-sms pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("SMS")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title: " Get text messages"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Get text messages\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "code-type-card col-lg-6"
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass: "btn-codetype",
+                                            class: {
+                                              active: _vm.selected == "text"
+                                            },
+                                            attrs: {
+                                              "data-type": "text",
+                                              loadurl:
+                                                "https://app.qr-code-generator.com/create/getform/add/text",
+                                              id: "codeFormId_10"
+                                            },
+                                            on: {
+                                              click: function($event) {
+                                                return _vm.selectItem("text")
+                                              }
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "icon icon-creation-code-text pull-left"
+                                            }),
+                                            _vm._v(" "),
+                                            _c("h4", [_vm._v("Text")]),
+                                            _vm._v(" "),
+                                            _c(
+                                              "small",
+                                              {
+                                                staticClass: "text-ellipsis",
+                                                attrs: {
+                                                  title:
+                                                    "Display a short message"
+                                                }
+                                              },
+                                              [
+                                                _vm._v(
+                                                  "\n                                                            Display a short message\n                                                        "
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "item redesign",
+                      attrs: { id: "formHere" }
+                    })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(22),
+            _vm._v(" "),
+            _c("div", { staticClass: "apply-fixedBottom-footerGenerator" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "footer-generator-actions content-footer redesign generator-float-bottom",
+                  staticStyle: { "margin-left": "0px" }
+                },
+                [
+                  _c("div", { staticClass: "table-cell-middle" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "container",
+                        staticStyle: { width: "100%", "max-width": "100%" }
+                      },
+                      [
+                        _c("div", { staticClass: "col-lg-12 col-xs-12" }, [
+                          _c("div", { staticClass: "row firststep" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "section-content section-content_generator-footer"
+                              },
+                              [
+                                _c("div", { staticClass: "grid" }, [
+                                  _c("div", { staticClass: "col" }, [
+                                    _c("div", { staticClass: "col-lg-12" }, [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass:
+                                            "btn green lc big btn-generator-next pull-right col-lg-6 btn_create_next ladda-button",
+                                          class: { disabled: !_vm.isActive },
+                                          attrs: {
+                                            "data-style": "expand-left"
+                                          },
+                                          on: { click: _vm.nextFirstStep }
                                         },
                                         [
-                                          _c("i", {
-                                            staticClass:
-                                              "icon-minus icon-minus-1",
-                                            class: {
-                                              "icon-minus-1": _vm.showDynamic,
-                                              "icon-plus-1": !_vm.showDynamic
-                                            }
+                                          _c(
+                                            "span",
+                                            { staticClass: "ladda-label" },
+                                            [_vm._v("Next")]
+                                          ),
+                                          _c("span", {
+                                            staticClass: "ladda-spinner"
                                           })
                                         ]
                                       )
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "col-lg-12 dynamiccodes",
-                                  class: { hidden: !_vm.showDynamic }
-                                },
-                                [
-                                  _vm._m(20),
+                                    ])
+                                  ]),
                                   _vm._v(" "),
-                                  _vm._m(21),
-                                  _vm._v(" "),
-                                  _vm._m(22),
-                                  _vm._v(" "),
-                                  _vm._m(23),
-                                  _vm._v(" "),
-                                  _vm._m(24),
-                                  _vm._v(" "),
-                                  _vm._m(25),
-                                  _vm._v(" "),
-                                  _vm._m(26),
-                                  _vm._v(" "),
-                                  _vm._m(27),
-                                  _vm._v(" "),
-                                  _vm._m(28),
-                                  _vm._v(" "),
-                                  _vm._m(29),
-                                  _vm._v(" "),
-                                  _vm._m(30),
-                                  _vm._v(" "),
-                                  _vm._m(31),
-                                  _vm._v(" "),
-                                  _vm._m(32),
-                                  _vm._v(" "),
-                                  _vm._m(33)
-                                ]
-                              )
-                            ]
-                          ),
+                                  _c("div", {
+                                    staticClass: "col col-fixed col-preview",
+                                    staticStyle: { width: "466px" }
+                                  })
+                                ])
+                              ]
+                            )
+                          ]),
                           _vm._v(" "),
+                          _vm._m(23)
+                        ])
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "col col-fixed col-preview",
+              staticStyle: { width: "466px" }
+            },
+            [
+              _c("div", { staticClass: "overflow_base" }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "redesign data__mockup",
+                  staticStyle: { "margin-left": "0px" }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "preview clearfix mockup__preview",
+                      class: { active: _vm.isActive },
+                      attrs: { "data-spy": "affix", "data-offset-top": "26" }
+                    },
+                    [
+                      _vm._m(24),
+                      _vm._v(" "),
+                      _vm._m(25),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "preview-smartphone clearfix active mockup__smartphone"
+                        },
+                        [
                           _c(
                             "div",
                             {
                               staticClass:
-                                "row row-generator-codetype-chooser white-form codetype-menu mb20 mt-0"
+                                "preview-smartphone-wrapper noVideo mockup__smartphone-wrapper"
                             },
                             [
+                              _c("div", {
+                                staticClass: "placeholder ratchet",
+                                attrs: { id: "smartphonePlaceholder" }
+                              }),
+                              _vm._v(" "),
+                              _vm._m(26),
+                              _vm._v(" "),
+                              _vm._m(27),
+                              _vm._v(" "),
                               _c(
                                 "div",
                                 {
                                   staticClass:
-                                    "col-lg-12 content-group mb-40 mt_10"
+                                    "placeholder ratchet previewNoVideo",
+                                  staticStyle: { overflow: "hidden" },
+                                  attrs: { id: "imgPlaceholder" }
                                 },
                                 [
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass: "content-wrapper text-center"
+                                  _c("img", {
+                                    staticStyle: {
+                                      "max-width": "320px",
+                                      width: "320px"
                                     },
-                                    [
-                                      _vm._m(34),
-                                      _vm._v(" "),
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass: "tools",
-                                          on: {
-                                            click: function($event) {
-                                              _vm.showStatic = !_vm.showStatic
-                                            }
-                                          }
-                                        },
-                                        [
-                                          _c("i", {
-                                            staticClass: "icon-minus",
-                                            class: {
-                                              "icon-minus-1": _vm.showStatic,
-                                              "icon-plus-1": !_vm.showStatic
-                                            }
-                                          })
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "col-lg-12 staticcodes",
-                                  class: { hidden: !_vm.showStatic }
-                                },
-                                [
-                                  _vm._m(35),
-                                  _vm._v(" "),
-                                  _vm._m(36),
-                                  _vm._v(" "),
-                                  _vm._m(37),
-                                  _vm._v(" "),
-                                  _vm._m(38),
-                                  _vm._v(" "),
-                                  _vm._m(39)
+                                    attrs: { src: _vm.previewImg }
+                                  })
                                 ]
                               )
                             ]
                           )
                         ]
-                      )
+                      ),
+                      _vm._v(" "),
+                      _vm._m(28)
                     ]
                   ),
                   _vm._v(" "),
-                  _c("div", {
-                    staticClass: "item redesign",
-                    attrs: { id: "formHere" }
-                  })
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _vm._m(40),
-          _vm._v(" "),
-          _vm._m(41)
-        ]),
-        _vm._v(" "),
-        _vm._m(42)
-      ])
-    ]
-  )
+                  _c(
+                    "div",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: !_vm.isActive,
+                          expression: "!isActive"
+                        }
+                      ],
+                      staticClass: "creation-no-default"
+                    },
+                    [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "//cdn.qr-code-generator.com/img/generator/cody/CodyE_PointingLeft.svg"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("div", [
+                        _vm._v("Please choose one to view a page preview")
+                      ])
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-navbar ng-scope",
+        staticStyle: { background: "none", position: "relative" },
+        attrs: {
+          "ng-style": "getNavbarStyle()",
+          "ng-controller": "qrNavbarCtrl",
+          "ng-init": "route='create/new'",
+          "data-navbar": ""
+        }
+      },
+      [
+        _c("div", { staticClass: "qr-navbar__element" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect",
+              attrs: { "ng-show": "route != 'manage/new'" }
+            },
+            [
+              _c(
+                "a",
+                { attrs: { "ng-click": "goBack($event)", href: "/home" } },
+                [
+                  _c("i", { staticClass: "icon-event-back" }),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      staticClass: "ng-hide",
+                      attrs: {
+                        "ng-show":
+                          "route != 'create/index' && route != 'create/new'"
+                      }
+                    },
+                    [_vm._v("Back")]
+                  )
+                ]
+              )
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("h3", [
-      _vm._v("Select your QR Code Type                "),
+      _vm._v(
+        "Select your QR Code Type\n                                                    "
+      ),
       _c("button", {
         staticClass: "btn-help visible-lg-inline-block",
         attrs: { title: "", "data-original-title": "" }
@@ -39925,6 +41471,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -39957,6 +41504,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -39994,6 +41542,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40030,6 +41579,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40066,6 +41616,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40102,6 +41653,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40134,6 +41686,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40170,6 +41723,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40206,6 +41760,7 @@ var staticRenderFns = [
               ])
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40238,7 +41793,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40271,7 +41828,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40308,7 +41867,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40341,7 +41902,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40374,7 +41937,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40407,7 +41972,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40444,7 +42011,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40477,7 +42046,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40510,7 +42081,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40547,7 +42120,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40580,7 +42155,9 @@ var staticRenderFns = [
               ])
             ]
           ),
-          _vm._v("/login"),
+          _vm._v(
+            "\n                                                                    /login\n                                                                    "
+          ),
           _c(
             "div",
             {
@@ -40618,7 +42195,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "/login\n                                                                "
+            "\n                                                                    /login\n                                                                    "
           ),
           _c(
             "div",
@@ -40656,6 +42233,7 @@ var staticRenderFns = [
               })
             ]
           ),
+          _vm._v(" "),
           _c(
             "div",
             {
@@ -40695,539 +42273,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6 col-sm-12" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "url",
-            id: "codeFormId_1",
-            loadurl: "https://app.qr-code-generator.com/create/getform/add/url"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-url pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Website")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Link to any page on the web" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Link to any page on the web                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dsocial",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/dsocial",
-            id: "codeFormId_14",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-social pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Social Media")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Link to your social media channels" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Link to your social media channels                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "coupon",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/coupon",
-            id: "codeFormId_18",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-coupon pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Coupons")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Share coupons and discounts" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Share coupons and discounts                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6 col-sm-12" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "angular",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/angular",
-            id: "codeFormId_12",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-vcard pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("vCard Plus")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Share personalized contact details" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Share personalized contact details                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dbusiness_page",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/dbusiness_page",
-            id: "codeFormId_15",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", {
-            staticClass: "icon icon-manage-code-business-page pull-left"
-          }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Business Page")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Provide your company information" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Provide your company information                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "feedback",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/feedback",
-            id: "codeFormId_17",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", {
-            staticClass: "icon icon-creation-code-feedback pull-left"
-          }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Feedback")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Collect feedback and get rated" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Collect feedback and get rated                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "drating",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/drating",
-            id: "codeFormId_19"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-rating pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Rating")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Ask a question and get rated" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Ask a question and get rated                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dvideo",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/dvideo",
-            id: "codeFormId_16",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-add-video pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Video")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Show the video page" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Share one or more videos                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "devent",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/devent",
-            id: "codeFormId_13",
-            "has-video": "false"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-event pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Event")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Promote your event" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Promote your event                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dpdf",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/dpdf",
-            id: "codeFormId_20"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-pdf pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("PDF")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Link to a mobile-optimized PDF" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Link to a mobile-optimized PDF                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "facebook",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/facebook",
-            id: "codeFormId_4"
-          }
-        },
-        [
-          _c("i", {
-            staticClass: "icon icon-creation-code-facebook pull-left"
-          }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Facebook")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Get more Likes for your page" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Get more Likes for your page                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dapp",
-            id: "codeFormId_21",
-            loadurl: "https://app.qr-code-generator.com/create/getform/add/dapp"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-app pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("App")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "View your app on various App Stores" }
-            },
-            [
-              _vm._v(
-                "\n                                                        View your app on various App Stores                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dmp3",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/dmp3",
-            id: "codeFormId_22"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-dmp3 pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("MP3")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Play an audio file" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Play an audio file                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "dgallery",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/dgallery",
-            id: "codeFormId_23"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-gallery pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Images")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "badge new" }, [_vm._v(" updated")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Show a series of photos" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Show a series of photos                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("h3", [
-      _vm._v("Select your QR Code Type                "),
+      _vm._v(
+        "Select your QR Code Type\n                                                    "
+      ),
       _c("button", {
         staticClass: "btn-help visible-lg-inline-block",
         attrs: { title: "", "data-original-title": "" }
@@ -41270,7 +42319,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Link to any page on the web                    "
+                "\n                                                            Link to any page on the web\n                                                        "
               )
             ]
           )
@@ -41307,7 +42356,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Link to a mobile-optimized PDF                    "
+                "\n                                                            Link to a mobile-optimized PDF\n                                                        "
               )
             ]
           )
@@ -41345,7 +42394,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Share personalized contact details                    "
+                "\n                                                            Share personalized contact details\n                                                        "
               )
             ]
           )
@@ -41383,7 +42432,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Share one or more videos                    "
+                "\n                                                            Share one or more videos\n                                                        "
               )
             ]
           )
@@ -41424,7 +42473,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Get more Likes for your page                    "
+                "\n                                                            Get more Likes for your page\n                                                        "
               )
             ]
           )
@@ -41462,7 +42511,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Link to your social media channels                    "
+                "\n                                                            Link to your social media channels\n                                                        "
               )
             ]
           )
@@ -41498,7 +42547,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        View your app on various App Stores                    "
+                "\n                                                            View your app on various App Stores\n                                                        "
               )
             ]
           )
@@ -41538,7 +42587,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Collect feedback and get rated\n                                                    "
+                "\n                                                            Collect feedback and get rated\n                                                        "
               )
             ]
           )
@@ -41575,7 +42624,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Ask a question and get rated\n                                                    "
+                "\n                                                            Ask a question and get rated\n                                                        "
               )
             ]
           )
@@ -41613,7 +42662,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Share coupons and discounts                    "
+                "\n                                                            Share coupons and discounts\n                                                        "
               )
             ]
           )
@@ -41653,7 +42702,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Provide your company information                    "
+                "\n                                                            Provide your company information\n                                                        "
               )
             ]
           )
@@ -41691,7 +42740,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Promote your event                    "
+                "\n                                                            Promote your event\n                                                        "
               )
             ]
           )
@@ -41730,7 +42779,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Play an audio file                    "
+                "\n                                                            Play an audio file\n                                                        "
               )
             ]
           )
@@ -41767,7 +42816,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                        Show a series of photos                    "
+                "\n                                                            Show a series of photos\n                                                        "
               )
             ]
           )
@@ -41787,190 +42836,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6 " }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "url_static",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/url?action=static",
-            id: "codeFormId_1"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-url pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Website")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Link to any page on the web" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Link to any page on the web                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "vcard",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/vcard",
-            id: "codeFormId_2"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-vcard pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("vCard")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Share contact details" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Share contact details                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "email",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/email",
-            id: "codeFormId_8"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-email pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Email")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Get email messages" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Get email messages                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "sms",
-            loadurl: "https://app.qr-code-generator.com/create/getform/add/sms",
-            id: "codeFormId_9"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-sms pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("SMS")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: " Get text messages" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Get text messages                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "code-type-card col-lg-6" }, [
-      _c(
-        "a",
-        {
-          staticClass: "btn-codetype",
-          attrs: {
-            "data-type": "text",
-            loadurl:
-              "https://app.qr-code-generator.com/create/getform/add/text",
-            id: "codeFormId_10"
-          }
-        },
-        [
-          _c("i", { staticClass: "icon icon-creation-code-text pull-left" }),
-          _vm._v(" "),
-          _c("h4", [_vm._v("Text")]),
-          _vm._v(" "),
-          _c(
-            "small",
-            {
-              staticClass: "text-ellipsis",
-              attrs: { title: "Display a short message" }
-            },
-            [
-              _vm._v(
-                "\n                                                        Display a short message                    "
-              )
-            ]
-          )
-        ]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "sk-three-bounce" }, [
       _c("div", { staticClass: "sk-child sk-bounce1" }),
       _vm._v(" "),
@@ -41983,201 +42848,122 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "apply-fixedBottom-footerGenerator" }, [
+    return _c("div", { staticClass: "row secondstep" }, [
       _c(
         "div",
-        {
-          staticClass:
-            "footer-generator-actions content-footer redesign generator-float-bottom",
-          staticStyle: { "margin-left": "0px" }
-        },
+        { staticClass: "section-content section-content_generator-footer" },
         [
-          _c("div", { staticClass: "table-cell-middle" }, [
-            _c(
-              "div",
-              { staticClass: "container", staticStyle: { width: "100%" } },
-              [
-                _c("div", { staticClass: "col-lg-12 col-xs-12" }, [
-                  _c("div", { staticClass: "row firststep" }, [
+          _c("div", { staticClass: "grid" }, [
+            _c("div", { staticClass: "col footer__left" }, [
+              _c(
+                "button",
+                { staticClass: "btn lc btn-generator-prev pull-left" },
+                [
+                  _c("i", {
+                    staticClass: "icon icon-chevron-left-medium pull-left"
+                  }),
+                  _vm._v(
+                    "Back\n                                                    "
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "footer__view-mobile",
+                  attrs: { "data-generate-mobile-bar": "" }
+                },
+                [
+                  _c("ul", [
+                    _c("li", { staticClass: "btn-generator-prev" }, [
+                      _c("i", { staticClass: "icon icon-arrow-24px" })
+                    ]),
+                    _vm._v(" "),
                     _c(
-                      "div",
+                      "li",
                       {
-                        staticClass:
-                          "section-content section-content_generator-footer"
+                        staticClass: "ng-scope",
+                        attrs: {
+                          "ng-repeat": "item in items",
+                          "ng-class":
+                            "{'active': item.id == states.activeItem}",
+                          "ng-click":
+                            "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
+                        }
                       },
                       [
-                        _c("div", { staticClass: "grid" }, [
-                          _c("div", { staticClass: "col" }, [
-                            _c("div", { staticClass: "col-lg-12" }, [
-                              _c(
-                                "button",
-                                {
-                                  staticClass:
-                                    "btn green lc big btn-generator-next pull-right col-lg-6 btn_create_next disabled ladda-button",
-                                  attrs: { "data-style": "expand-left" }
-                                },
-                                [
-                                  _c("span", { staticClass: "ladda-label" }, [
-                                    _vm._v("Next")
-                                  ]),
-                                  _c("span", { staticClass: "ladda-spinner" })
-                                ]
-                              )
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", {
-                            staticClass: "col col-fixed col-preview",
-                            staticStyle: { width: "466px" }
-                          })
-                        ])
+                        _c("i", {
+                          staticClass: "icon icon-pencil-24px",
+                          attrs: { "ng-class": "'icon icon-' + item.icon" }
+                        })
                       ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row secondstep" }, [
+                    ),
+                    _vm._v(" "),
                     _c(
-                      "div",
+                      "li",
                       {
-                        staticClass:
-                          "section-content section-content_generator-footer"
+                        staticClass: "ng-scope",
+                        attrs: {
+                          "ng-repeat": "item in items",
+                          "ng-class":
+                            "{'active': item.id == states.activeItem}",
+                          "ng-click":
+                            "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
+                        }
                       },
                       [
-                        _c("div", { staticClass: "grid" }, [
-                          _c("div", { staticClass: "col footer__left" }, [
-                            _c(
-                              "button",
-                              {
-                                staticClass:
-                                  "btn lc btn-generator-prev pull-left"
-                              },
-                              [
-                                _c("i", {
-                                  staticClass:
-                                    "icon icon-chevron-left-medium pull-left"
-                                }),
-                                _vm._v("Back")
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "footer__view-mobile",
-                                attrs: { "data-generate-mobile-bar": "" }
-                              },
-                              [
-                                _c("ul", [
-                                  _c(
-                                    "li",
-                                    { staticClass: "btn-generator-prev" },
-                                    [
-                                      _c("i", {
-                                        staticClass: "icon icon-arrow-24px"
-                                      })
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "li",
-                                    {
-                                      staticClass: "ng-scope",
-                                      attrs: {
-                                        "ng-repeat": "item in items",
-                                        "ng-class":
-                                          "{'active': item.id == states.activeItem}",
-                                        "ng-click":
-                                          "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "icon icon-pencil-24px",
-                                        attrs: {
-                                          "ng-class": "'icon icon-' + item.icon"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _c(
-                                    "li",
-                                    {
-                                      staticClass: "ng-scope",
-                                      attrs: {
-                                        "ng-repeat": "item in items",
-                                        "ng-class":
-                                          "{'active': item.id == states.activeItem}",
-                                        "ng-click":
-                                          "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "icon icon-phone-24px",
-                                        attrs: {
-                                          "ng-class": "'icon icon-' + item.icon"
-                                        }
-                                      })
-                                    ]
-                                  ),
-                                  _c(
-                                    "li",
-                                    {
-                                      staticClass: "ng-scope",
-                                      attrs: {
-                                        "ng-repeat": "item in items",
-                                        "ng-class":
-                                          "{'active': item.id == states.activeItem}",
-                                        "ng-click":
-                                          "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
-                                      }
-                                    },
-                                    [
-                                      _c("i", {
-                                        staticClass: "icon icon-qr-code-mobile",
-                                        attrs: {
-                                          "ng-class": "'icon icon-' + item.icon"
-                                        }
-                                      })
-                                    ]
-                                  )
-                                ])
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "button",
-                              {
-                                staticClass:
-                                  "btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button",
-                                attrs: {
-                                  type: "button",
-                                  "data-style": "expand-left"
-                                }
-                              },
-                              [
-                                _c("span", { staticClass: "ladda-label" }, [
-                                  _vm._v("Next")
-                                ]),
-                                _c("span", { staticClass: "ladda-spinner" })
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "col col-fixed footer__bar",
-                              staticStyle: { width: "466px" }
-                            },
-                            [_c("div", { staticClass: "footer__button" })]
-                          )
-                        ])
+                        _c("i", {
+                          staticClass: "icon icon-phone-24px",
+                          attrs: { "ng-class": "'icon icon-' + item.icon" }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      {
+                        staticClass: "ng-scope",
+                        attrs: {
+                          "ng-repeat": "item in items",
+                          "ng-class":
+                            "{'active': item.id == states.activeItem}",
+                          "ng-click":
+                            "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "icon icon-qr-code-mobile",
+                          attrs: { "ng-class": "'icon icon-' + item.icon" }
+                        })
                       ]
                     )
                   ])
-                ])
-              ]
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass:
+                    "btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button",
+                  attrs: { type: "button", "data-style": "expand-left" }
+                },
+                [
+                  _c("span", { staticClass: "ladda-label" }, [_vm._v("Next")]),
+                  _c("span", { staticClass: "ladda-spinner" })
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "col col-fixed footer__bar",
+                staticStyle: { width: "466px" }
+              },
+              [_c("div", { staticClass: "footer__button" })]
             )
           ])
         ]
@@ -42189,217 +42975,120 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "div",
+      "button",
       {
-        staticClass: "col col-fixed col-preview",
-        staticStyle: { width: "466px" }
+        staticClass: "btn-slide-toggler btn-slide-toggler_label active",
+        staticStyle: { display: "none" }
       },
       [
-        _c("div", { staticClass: "overflow_base" }),
+        _c("span", { staticClass: "btn-slide-toggler__phone" }, [
+          _vm._v("\n            Preview            ")
+        ]),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "redesign data__mockup",
-            staticStyle: { "margin-left": "0px" }
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass: "preview clearfix mockup__preview",
-                attrs: { "data-spy": "affix", "data-offset-top": "26" }
-              },
-              [
-                _c(
-                  "button",
-                  {
-                    staticClass:
-                      "btn-slide-toggler btn-slide-toggler_label active",
-                    staticStyle: { display: "none" }
-                  },
-                  [
-                    _c("span", { staticClass: "btn-slide-toggler__phone" }, [
-                      _vm._v("\n        Preview            ")
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "btn-slide-toggler__code" }, [
-                      _vm._v("\n        QR Code            ")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "preview-qrcode mockup__qrcode qrcode_create",
-                    staticStyle: { display: "none" }
-                  },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "code", attrs: { id: "barcodeHere" } },
-                      [
-                        _c("div", {
-                          staticClass: "qr-preview-overlay",
-                          staticStyle: { opacity: "0" }
-                        }),
-                        _vm._v(" "),
-                        _c("img", {
-                          attrs: {
-                            id: "barcodeImage",
-                            src: "/images/qrcode_placeholder.png",
-                            alt: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "mockup__qrcode-error" }, [
-                          _c(
-                            "div",
-                            { staticClass: "mockup__qrcode-error-content" },
-                            [
-                              _c("i", { staticClass: "icon icon-info-icon" }),
-                              _vm._v(" "),
-                              _c("h4", [
-                                _vm._v(
-                                  "Fill in the required fields in the form to preview your QR Code"
-                                )
-                              ])
-                            ]
-                          )
-                        ])
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("h3", [_vm._v("Scan this QR Code to preview")]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v("You can customize the design of your "),
-                      _c("br"),
-                      _vm._v(" QR Code in the next step.")
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "preview-smartphone clearfix active mockup__smartphone"
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "preview-smartphone-wrapper noVideo mockup__smartphone-wrapper ng-scope",
-                        staticStyle: { display: "none" },
-                        attrs: { "ng-controller": "previewController" }
-                      },
-                      [
-                        _c("div", {
-                          staticClass: "placeholder ratchet",
-                          attrs: { id: "smartphonePlaceholder" }
-                        }),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "previewNoVideoText" }, [
-                          _c(
-                            "span",
-                            {
-                              staticClass: "static-code-text",
-                              staticStyle: { display: "none" }
-                            },
-                            [_vm._v("No live preview")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass: "code-white-card",
-                              staticStyle: { display: "none" }
-                            },
-                            [
-                              _c("img", {
-                                attrs: { id: "code-image", src: "" }
-                              }),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "code-text" }, [
-                                _c("i", {
-                                  staticClass: "icon-creation-code-url",
-                                  attrs: { id: "code-icon" }
-                                }),
-                                _vm._v(" "),
-                                _c("span", [
-                                  _vm._v(
-                                    "\n                        Scan to see a live preview                            "
-                                  )
-                                ])
-                              ])
-                            ]
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass: "loading-video",
-                            staticStyle: { display: "none" }
-                          },
-                          [
-                            _c("div", [_vm._v("Loading video")]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "progress" }, [
-                              _c("div", {
-                                staticClass: "loading-bar indeterminate"
-                              })
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("div", {
-                          staticClass: "placeholder ratchet previewNoVideo",
-                          staticStyle: { overflow: "hidden" },
-                          attrs: { id: "imgPlaceholder" }
-                        })
-                      ]
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "landscapeOrientation",
-                    staticStyle: { display: "none" }
-                  },
-                  [
-                    _c("i", { staticClass: "icon icon-rotate-phone-48px-v1" }),
-                    _vm._v(" "),
-                    _c("h5", [_vm._v("Rotate device to display preview mode")])
-                  ]
+        _c("span", { staticClass: "btn-slide-toggler__code" }, [
+          _vm._v("\n            QR Code            ")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "preview-qrcode mockup__qrcode qrcode_create",
+        staticStyle: { display: "none" }
+      },
+      [
+        _c("div", { staticClass: "code", attrs: { id: "barcodeHere" } }, [
+          _c("div", {
+            staticClass: "qr-preview-overlay",
+            staticStyle: { opacity: "0" }
+          }),
+          _vm._v(" "),
+          _c("img", {
+            attrs: {
+              id: "barcodeImage",
+              src: "/images/qrcode_placeholder.png",
+              alt: ""
+            }
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "mockup__qrcode-error" }, [
+            _c("div", { staticClass: "mockup__qrcode-error-content" }, [
+              _c("i", { staticClass: "icon icon-info-icon" }),
+              _vm._v(" "),
+              _c("h4", [
+                _vm._v(
+                  "Fill in the required fields in the form to preview your QR Code"
                 )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "creation-no-default",
-                staticStyle: { display: "block" }
-              },
-              [
-                _c("img", {
-                  attrs: {
-                    src:
-                      "//cdn.qr-code-generator.com/img/generator/cody/CodyE_PointingLeft.svg"
-                  }
-                }),
-                _vm._v(" "),
-                _c("div", [_vm._v("Please choose one to view a page preview")])
-              ]
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("h3", [_vm._v("Scan this QR Code to preview")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("You can customize the design of your "),
+          _c("br"),
+          _vm._v(" QR Code in the next step.")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "previewNoVideoText" }, [
+      _c("span", { staticClass: "static-code-text" }, [
+        _vm._v("No live preview")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "code-white-card" }, [
+        _c("img", { attrs: { id: "code-image", src: "" } }),
+        _vm._v(" "),
+        _c("div", { staticClass: "code-text" }, [
+          _c("i", {
+            staticClass: "icon-creation-code-url",
+            attrs: { id: "code-icon" }
+          }),
+          _vm._v(" "),
+          _c("span", [
+            _vm._v(
+              "\n                            Scan to see a live preview                            "
             )
-          ]
-        )
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "loading-video" }, [
+      _c("div", [_vm._v("Loading video")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "progress" }, [
+        _c("div", { staticClass: "loading-bar indeterminate" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "landscapeOrientation", staticStyle: { display: "none" } },
+      [
+        _c("i", { staticClass: "icon icon-rotate-phone-48px-v1" }),
+        _vm._v(" "),
+        _c("h5", [_vm._v("Rotate device to display preview mode")])
       ]
     )
   }
@@ -45567,75 +46256,6 @@ window.FileSaver = __webpack_require__(/*! file-saver */ "./node_modules/file-sa
 
 /***/ }),
 
-/***/ "./resources/js/pages/App.vue":
-/*!************************************!*\
-  !*** ./resources/js/pages/App.vue ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=41ac2cb0&scoped=true& */ "./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&");
-/* harmony import */ var _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js& */ "./resources/js/pages/App.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  "41ac2cb0",
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/pages/App.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/pages/App.vue?vue&type=script&lang=js&":
-/*!*************************************************************!*\
-  !*** ./resources/js/pages/App.vue?vue&type=script&lang=js& ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true& ***!
-  \*******************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=template&id=41ac2cb0&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/js/pages/Create.vue":
 /*!***************************************!*\
   !*** ./resources/js/pages/Create.vue ***!
@@ -45760,11 +46380,11 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: '/',
     name: 'app',
-    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('App', __webpack_require__(/*! ./pages/App.vue */ "./resources/js/pages/App.vue")["default"])
+    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('App', __webpack_require__(/*! ./pages/Create.vue */ "./resources/js/pages/Create.vue")["default"])
   }, {
     path: '/create',
     name: 'create',
-    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('App', __webpack_require__(/*! ./pages/Create.vue */ "./resources/js/pages/Create.vue")["default"])
+    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('Create', __webpack_require__(/*! ./pages/Create.vue */ "./resources/js/pages/Create.vue")["default"])
   }]
 }));
 

@@ -24,12 +24,12 @@ export default new VueRouter({
         {
             path: '/',
             name: 'app',
-            component: Vue.component( 'App', require( './pages/App.vue' ).default )
+            component: Vue.component( 'App', require( './pages/Create.vue' ).default )
         },
         {
             path: '/create',
             name: 'create',
-            component: Vue.component( 'App', require( './pages/Create.vue' ).default )
+            component: Vue.component( 'Create', require( './pages/Create.vue' ).default )
         },
     ]
 });
