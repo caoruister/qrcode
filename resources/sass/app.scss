@@ -1,5 +1,5 @@
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+//@import '~bootstrap/scss/bootstrap';
 
 html {
   font-family: sans-serif;
@@ -948,7 +948,7 @@ pre code {
   }
 
   .col-sm-1 {
-    width: 8.3333333333%
+    width: 8.3333333333%;
   }
 
   .col-sm-2 {
@@ -15951,7 +15951,7 @@ p#freeplan {
   border-width: 0 1px;
   position: fixed;
   width: 468px;
-  //top: 0;
+  top: 0;
   z-index: 5;
   min-height: 100vh;
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);

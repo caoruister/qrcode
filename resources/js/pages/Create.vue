@@ -1,9 +1,8 @@
 <template>
     <div>
-        <div class="qr-navbar ng-scope" ng-style="getNavbarStyle()" ng-controller="qrNavbarCtrl"
-             ng-init="route='create/new'" data-navbar="" style="background: none; position: relative;">
+        <div class="qr-navbar" data-navbar="" style="background: none; position: relative;">
 
-            <div class="qr-navbar__element">
+            <div class="qr-navbar__element" v-show="!secondStep">
                 <div class="qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect"
                      ng-show="route != 'manage/new'">
                     <a ng-click="goBack($event)" href="/home">
@@ -17,8 +16,8 @@
             </div>
         </div>
 
-        <div class="section-content section-content_generator-add newgenerator row state-generator-codetype addMode  generator_preview"
-             :class="{'state-generator-data': secondStep}"
+        <div class="section-content section-content_generator-add newgenerator row  addMode  generator_preview"
+             :class="{'state-generator-data': secondStep, 'state-generator-codetype': !secondStep}"
              style="padding-bottom: 64px;">
             <div class="grid">
                 <div class="col">
@@ -26,7 +25,7 @@
                         <div class="section-generator ">
                             <div class="carousel slide">
                                 <div class="carousel-inner ">
-                                    <div class="codetype-view item active white-form">
+                                    <div class="codetype-view item white-form" v-bind:class="{'active': !secondStep}">
                                         <div class="redesign" data-new-status="">
                                             <div class="row row-generator-codetype-chooser white-form codetype-menu v1">
 
@@ -965,7 +964,150 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="formHere" class="item redesign"></div>
+                                    <div id="formHere" class="item redesign" v-bind:class="{'active': secondStep}">
+                                        <form name="UrlCodeTrckable" id="UrlCodeTrckable" action="/create/handlecodesubmit" method="post">
+<div style="display:none"><input type="hidden" value="13b4ba5911767e7290861f461df1ceae45e8787a" name="YII_CSRF_TOKEN"></div>        <input type="hidden" id="shorturlHolder" name="codeValue" value="!">
+    <input type="hidden" id="shortcodeHolder" value="">
+    <input type="hidden" name="oldCodeId" id="oldCodeId" value="0">
+    <input name="UrlBarcode[qrcode_type_id]" id="UrlBarcode_qrcode_type_id" type="hidden" value="1">    <input name="UrlBarcode[folder_id]" id="UrlBarcode_folder_id" type="hidden" value="1">    <input name="UrlBarcode[industry_id]" id="UrlBarcode_industry_id" type="hidden">    <input name="UrlBarcode[qr_demo_id]" id="UrlBarcode_qr_demo_id" type="hidden">    <input name="UrlBarcode[designer_templates_id]" id="UrlBarcode_designer_templates_id" type="hidden" value="0">    <input name="UrlBarcode[app_templates_id]" id="UrlBarcode_app_templates_id" type="hidden" value="0">    <input class="trackableIndicator" name="UrlBarcode[trackable]" id="UrlBarcode_trackable" type="hidden" value="1">    <input name="UrlBarcode[user_id]" id="UrlBarcode_user_id" type="hidden">    <input name="UrlBarcode[active]" id="UrlBarcode_active" type="hidden" value="1">    <input name="UrlBarcode[trash]" id="UrlBarcode_trash" type="hidden" value="0">    <input name="UrlBarcode[filename]" id="UrlBarcode_filename" type="hidden">    <input name="UrlBarcode[total_scans]" id="UrlBarcode_total_scans" type="hidden" value="0">    <input name="UrlBarcode[unique_scans]" id="UrlBarcode_unique_scans" type="hidden" value="0">    <input class="itemId" name="UrlBarcode[_record_id]" id="UrlBarcode__record_id" type="hidden" value="0">    <input name="UrlBarcode[json_data]" id="UrlBarcode_json_data" type="hidden" value="{}">
+    <input class="downloadIndicator" type="hidden" value="no" name="downloadIndicatorName" id="downloadIndicatorName">
+            <input class="backColorField" value="ffffff" name="UrlBarcode[back_color]" id="UrlBarcode_back_color" type="hidden">        <input class="frontColorField" value="000000" name="UrlBarcode[front_color]" id="UrlBarcode_front_color" type="hidden">        <input class="errorCorrectionField" value="M" name="UrlBarcode[error_correction]" id="UrlBarcode_error_correction" type="hidden">
+<!--End: Angular Wrapper-->
+<div class="angularWrapper inapp-helpV1 init"><!-- Triggering the different inapp advertising see filters when they popup -->
+    <!--Start: Angular Controller-->
+    <div ng-controller="AngularBaseController as cs" class="ng-scope white-form foldabel-form">
+
+<div class="hidden">
+    <input ng-model="qrcode_title" value="" ng-init="qrcode_title=''" placeholder="My Website QR Code" data-content="Give your code a description, it helps you to identify the code in the management and you can search for it, too." name="UrlBarcode[title]" id="UrlBarcode_title" type="hidden" class="ng-pristine ng-untouched ng-valid">    <div class="errorMessage" id="UrlBarcode_title_em_" style="display:none"></div><button class="btn-help hidden-xs" data-original-title="" title=""><i class="icon-help"> </i></button>
+    <input ng-model="qrcode_geolocation" value="0" name="UrlBarcode[geolocation]" id="UrlBarcode_geolocation" type="text" class="ng-pristine ng-untouched ng-valid">    <div class="errorMessage" id="UrlBarcode_geolocation_em_" style="display:none"></div>
+</div>
+
+
+
+        <!-- begin: Title Editing -->
+        <div class="section-title" ng-class="IsDisplay ? 'section-title--backdrop' : ''">
+            <!-- QR Code Type Icon Element -->
+            <div class="section-title__icon">
+                <i class="icon--title-editing icon-creation-code-url" data-title-icon=""></i>
+            </div>
+            <!-- QR Code Type Title -->
+            <div class="section-title__name">
+                <input class="input--title-editing ng-pristine ng-untouched ng-valid" id="qrcode_title_0" ng-change="dismissHintCookie()" type="text" ng-model="qrcode_title" placeholder="My Website QR Code" data-title-input="" autocomplete="off">
+
+                <label class="section-title__label" for="qrcode_title_0">Name your QR Code</label>
+
+                <span class="btn-help-icon section-title__icon_tooltip" ng-class="IsDisplay ? 'hidden' : ''" rel="tooltip" data-trigger="hover" data-placement="left" data-original-title="Names help you to stay organized and will only appear in your account and are not displayed to customers who scan your QR Codes."></span>
+
+                <!-- ngIf: IsDisplay -->
+            </div>
+        </div>
+        <!-- end: Title Editing -->
+        <div class="form-container">
+            <div class="section-header section-open not-formly">
+                <div class="form-title-row">
+                    <div class="col-md-1 box-icon hidden-sm">
+                        <div class="round-no text-center mt10" style="margin-top: 20px !important;">
+                            <i class="icon-edit-b"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-11 box-title">
+                        <h3>Enter your website address                            <button class="btn-help visible-lg-inline-block" title="" data-original-title=""></button>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section-body">
+                <div class="section_type_container section_information">
+                    <div class="row form-input-row formly-field">
+                        <div class="col-lg-offset-1 col-sm-12 col-lg-11 mb-10">
+                            <p class="section-subheadline">Type in the website to link with your QR Code</p>
+                        </div>
+
+
+                        <div class="mb-10">
+                            <div class="col-sm-1 col-md-1 box-icon hidden-xs hidden-sm"></div>
+                            <div class="col-sm-12 col-md-3 box-label">
+                                Website:
+                            </div>
+                            <div class="col-sm-12 col-md-8 box-input" v-bind:class="{'error': barCodeError}">
+                                <input v-model="modelUrl" required="required" spellcheck="false" class="required canHaveError" placeholder="http://www.my-website.com" name="url" id="url" type="text" maxlength="1500" v-on:input="websiteChanged">
+                                <div data-error-container="" class="errorMessage" id="UrlBarcode_url_em_" style="display:none"></div>
+                                <div class="errorHolder errorMessage pull-right" style="position: relative;top: -29px;" data-error-container="#errorUrlBarcode_url" data-error-msg="Please enter a website address and click on next."></div>
+                                <span id="errorUrlBarcode_url"></span>
+                                <div class="popover popover-error fade right in" role="tooltip" id="popover256828" style="top: -21px; left: 6px; display: block; position: relative;" v-show="barCodeError">
+                                    <div class="arrow"></div>
+                                    <h3 class="popover-title" style="display: none;"></h3>
+                                    <div class="popover-content">{{errorMsg}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-container hidden" id="advancedOptions">
+    <div class="section-header" ng-click="formState.advancedOptions = !formState.advancedOptions" ng-class="{'active section-open':formState.advancedOptions}">
+        <div class="toggle-collapse">
+            <div class="checkboxes-container fold-checkbox">
+                <input type="checkbox" ng-attr-id="section_advance_options" ng-checked="!formState.advancedOptions" checked="checked">
+                <label ng-attr-for="section_advance_options" class="checkbox_label ml-20"></label>
+            </div>
+        </div>
+        <div class="form-title-row form-hidden-trigger-row hide-during-loading">
+            <div class="col-md-1 box-icon hidden-sm">
+                <div class="round-no text-center mt10">
+                    <i class="icon-creation-advanced"></i>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-11 box-title">
+                <h3>
+                    Advanced Options                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="section-body">
+        <div class="section_type_container section_advance_options section-close" ng-class="{'section-close': !formState.advancedOptions}" style="">
+            <!--start: Avanced settings-->
+            <div ng-class="{hidden:!formState.advancedOptions}" class=" row form-input-row mt-25 hidden " style="display:none;">
+                <div class="col-sm-1 box-icon hidden-xs hidden-sm"></div>
+                <div class="col-sm-12 col-md-3 box-label">
+                    Label:
+                    <span class="btn-help-icon visible-lg-inline-block " title="" rel="tooltip" data-trigger="hover" data-placement="top" data-original-title="Name your QR Code to stay organized. You will only see this label in the Manage page of your account."></span>
+
+                </div>
+                <div class="col-sm-12 col-md-8 box-input">
+                    <input id="qrcode_title_1" type="text" ng-model="qrcode_title" placeholder="My Website QR Code" class="ng-pristine ng-untouched ng-valid">
+                </div>
+            </div>
+                            <div ng-class="{hidden:!formState.advancedOptions}" class=" row form-input-row mt-25 mb-0 hidden ">
+                    <div class="col-sm-1 box-icon hidden-xs hidden-sm"></div>
+                    <div class="col-sm-12 col-md-3 box-label">
+                        Geolocation:
+                    </div>
+                    <div class="col-sm-12 col-md-7 checkboxes-container green-checkbox mt-15">
+                        <input type="checkbox" id="qrcode_geolocation_checkbox" ng-model="qrcode_geolocation" ng-true-value="1" ng-false-value="0" ng-init="qrcode_geolocation=0" class="ng-pristine ng-untouched ng-valid">
+                        <label for="qrcode_geolocation_checkbox" class="mr-10 label-geolocation">Ask smartphone users for geolocation</label>
+                        <span class="btn-help-icon visible-lg-inline-block" title="" rel="tooltip" data-trigger="hover" data-placement="top" data-original-title="Ask users to provide their exact location at the time of scan. This may cause cautious users to discontinue. Note that you will still receive IP-based location data when turned off."></span>
+                    </div>
+                </div>
+                        <!--end: Avanced settings-->
+        </div>
+    </div>
+</div>
+
+
+
+        <!--End: Angular Controller-->
+    </div>
+    <!--End: Angular Wrapper--></div>
+
+
+<input class="hidden" type="submit" name="yt0" value="notvisible">
+
+
+</form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1002,7 +1144,7 @@
                                             <div class="section-content section-content_generator-footer">
                                                 <div class="grid">
                                                     <div class="col footer__left">
-                                                        <button class="btn lc btn-generator-prev pull-left"><i
+                                                        <button class="btn lc btn-generator-prev pull-left" v-on:click="secondStep = false"><i
                                                                 class="icon icon-chevron-left-medium pull-left"></i>Back
                                                         </button>
                                                         <div class="footer__view-mobile" data-generate-mobile-bar="">
@@ -1063,19 +1205,20 @@
                     <!--  end: overflow base -->
                     <div class="redesign data__mockup" style="margin-left: 0px;">
 
-                        <div class="preview clearfix mockup__preview" v-bind:class="{'active': isActive}"
+                        <div class="preview clearfix mockup__preview url_noAffix " v-bind:class="{'active': isActive, 'showQRCode affix': showQRCode, 'affix-top': !showQRCode}"
                              data-spy="affix"
                              data-offset-top="26">
-                            <button class="btn-slide-toggler btn-slide-toggler_label active" style="display: none">
-            <span class="btn-slide-toggler__phone">
+                            <button class="btn-slide-toggler btn-slide-toggler_label" style="display: none" v-bind:class="{'active': !showQRCode}">
+            <span class="btn-slide-toggler__phone" v-on:click="showQRCode = false">
                 Preview            </span>
-                                <span class="btn-slide-toggler__code">
+                                <span class="btn-slide-toggler__code" v-on:click="genQRCode">
                 QR Code            </span>
                             </button>
-                            <div class="preview-qrcode mockup__qrcode qrcode_create" style="display: none;">
+                            <div class="preview-qrcode mockup__qrcode qrcode_create" v-bind:class="{'barCodeError': barCodeError}" style="position: fixed; top: 24px; display: none;" v-show="showQRCode">
                                 <div class="code" id="barcodeHere">
-                                    <div class="qr-preview-overlay" style="opacity: 0;"></div>
-                                    <img id="barcodeImage" src="/images/qrcode_placeholder.png" alt="">
+                                    <div class="qr-preview-overlay" v-bind:class="{'loading2': true}" style="opacity: 0;"></div>
+
+                                    <img id="barcodeImage" :src="barcodeImage" alt="">
                                     <div class="mockup__qrcode-error">
                                         <div class="mockup__qrcode-error-content">
                                             <i class="icon icon-info-icon"></i>
@@ -1086,9 +1229,30 @@
                                 <h3>Scan this QR Code to preview</h3>
                                 <p>You can customize the design of your <br> QR Code in the next step.</p>
                             </div>
-                            <div class="preview-smartphone clearfix active mockup__smartphone" style="">
+                            <div class="preview-smartphone clearfix active mockup__smartphone" style="position: fixed; top: 24px; display: none;" v-show="!showQRCode">
                                 <div class="preview-smartphone-wrapper noVideo mockup__smartphone-wrapper">
-                                    <div id="smartphonePlaceholder" class="placeholder ratchet"></div>
+                                    <div id="smartphonePlaceholder" class="placeholder ratchet"><div class="template template-url">
+                                        <header class="bar bar-nav">
+                                            <div class="pure-g">
+                                                <div class="browser-input pure-u-5-6">{{formalUrl}}</div>
+                                                <div class="browser-refresh pure-u-1-6">
+                                                    <!--<img src="/img/generator/template-url-icon-refresh.svg">-->
+                                                </div>
+                                            </div>
+
+                                        </header>
+
+                                        <div class="text-center content template_url" style="padding-top:200px;background-image:none;">
+                                            <div class="arrow_box">
+                                                <span>Some QR Codes types will show a live preview here but not this one. View and test your QR Code in the next step!</span>
+                                            </div>
+                                            <img src="/images/CodyE_PointingLeft.svg">
+                                        </div>
+
+                                    </div>
+
+                                    </div>
+
                                     <div class="previewNoVideoText">
                                         <span class="static-code-text">No live preview</span>
                                         <div class="code-white-card">
@@ -1138,12 +1302,20 @@
                 selected: '',
                 isActive: false,
                 secondStep: false,
+                modelUrl: '',
+                showQRCode: false,
+                barCodeError: false,
+                errorMsg: '',
+                barcodeImage: '/images/qrcode_placeholder.png',
             }
         },
         computed: {
             previewImg: function () {
                 return this.isActive ? '/images/preview-type-' + (this.selected.indexOf('url') != -1 ? 'url' : this.selected) + '-en.jpg' : '';
             },
+            formalUrl: function () {
+                return this.modelUrl ? 'http://' + this.modelUrl : '';
+            }
         },
         methods: {
             selectItem: function (item) {
@@ -1152,6 +1324,31 @@
             },
             nextFirstStep: function () {
                 this.secondStep = true;
+            },
+            websiteChanged: function() {
+                this.showQRCode = false;
+
+                if (!/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/i.test(this.formalUrl)) {
+                    this.barCodeError = true;
+                    this.errorMsg = 'Website is not a valid URL.';
+                } else {
+                    this.barCodeError = false;
+                    this.errorMsg = '';
+                }
+            },
+            genQRCode: function() {
+                this.showQRCode = true;
+
+                if (!this.formalUrl) {
+                    this.barCodeError = true;
+                    this.errorMsg = 'Please enter a website address and click on next.';
+                } else if (!/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/i.test(this.formalUrl)) {
+                    this.barCodeError = true;
+                    this.errorMsg = 'Website is not a valid URL.';
+                } else {
+                    this.barCodeError = false;
+                    this.barcodeImage = '/api/v1/create?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
+                }
             }
         }
     }

@@ -2883,6 +2883,170 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2890,12 +3054,20 @@ __webpack_require__.r(__webpack_exports__);
       showStatic: false,
       selected: '',
       isActive: false,
-      secondStep: false
+      secondStep: false,
+      modelUrl: '',
+      showQRCode: false,
+      barCodeError: false,
+      errorMsg: '',
+      barcodeImage: '/images/qrcode_placeholder.png'
     };
   },
   computed: {
     previewImg: function previewImg() {
       return this.isActive ? '/images/preview-type-' + (this.selected.indexOf('url') != -1 ? 'url' : this.selected) + '-en.jpg' : '';
+    },
+    formalUrl: function formalUrl() {
+      return this.modelUrl ? 'http://' + this.modelUrl : '';
     }
   },
   methods: {
@@ -2905,6 +3077,31 @@ __webpack_require__.r(__webpack_exports__);
     },
     nextFirstStep: function nextFirstStep() {
       this.secondStep = true;
+    },
+    websiteChanged: function websiteChanged() {
+      this.showQRCode = false;
+
+      if (!/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/i.test(this.formalUrl)) {
+        this.barCodeError = true;
+        this.errorMsg = 'Website is not a valid URL.';
+      } else {
+        this.barCodeError = false;
+        this.errorMsg = '';
+      }
+    },
+    genQRCode: function genQRCode() {
+      this.showQRCode = true;
+
+      if (!this.formalUrl) {
+        this.barCodeError = true;
+        this.errorMsg = 'Please enter a website address and click on next.';
+      } else if (!/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/i.test(this.formalUrl)) {
+        this.barCodeError = true;
+        this.errorMsg = 'Website is not a valid URL.';
+      } else {
+        this.barCodeError = false;
+        this.barcodeImage = '/api/v1/create?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
+      }
     }
   }
 });
@@ -39698,14 +39895,41 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c(
+      "div",
+      {
+        staticClass: "qr-navbar",
+        staticStyle: { background: "none", position: "relative" },
+        attrs: { "data-navbar": "" }
+      },
+      [
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: !_vm.secondStep,
+                expression: "!secondStep"
+              }
+            ],
+            staticClass: "qr-navbar__element"
+          },
+          [_vm._m(0)]
+        )
+      ]
+    ),
     _vm._v(" "),
     _c(
       "div",
       {
         staticClass:
-          "section-content section-content_generator-add newgenerator row state-generator-codetype addMode  generator_preview",
-        class: { "state-generator-data": _vm.secondStep },
+          "section-content section-content_generator-add newgenerator row  addMode  generator_preview",
+        class: {
+          "state-generator-data": _vm.secondStep,
+          "state-generator-codetype": !_vm.secondStep
+        },
         staticStyle: { "padding-bottom": "64px" }
       },
       [
@@ -39717,7 +39941,10 @@ var render = function() {
                   _c("div", { staticClass: "carousel-inner " }, [
                     _c(
                       "div",
-                      { staticClass: "codetype-view item active white-form" },
+                      {
+                        staticClass: "codetype-view item white-form",
+                        class: { active: !_vm.secondStep }
+                      },
                       [
                         _c(
                           "div",
@@ -40033,7 +40260,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Link to any page on the web\n                                                        "
+                                                  "\n                                                                Link to any page on the web\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40086,7 +40313,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Link to your social media channels\n                                                        "
+                                                  "\n                                                                Link to your social media channels\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40139,7 +40366,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Share coupons and discounts\n                                                        "
+                                                  "\n                                                                Share coupons and discounts\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40193,7 +40420,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Share personalized contact details\n                                                        "
+                                                  "\n                                                                Share personalized contact details\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40249,7 +40476,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Provide your company information\n                                                        "
+                                                  "\n                                                                Provide your company information\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40304,7 +40531,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Collect feedback and get rated\n                                                        "
+                                                  "\n                                                                Collect feedback and get rated\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40356,7 +40583,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Ask a question and get rated\n                                                        "
+                                                  "\n                                                                Ask a question and get rated\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40408,7 +40635,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Share one or more videos\n                                                        "
+                                                  "\n                                                                Share one or more videos\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40460,7 +40687,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Promote your event\n                                                        "
+                                                  "\n                                                                Promote your event\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40512,7 +40739,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Link to a mobile-optimized PDF\n                                                        "
+                                                  "\n                                                                Link to a mobile-optimized PDF\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40566,7 +40793,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Get more Likes for your page\n                                                        "
+                                                  "\n                                                                Get more Likes for your page\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40618,7 +40845,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            View your app on various App Stores\n                                                        "
+                                                  "\n                                                                View your app on various App Stores\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40669,7 +40896,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Play an audio file\n                                                        "
+                                                  "\n                                                                Play an audio file\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40729,7 +40956,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Show a series of photos\n                                                        "
+                                                  "\n                                                                Show a series of photos\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40929,7 +41156,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Link to any page on the web\n                                                        "
+                                                  "\n                                                                Link to any page on the web\n                                                            "
                                                 )
                                               ]
                                             )
@@ -40981,7 +41208,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Share contact details\n                                                        "
+                                                  "\n                                                                Share contact details\n                                                            "
                                                 )
                                               ]
                                             )
@@ -41033,7 +41260,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Get email messages\n                                                        "
+                                                  "\n                                                                Get email messages\n                                                            "
                                                 )
                                               ]
                                             )
@@ -41085,7 +41312,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Get text messages\n                                                        "
+                                                  "\n                                                                Get text messages\n                                                            "
                                                 )
                                               ]
                                             )
@@ -41138,7 +41365,7 @@ var render = function() {
                                               },
                                               [
                                                 _vm._v(
-                                                  "\n                                                            Display a short message\n                                                        "
+                                                  "\n                                                                Display a short message\n                                                            "
                                                 )
                                               ]
                                             )
@@ -41155,16 +41382,494 @@ var render = function() {
                       ]
                     ),
                     _vm._v(" "),
-                    _c("div", {
-                      staticClass: "item redesign",
-                      attrs: { id: "formHere" }
-                    })
+                    _c(
+                      "div",
+                      {
+                        staticClass: "item redesign",
+                        class: { active: _vm.secondStep },
+                        attrs: { id: "formHere" }
+                      },
+                      [
+                        _c(
+                          "form",
+                          {
+                            attrs: {
+                              name: "UrlCodeTrckable",
+                              id: "UrlCodeTrckable",
+                              action: "/create/handlecodesubmit",
+                              method: "post"
+                            }
+                          },
+                          [
+                            _vm._m(22),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                type: "hidden",
+                                id: "shorturlHolder",
+                                name: "codeValue",
+                                value: "!"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                type: "hidden",
+                                id: "shortcodeHolder",
+                                value: ""
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                type: "hidden",
+                                name: "oldCodeId",
+                                id: "oldCodeId",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[qrcode_type_id]",
+                                id: "UrlBarcode_qrcode_type_id",
+                                type: "hidden",
+                                value: "1"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[folder_id]",
+                                id: "UrlBarcode_folder_id",
+                                type: "hidden",
+                                value: "1"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[industry_id]",
+                                id: "UrlBarcode_industry_id",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[qr_demo_id]",
+                                id: "UrlBarcode_qr_demo_id",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[designer_templates_id]",
+                                id: "UrlBarcode_designer_templates_id",
+                                type: "hidden",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[app_templates_id]",
+                                id: "UrlBarcode_app_templates_id",
+                                type: "hidden",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "trackableIndicator",
+                              attrs: {
+                                name: "UrlBarcode[trackable]",
+                                id: "UrlBarcode_trackable",
+                                type: "hidden",
+                                value: "1"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[user_id]",
+                                id: "UrlBarcode_user_id",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[active]",
+                                id: "UrlBarcode_active",
+                                type: "hidden",
+                                value: "1"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[trash]",
+                                id: "UrlBarcode_trash",
+                                type: "hidden",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[filename]",
+                                id: "UrlBarcode_filename",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[total_scans]",
+                                id: "UrlBarcode_total_scans",
+                                type: "hidden",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[unique_scans]",
+                                id: "UrlBarcode_unique_scans",
+                                type: "hidden",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "itemId",
+                              attrs: {
+                                name: "UrlBarcode[_record_id]",
+                                id: "UrlBarcode__record_id",
+                                type: "hidden",
+                                value: "0"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              attrs: {
+                                name: "UrlBarcode[json_data]",
+                                id: "UrlBarcode_json_data",
+                                type: "hidden",
+                                value: "{}"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "downloadIndicator",
+                              attrs: {
+                                type: "hidden",
+                                value: "no",
+                                name: "downloadIndicatorName",
+                                id: "downloadIndicatorName"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "backColorField",
+                              attrs: {
+                                value: "ffffff",
+                                name: "UrlBarcode[back_color]",
+                                id: "UrlBarcode_back_color",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "frontColorField",
+                              attrs: {
+                                value: "000000",
+                                name: "UrlBarcode[front_color]",
+                                id: "UrlBarcode_front_color",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "errorCorrectionField",
+                              attrs: {
+                                value: "M",
+                                name: "UrlBarcode[error_correction]",
+                                id: "UrlBarcode_error_correction",
+                                type: "hidden"
+                              }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "angularWrapper inapp-helpV1 init"
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "ng-scope white-form foldabel-form",
+                                    attrs: {
+                                      "ng-controller":
+                                        "AngularBaseController as cs"
+                                    }
+                                  },
+                                  [
+                                    _vm._m(23),
+                                    _vm._v(" "),
+                                    _vm._m(24),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      { staticClass: "form-container" },
+                                      [
+                                        _vm._m(25),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "section-body" },
+                                          [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "section_type_container section_information"
+                                              },
+                                              [
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "row form-input-row formly-field"
+                                                  },
+                                                  [
+                                                    _vm._m(26),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "div",
+                                                      { staticClass: "mb-10" },
+                                                      [
+                                                        _c("div", {
+                                                          staticClass:
+                                                            "col-sm-1 col-md-1 box-icon hidden-xs hidden-sm"
+                                                        }),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "col-sm-12 col-md-3 box-label"
+                                                          },
+                                                          [
+                                                            _vm._v(
+                                                              "\n                                Website:\n                            "
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "div",
+                                                          {
+                                                            staticClass:
+                                                              "col-sm-12 col-md-8 box-input",
+                                                            class: {
+                                                              error:
+                                                                _vm.barCodeError
+                                                            }
+                                                          },
+                                                          [
+                                                            _c("input", {
+                                                              directives: [
+                                                                {
+                                                                  name: "model",
+                                                                  rawName:
+                                                                    "v-model",
+                                                                  value:
+                                                                    _vm.modelUrl,
+                                                                  expression:
+                                                                    "modelUrl"
+                                                                }
+                                                              ],
+                                                              staticClass:
+                                                                "required canHaveError",
+                                                              attrs: {
+                                                                required:
+                                                                  "required",
+                                                                spellcheck:
+                                                                  "false",
+                                                                placeholder:
+                                                                  "http://www.my-website.com",
+                                                                name: "url",
+                                                                id: "url",
+                                                                type: "text",
+                                                                maxlength:
+                                                                  "1500"
+                                                              },
+                                                              domProps: {
+                                                                value:
+                                                                  _vm.modelUrl
+                                                              },
+                                                              on: {
+                                                                input: [
+                                                                  function(
+                                                                    $event
+                                                                  ) {
+                                                                    if (
+                                                                      $event
+                                                                        .target
+                                                                        .composing
+                                                                    ) {
+                                                                      return
+                                                                    }
+                                                                    _vm.modelUrl =
+                                                                      $event.target.value
+                                                                  },
+                                                                  _vm.websiteChanged
+                                                                ]
+                                                              }
+                                                            }),
+                                                            _vm._v(" "),
+                                                            _c("div", {
+                                                              staticClass:
+                                                                "errorMessage",
+                                                              staticStyle: {
+                                                                display: "none"
+                                                              },
+                                                              attrs: {
+                                                                "data-error-container":
+                                                                  "",
+                                                                id:
+                                                                  "UrlBarcode_url_em_"
+                                                              }
+                                                            }),
+                                                            _vm._v(" "),
+                                                            _c("div", {
+                                                              staticClass:
+                                                                "errorHolder errorMessage pull-right",
+                                                              staticStyle: {
+                                                                position:
+                                                                  "relative",
+                                                                top: "-29px"
+                                                              },
+                                                              attrs: {
+                                                                "data-error-container":
+                                                                  "#errorUrlBarcode_url",
+                                                                "data-error-msg":
+                                                                  "Please enter a website address and click on next."
+                                                              }
+                                                            }),
+                                                            _vm._v(" "),
+                                                            _c("span", {
+                                                              attrs: {
+                                                                id:
+                                                                  "errorUrlBarcode_url"
+                                                              }
+                                                            }),
+                                                            _vm._v(" "),
+                                                            _c(
+                                                              "div",
+                                                              {
+                                                                directives: [
+                                                                  {
+                                                                    name:
+                                                                      "show",
+                                                                    rawName:
+                                                                      "v-show",
+                                                                    value:
+                                                                      _vm.barCodeError,
+                                                                    expression:
+                                                                      "barCodeError"
+                                                                  }
+                                                                ],
+                                                                staticClass:
+                                                                  "popover popover-error fade right in",
+                                                                staticStyle: {
+                                                                  top: "-21px",
+                                                                  left: "6px",
+                                                                  display:
+                                                                    "block",
+                                                                  position:
+                                                                    "relative"
+                                                                },
+                                                                attrs: {
+                                                                  role:
+                                                                    "tooltip",
+                                                                  id:
+                                                                    "popover256828"
+                                                                }
+                                                              },
+                                                              [
+                                                                _c("div", {
+                                                                  staticClass:
+                                                                    "arrow"
+                                                                }),
+                                                                _vm._v(" "),
+                                                                _c("h3", {
+                                                                  staticClass:
+                                                                    "popover-title",
+                                                                  staticStyle: {
+                                                                    display:
+                                                                      "none"
+                                                                  }
+                                                                }),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "popover-content"
+                                                                  },
+                                                                  [
+                                                                    _vm._v(
+                                                                      _vm._s(
+                                                                        _vm.errorMsg
+                                                                      )
+                                                                    )
+                                                                  ]
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(27)
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("input", {
+                              staticClass: "hidden",
+                              attrs: {
+                                type: "submit",
+                                name: "yt0",
+                                value: "notvisible"
+                              }
+                            })
+                          ]
+                        )
+                      ]
+                    )
                   ])
                 ])
               ])
             ]),
             _vm._v(" "),
-            _vm._m(22),
+            _vm._m(28),
             _vm._v(" "),
             _c("div", { staticClass: "apply-fixedBottom-footerGenerator" }, [
               _c(
@@ -41229,7 +41934,52 @@ var render = function() {
                             )
                           ]),
                           _vm._v(" "),
-                          _vm._m(23)
+                          _c("div", { staticClass: "row secondstep" }, [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "section-content section-content_generator-footer"
+                              },
+                              [
+                                _c("div", { staticClass: "grid" }, [
+                                  _c(
+                                    "div",
+                                    { staticClass: "col footer__left" },
+                                    [
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass:
+                                            "btn lc btn-generator-prev pull-left",
+                                          on: {
+                                            click: function($event) {
+                                              _vm.secondStep = false
+                                            }
+                                          }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass:
+                                              "icon icon-chevron-left-medium pull-left"
+                                          }),
+                                          _vm._v(
+                                            "Back\n                                                        "
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm._m(29),
+                                      _vm._v(" "),
+                                      _vm._m(30)
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._m(31)
+                                ])
+                              ]
+                            )
+                          ])
                         ])
                       ]
                     )
@@ -41258,20 +42008,119 @@ var render = function() {
                   _c(
                     "div",
                     {
-                      staticClass: "preview clearfix mockup__preview",
-                      class: { active: _vm.isActive },
+                      staticClass:
+                        "preview clearfix mockup__preview url_noAffix ",
+                      class: {
+                        active: _vm.isActive,
+                        "showQRCode affix": _vm.showQRCode,
+                        "affix-top": !_vm.showQRCode
+                      },
                       attrs: { "data-spy": "affix", "data-offset-top": "26" }
                     },
                     [
-                      _vm._m(24),
-                      _vm._v(" "),
-                      _vm._m(25),
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "btn-slide-toggler btn-slide-toggler_label",
+                          class: { active: !_vm.showQRCode },
+                          staticStyle: { display: "none" }
+                        },
+                        [
+                          _c(
+                            "span",
+                            {
+                              staticClass: "btn-slide-toggler__phone",
+                              on: {
+                                click: function($event) {
+                                  _vm.showQRCode = false
+                                }
+                              }
+                            },
+                            [_vm._v("\n                Preview            ")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "span",
+                            {
+                              staticClass: "btn-slide-toggler__code",
+                              on: { click: _vm.genQRCode }
+                            },
+                            [_vm._v("\n                QR Code            ")]
+                          )
+                        ]
+                      ),
                       _vm._v(" "),
                       _c(
                         "div",
                         {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: _vm.showQRCode,
+                              expression: "showQRCode"
+                            }
+                          ],
                           staticClass:
-                            "preview-smartphone clearfix active mockup__smartphone"
+                            "preview-qrcode mockup__qrcode qrcode_create",
+                          class: { barCodeError: _vm.barCodeError },
+                          staticStyle: {
+                            position: "fixed",
+                            top: "24px",
+                            display: "none"
+                          }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "code",
+                              attrs: { id: "barcodeHere" }
+                            },
+                            [
+                              _c("div", {
+                                staticClass: "qr-preview-overlay",
+                                class: { loading2: true },
+                                staticStyle: { opacity: "0" }
+                              }),
+                              _vm._v(" "),
+                              _c("img", {
+                                attrs: {
+                                  id: "barcodeImage",
+                                  src: _vm.barcodeImage,
+                                  alt: ""
+                                }
+                              }),
+                              _vm._v(" "),
+                              _vm._m(32)
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c("h3", [_vm._v("Scan this QR Code to preview")]),
+                          _vm._v(" "),
+                          _vm._m(33)
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          directives: [
+                            {
+                              name: "show",
+                              rawName: "v-show",
+                              value: !_vm.showQRCode,
+                              expression: "!showQRCode"
+                            }
+                          ],
+                          staticClass:
+                            "preview-smartphone clearfix active mockup__smartphone",
+                          staticStyle: {
+                            position: "fixed",
+                            top: "24px",
+                            display: "none"
+                          }
                         },
                         [
                           _c(
@@ -41281,14 +42130,48 @@ var render = function() {
                                 "preview-smartphone-wrapper noVideo mockup__smartphone-wrapper"
                             },
                             [
-                              _c("div", {
-                                staticClass: "placeholder ratchet",
-                                attrs: { id: "smartphonePlaceholder" }
-                              }),
+                              _c(
+                                "div",
+                                {
+                                  staticClass: "placeholder ratchet",
+                                  attrs: { id: "smartphonePlaceholder" }
+                                },
+                                [
+                                  _c(
+                                    "div",
+                                    { staticClass: "template template-url" },
+                                    [
+                                      _c(
+                                        "header",
+                                        { staticClass: "bar bar-nav" },
+                                        [
+                                          _c("div", { staticClass: "pure-g" }, [
+                                            _c(
+                                              "div",
+                                              {
+                                                staticClass:
+                                                  "browser-input pure-u-5-6"
+                                              },
+                                              [_vm._v(_vm._s(_vm.formalUrl))]
+                                            ),
+                                            _vm._v(" "),
+                                            _c("div", {
+                                              staticClass:
+                                                "browser-refresh pure-u-1-6"
+                                            })
+                                          ])
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _vm._m(34)
+                                    ]
+                                  )
+                                ]
+                              ),
                               _vm._v(" "),
-                              _vm._m(26),
+                              _vm._m(35),
                               _vm._v(" "),
-                              _vm._m(27),
+                              _vm._m(36),
                               _vm._v(" "),
                               _c(
                                 "div",
@@ -41313,7 +42196,7 @@ var render = function() {
                         ]
                       ),
                       _vm._v(" "),
-                      _vm._m(28)
+                      _vm._m(37)
                     ]
                   ),
                   _vm._v(" "),
@@ -41360,45 +42243,23 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "qr-navbar ng-scope",
-        staticStyle: { background: "none", position: "relative" },
-        attrs: {
-          "ng-style": "getNavbarStyle()",
-          "ng-controller": "qrNavbarCtrl",
-          "ng-init": "route='create/new'",
-          "data-navbar": ""
-        }
+        staticClass:
+          "qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect",
+        attrs: { "ng-show": "route != 'manage/new'" }
       },
       [
-        _c("div", { staticClass: "qr-navbar__element" }, [
+        _c("a", { attrs: { "ng-click": "goBack($event)", href: "/home" } }, [
+          _c("i", { staticClass: "icon-event-back" }),
+          _vm._v(" "),
           _c(
-            "div",
+            "span",
             {
-              staticClass:
-                "qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect",
-              attrs: { "ng-show": "route != 'manage/new'" }
+              staticClass: "ng-hide",
+              attrs: {
+                "ng-show": "route != 'create/index' && route != 'create/new'"
+              }
             },
-            [
-              _c(
-                "a",
-                { attrs: { "ng-click": "goBack($event)", href: "/home" } },
-                [
-                  _c("i", { staticClass: "icon-event-back" }),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      staticClass: "ng-hide",
-                      attrs: {
-                        "ng-show":
-                          "route != 'create/index' && route != 'create/new'"
-                      }
-                    },
-                    [_vm._v("Back")]
-                  )
-                ]
-              )
-            ]
+            [_vm._v("Back")]
           )
         ])
       ]
@@ -41410,7 +42271,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("h3", [
       _vm._v(
-        "Select your QR Code Type\n                                                    "
+        "Select your QR Code Type\n                                                        "
       ),
       _c("button", {
         staticClass: "btn-help visible-lg-inline-block",
@@ -41794,7 +42655,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -41829,7 +42690,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -41868,7 +42729,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -41903,7 +42764,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -41938,7 +42799,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -41973,7 +42834,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42012,7 +42873,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42047,7 +42908,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42082,7 +42943,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42121,7 +42982,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42156,7 +43017,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42195,7 +43056,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(
-            "\n                                                                    /login\n                                                                    "
+            "\n                                                                        /login\n                                                                        "
           ),
           _c(
             "div",
@@ -42275,7 +43136,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("h3", [
       _vm._v(
-        "Select your QR Code Type\n                                                    "
+        "Select your QR Code Type\n                                                        "
       ),
       _c("button", {
         staticClass: "btn-help visible-lg-inline-block",
@@ -42319,7 +43180,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Link to any page on the web\n                                                        "
+                "\n                                                                Link to any page on the web\n                                                            "
               )
             ]
           )
@@ -42356,7 +43217,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Link to a mobile-optimized PDF\n                                                        "
+                "\n                                                                Link to a mobile-optimized PDF\n                                                            "
               )
             ]
           )
@@ -42394,7 +43255,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Share personalized contact details\n                                                        "
+                "\n                                                                Share personalized contact details\n                                                            "
               )
             ]
           )
@@ -42432,7 +43293,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Share one or more videos\n                                                        "
+                "\n                                                                Share one or more videos\n                                                            "
               )
             ]
           )
@@ -42473,7 +43334,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Get more Likes for your page\n                                                        "
+                "\n                                                                Get more Likes for your page\n                                                            "
               )
             ]
           )
@@ -42511,7 +43372,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Link to your social media channels\n                                                        "
+                "\n                                                                Link to your social media channels\n                                                            "
               )
             ]
           )
@@ -42547,7 +43408,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            View your app on various App Stores\n                                                        "
+                "\n                                                                View your app on various App Stores\n                                                            "
               )
             ]
           )
@@ -42587,7 +43448,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Collect feedback and get rated\n                                                        "
+                "\n                                                                Collect feedback and get rated\n                                                            "
               )
             ]
           )
@@ -42624,7 +43485,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Ask a question and get rated\n                                                        "
+                "\n                                                                Ask a question and get rated\n                                                            "
               )
             ]
           )
@@ -42662,7 +43523,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Share coupons and discounts\n                                                        "
+                "\n                                                                Share coupons and discounts\n                                                            "
               )
             ]
           )
@@ -42702,7 +43563,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Provide your company information\n                                                        "
+                "\n                                                                Provide your company information\n                                                            "
               )
             ]
           )
@@ -42740,7 +43601,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Promote your event\n                                                        "
+                "\n                                                                Promote your event\n                                                            "
               )
             ]
           )
@@ -42779,7 +43640,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Play an audio file\n                                                        "
+                "\n                                                                Play an audio file\n                                                            "
               )
             ]
           )
@@ -42816,7 +43677,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "\n                                                            Show a series of photos\n                                                        "
+                "\n                                                                Show a series of photos\n                                                            "
               )
             ]
           )
@@ -42836,6 +43697,361 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticStyle: { display: "none" } }, [
+      _c("input", {
+        attrs: {
+          type: "hidden",
+          value: "13b4ba5911767e7290861f461df1ceae45e8787a",
+          name: "YII_CSRF_TOKEN"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "hidden" }, [
+      _c("input", {
+        staticClass: "ng-pristine ng-untouched ng-valid",
+        attrs: {
+          "ng-model": "qrcode_title",
+          value: "",
+          "ng-init": "qrcode_title=''",
+          placeholder: "My Website QR Code",
+          "data-content":
+            "Give your code a description, it helps you to identify the code in the management and you can search for it, too.",
+          name: "UrlBarcode[title]",
+          id: "UrlBarcode_title",
+          type: "hidden"
+        }
+      }),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "errorMessage",
+        staticStyle: { display: "none" },
+        attrs: { id: "UrlBarcode_title_em_" }
+      }),
+      _c(
+        "button",
+        {
+          staticClass: "btn-help hidden-xs",
+          attrs: { "data-original-title": "", title: "" }
+        },
+        [_c("i", { staticClass: "icon-help" })]
+      ),
+      _vm._v(" "),
+      _c("input", {
+        staticClass: "ng-pristine ng-untouched ng-valid",
+        attrs: {
+          "ng-model": "qrcode_geolocation",
+          value: "0",
+          name: "UrlBarcode[geolocation]",
+          id: "UrlBarcode_geolocation",
+          type: "text"
+        }
+      }),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "errorMessage",
+        staticStyle: { display: "none" },
+        attrs: { id: "UrlBarcode_geolocation_em_" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "section-title",
+        attrs: { "ng-class": "IsDisplay ? 'section-title--backdrop' : ''" }
+      },
+      [
+        _c("div", { staticClass: "section-title__icon" }, [
+          _c("i", {
+            staticClass: "icon--title-editing icon-creation-code-url",
+            attrs: { "data-title-icon": "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "section-title__name" }, [
+          _c("input", {
+            staticClass:
+              "input--title-editing ng-pristine ng-untouched ng-valid",
+            attrs: {
+              id: "qrcode_title_0",
+              "ng-change": "dismissHintCookie()",
+              type: "text",
+              "ng-model": "qrcode_title",
+              placeholder: "My Website QR Code",
+              "data-title-input": "",
+              autocomplete: "off"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "label",
+            {
+              staticClass: "section-title__label",
+              attrs: { for: "qrcode_title_0" }
+            },
+            [_vm._v("Name your QR Code")]
+          ),
+          _vm._v(" "),
+          _c("span", {
+            staticClass: "btn-help-icon section-title__icon_tooltip",
+            attrs: {
+              "ng-class": "IsDisplay ? 'hidden' : ''",
+              rel: "tooltip",
+              "data-trigger": "hover",
+              "data-placement": "left",
+              "data-original-title":
+                "Names help you to stay organized and will only appear in your account and are not displayed to customers who scan your QR Codes."
+            }
+          })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "section-header section-open not-formly" },
+      [
+        _c("div", { staticClass: "form-title-row" }, [
+          _c("div", { staticClass: "col-md-1 box-icon hidden-sm" }, [
+            _c(
+              "div",
+              {
+                staticClass: "round-no text-center mt10",
+                staticStyle: { "margin-top": "20px !important" }
+              },
+              [_c("i", { staticClass: "icon-edit-b" })]
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-12 col-md-11 box-title" }, [
+            _c("h3", [
+              _vm._v("Enter your website address                            "),
+              _c("button", {
+                staticClass: "btn-help visible-lg-inline-block",
+                attrs: { title: "", "data-original-title": "" }
+              })
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-lg-offset-1 col-sm-12 col-lg-11 mb-10" },
+      [
+        _c("p", { staticClass: "section-subheadline" }, [
+          _vm._v("Type in the website to link with your QR Code")
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "form-container hidden",
+        attrs: { id: "advancedOptions" }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "section-header",
+            attrs: {
+              "ng-click":
+                "formState.advancedOptions = !formState.advancedOptions",
+              "ng-class": "{'active section-open':formState.advancedOptions}"
+            }
+          },
+          [
+            _c("div", { staticClass: "toggle-collapse" }, [
+              _c("div", { staticClass: "checkboxes-container fold-checkbox" }, [
+                _c("input", {
+                  attrs: {
+                    type: "checkbox",
+                    "ng-attr-id": "section_advance_options",
+                    "ng-checked": "!formState.advancedOptions",
+                    checked: "checked"
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", {
+                  staticClass: "checkbox_label ml-20",
+                  attrs: { "ng-attr-for": "section_advance_options" }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "form-title-row form-hidden-trigger-row hide-during-loading"
+              },
+              [
+                _c("div", { staticClass: "col-md-1 box-icon hidden-sm" }, [
+                  _c("div", { staticClass: "round-no text-center mt10" }, [
+                    _c("i", { staticClass: "icon-creation-advanced" })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-sm-12 col-md-11 box-title" }, [
+                  _c("h3", [
+                    _vm._v(
+                      "\n                    Advanced Options                "
+                    )
+                  ])
+                ])
+              ]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "section-body" }, [
+          _c(
+            "div",
+            {
+              staticClass:
+                "section_type_container section_advance_options section-close",
+              attrs: {
+                "ng-class": "{'section-close': !formState.advancedOptions}"
+              }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: " row form-input-row mt-25 hidden ",
+                  staticStyle: { display: "none" },
+                  attrs: { "ng-class": "{hidden:!formState.advancedOptions}" }
+                },
+                [
+                  _c("div", {
+                    staticClass: "col-sm-1 box-icon hidden-xs hidden-sm"
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 col-md-3 box-label" }, [
+                    _vm._v(
+                      "\n                    Label:\n                    "
+                    ),
+                    _c("span", {
+                      staticClass: "btn-help-icon visible-lg-inline-block ",
+                      attrs: {
+                        title: "",
+                        rel: "tooltip",
+                        "data-trigger": "hover",
+                        "data-placement": "top",
+                        "data-original-title":
+                          "Name your QR Code to stay organized. You will only see this label in the Manage page of your account."
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 col-md-8 box-input" }, [
+                    _c("input", {
+                      staticClass: "ng-pristine ng-untouched ng-valid",
+                      attrs: {
+                        id: "qrcode_title_1",
+                        type: "text",
+                        "ng-model": "qrcode_title",
+                        placeholder: "My Website QR Code"
+                      }
+                    })
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: " row form-input-row mt-25 mb-0 hidden ",
+                  attrs: { "ng-class": "{hidden:!formState.advancedOptions}" }
+                },
+                [
+                  _c("div", {
+                    staticClass: "col-sm-1 box-icon hidden-xs hidden-sm"
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-12 col-md-3 box-label" }, [
+                    _vm._v(
+                      "\n                        Geolocation:\n                    "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "col-sm-12 col-md-7 checkboxes-container green-checkbox mt-15"
+                    },
+                    [
+                      _c("input", {
+                        staticClass: "ng-pristine ng-untouched ng-valid",
+                        attrs: {
+                          type: "checkbox",
+                          id: "qrcode_geolocation_checkbox",
+                          "ng-model": "qrcode_geolocation",
+                          "ng-true-value": "1",
+                          "ng-false-value": "0",
+                          "ng-init": "qrcode_geolocation=0"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "label",
+                        {
+                          staticClass: "mr-10 label-geolocation",
+                          attrs: { for: "qrcode_geolocation_checkbox" }
+                        },
+                        [_vm._v("Ask smartphone users for geolocation")]
+                      ),
+                      _vm._v(" "),
+                      _c("span", {
+                        staticClass: "btn-help-icon visible-lg-inline-block",
+                        attrs: {
+                          title: "",
+                          rel: "tooltip",
+                          "data-trigger": "hover",
+                          "data-placement": "top",
+                          "data-original-title":
+                            "Ask users to provide their exact location at the time of scan. This may cause cautious users to discontinue. Note that you will still receive IP-based location data when turned off."
+                        }
+                      })
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "sk-three-bounce" }, [
       _c("div", { staticClass: "sk-child sk-bounce1" }),
       _vm._v(" "),
@@ -42848,127 +44064,77 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row secondstep" }, [
-      _c(
-        "div",
-        { staticClass: "section-content section-content_generator-footer" },
-        [
-          _c("div", { staticClass: "grid" }, [
-            _c("div", { staticClass: "col footer__left" }, [
-              _c(
-                "button",
-                { staticClass: "btn lc btn-generator-prev pull-left" },
-                [
-                  _c("i", {
-                    staticClass: "icon icon-chevron-left-medium pull-left"
-                  }),
-                  _vm._v(
-                    "Back\n                                                    "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "footer__view-mobile",
-                  attrs: { "data-generate-mobile-bar": "" }
-                },
-                [
-                  _c("ul", [
-                    _c("li", { staticClass: "btn-generator-prev" }, [
-                      _c("i", { staticClass: "icon icon-arrow-24px" })
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "ng-scope",
-                        attrs: {
-                          "ng-repeat": "item in items",
-                          "ng-class":
-                            "{'active': item.id == states.activeItem}",
-                          "ng-click":
-                            "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
-                        }
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "icon icon-pencil-24px",
-                          attrs: { "ng-class": "'icon icon-' + item.icon" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "ng-scope",
-                        attrs: {
-                          "ng-repeat": "item in items",
-                          "ng-class":
-                            "{'active': item.id == states.activeItem}",
-                          "ng-click":
-                            "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
-                        }
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "icon icon-phone-24px",
-                          attrs: { "ng-class": "'icon icon-' + item.icon" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      {
-                        staticClass: "ng-scope",
-                        attrs: {
-                          "ng-repeat": "item in items",
-                          "ng-class":
-                            "{'active': item.id == states.activeItem}",
-                          "ng-click":
-                            "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
-                        }
-                      },
-                      [
-                        _c("i", {
-                          staticClass: "icon icon-qr-code-mobile",
-                          attrs: { "ng-class": "'icon icon-' + item.icon" }
-                        })
-                      ]
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass:
-                    "btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button",
-                  attrs: { type: "button", "data-style": "expand-left" }
-                },
-                [
-                  _c("span", { staticClass: "ladda-label" }, [_vm._v("Next")]),
-                  _c("span", { staticClass: "ladda-spinner" })
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col col-fixed footer__bar",
-                staticStyle: { width: "466px" }
-              },
-              [_c("div", { staticClass: "footer__button" })]
-            )
-          ])
-        ]
-      )
-    ])
+    return _c(
+      "div",
+      {
+        staticClass: "footer__view-mobile",
+        attrs: { "data-generate-mobile-bar": "" }
+      },
+      [
+        _c("ul", [
+          _c("li", { staticClass: "btn-generator-prev" }, [
+            _c("i", { staticClass: "icon icon-arrow-24px" })
+          ]),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "ng-scope",
+              attrs: {
+                "ng-repeat": "item in items",
+                "ng-class": "{'active': item.id == states.activeItem}",
+                "ng-click":
+                  "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
+              }
+            },
+            [
+              _c("i", {
+                staticClass: "icon icon-pencil-24px",
+                attrs: { "ng-class": "'icon icon-' + item.icon" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "ng-scope",
+              attrs: {
+                "ng-repeat": "item in items",
+                "ng-class": "{'active': item.id == states.activeItem}",
+                "ng-click":
+                  "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
+              }
+            },
+            [
+              _c("i", {
+                staticClass: "icon icon-phone-24px",
+                attrs: { "ng-class": "'icon icon-' + item.icon" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "li",
+            {
+              staticClass: "ng-scope",
+              attrs: {
+                "ng-repeat": "item in items",
+                "ng-class": "{'active': item.id == states.activeItem}",
+                "ng-click":
+                  "states.activeItem = item.id; states.viewType = item.class; codeValidation(); disableScrolling(); toggleView();"
+              }
+            },
+            [
+              _c("i", {
+                staticClass: "icon icon-qr-code-mobile",
+                attrs: { "ng-class": "'icon icon-' + item.icon" }
+              })
+            ]
+          )
+        ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -42977,17 +44143,13 @@ var staticRenderFns = [
     return _c(
       "button",
       {
-        staticClass: "btn-slide-toggler btn-slide-toggler_label active",
-        staticStyle: { display: "none" }
+        staticClass:
+          "btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button",
+        attrs: { type: "button", "data-style": "expand-left" }
       },
       [
-        _c("span", { staticClass: "btn-slide-toggler__phone" }, [
-          _vm._v("\n            Preview            ")
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "btn-slide-toggler__code" }, [
-          _vm._v("\n            QR Code            ")
-        ])
+        _c("span", { staticClass: "ladda-label" }, [_vm._v("Next")]),
+        _c("span", { staticClass: "ladda-spinner" })
       ]
     )
   },
@@ -42998,44 +44160,58 @@ var staticRenderFns = [
     return _c(
       "div",
       {
-        staticClass: "preview-qrcode mockup__qrcode qrcode_create",
-        staticStyle: { display: "none" }
+        staticClass: "col col-fixed footer__bar",
+        staticStyle: { width: "466px" }
+      },
+      [_c("div", { staticClass: "footer__button" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mockup__qrcode-error" }, [
+      _c("div", { staticClass: "mockup__qrcode-error-content" }, [
+        _c("i", { staticClass: "icon icon-info-icon" }),
+        _vm._v(" "),
+        _c("h4", [
+          _vm._v(
+            "Fill in the required fields in the form to preview your QR Code"
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v("You can customize the design of your "),
+      _c("br"),
+      _vm._v(" QR Code in the next step.")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "text-center content template_url",
+        staticStyle: { "padding-top": "200px", "background-image": "none" }
       },
       [
-        _c("div", { staticClass: "code", attrs: { id: "barcodeHere" } }, [
-          _c("div", {
-            staticClass: "qr-preview-overlay",
-            staticStyle: { opacity: "0" }
-          }),
-          _vm._v(" "),
-          _c("img", {
-            attrs: {
-              id: "barcodeImage",
-              src: "/images/qrcode_placeholder.png",
-              alt: ""
-            }
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "mockup__qrcode-error" }, [
-            _c("div", { staticClass: "mockup__qrcode-error-content" }, [
-              _c("i", { staticClass: "icon icon-info-icon" }),
-              _vm._v(" "),
-              _c("h4", [
-                _vm._v(
-                  "Fill in the required fields in the form to preview your QR Code"
-                )
-              ])
-            ])
+        _c("div", { staticClass: "arrow_box" }, [
+          _c("span", [
+            _vm._v(
+              "Some QR Codes types will show a live preview here but not this one. View and test your QR Code in the next step!"
+            )
           ])
         ]),
         _vm._v(" "),
-        _c("h3", [_vm._v("Scan this QR Code to preview")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("You can customize the design of your "),
-          _c("br"),
-          _vm._v(" QR Code in the next step.")
-        ])
+        _c("img", { attrs: { src: "/images/CodyE_PointingLeft.svg" } })
       ]
     )
   },
@@ -43059,7 +44235,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("span", [
             _vm._v(
-              "\n                            Scan to see a live preview                            "
+              "\n                                Scan to see a live preview                            "
             )
           ])
         ])
