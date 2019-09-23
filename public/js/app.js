@@ -1743,6 +1743,2981 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageBarComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageBarComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ManageBarComponent",
+  data: function data() {
+    return {
+      searchQuery: false
+    };
+  },
+  computed: {
+    isFilterVisible: function isFilterVisible() {
+      return false;
+    }
+  },
+  methods: {
+    createQRCode: function createQRCode() {
+      this.$router.push('/create');
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageCodeComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageCodeComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ManageCodeComponent"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageContentComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageContentComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _OpenInvoiceComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OpenInvoiceComponent */ "./resources/js/components/OpenInvoiceComponent.vue");
+/* harmony import */ var _ManageBarComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageBarComponent */ "./resources/js/components/ManageBarComponent.vue");
+/* harmony import */ var _ManageCodeComponent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ManageCodeComponent */ "./resources/js/components/ManageCodeComponent.vue");
+/* harmony import */ var _SpinnerComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SpinnerComponent */ "./resources/js/components/SpinnerComponent.vue");
+/* harmony import */ var _ResourcesComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ResourcesComponent */ "./resources/js/components/ResourcesComponent.vue");
+/* harmony import */ var _StatisticsViewComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StatisticsViewComponent */ "./resources/js/components/StatisticsViewComponent.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ManageContentComponent",
+  components: {
+    StatisticsViewComponent: _StatisticsViewComponent__WEBPACK_IMPORTED_MODULE_5__["default"],
+    ResourcesComponent: _ResourcesComponent__WEBPACK_IMPORTED_MODULE_4__["default"],
+    SpinnerComponent: _SpinnerComponent__WEBPACK_IMPORTED_MODULE_3__["default"],
+    ManageCodeComponent: _ManageCodeComponent__WEBPACK_IMPORTED_MODULE_2__["default"],
+    ManageBarComponent: _ManageBarComponent__WEBPACK_IMPORTED_MODULE_1__["default"],
+    OpenInvoiceComponent: _OpenInvoiceComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      checkbox: {
+        visible: false,
+        checkAllState: false
+      }
+    };
+  },
+  computed: {},
+  methods: {
+    checkAll: function checkAll() {}
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageFolderComponent.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageFolderComponent.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Popup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup */ "./resources/js/components/Popup.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ManageFolderComponent",
+  components: {
+    Popup: _Popup__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  props: ['icon', 'value', 'count', 'animated', 'menu', 'editing', 'isMenuVisible'],
+  data: function data() {
+    return {
+      isMenuAvailable: false
+    };
+  },
+  computed: {
+    isEditing: function isEditing() {
+      return false;
+    }
+  },
+  methods: {
+    clickMenu: function clickMenu() {
+      this.isMenuAvailable = !this.isMenuAvailable;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManagePanelComponent.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManagePanelComponent.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageFolderComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageFolderComponent */ "./resources/js/components/ManageFolderComponent.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ManagePanelComponent",
+  components: {
+    ManageFolderComponent: _ManageFolderComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      searchQuery: '',
+      filters: [{
+        id: 1,
+        name: 'All',
+        count: 2,
+        icon: 'icon-qr-all',
+        visible: true
+      }, {
+        id: 2,
+        name: 'Active',
+        count: 2,
+        icon: 'icon-active',
+        visible: true
+      }, {
+        id: 3,
+        name: 'Paused',
+        count: 0,
+        icon: 'icon-qr-paused',
+        visible: true
+      }],
+      folders: []
+    };
+  },
+  computed: {
+    getFolders: function getFolders() {
+      return this.folders;
+    }
+  },
+  methods: {
+    searchQuery: function searchQuery() {
+      return true;
+    },
+    addFolder: function addFolder() {
+      this.folders.push({
+        name: 'Untitled folder',
+        icon: 'icon-qr-folder'
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageViewComponent.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageViewComponent.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManagePanelComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManagePanelComponent */ "./resources/js/components/ManagePanelComponent.vue");
+/* harmony import */ var _ManageContentComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageContentComponent */ "./resources/js/components/ManageContentComponent.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ManageViewComponent",
+  components: {
+    ManageContentComponent: _ManageContentComponent__WEBPACK_IMPORTED_MODULE_1__["default"],
+    ManagePanelComponent: _ManagePanelComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  mounted: function mounted() {
+    console.log('Component mounted.');
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/OpenInvoiceComponent.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/OpenInvoiceComponent.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "OpenInvoiceComponent"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Popup.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Popup.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "Popup",
+  beforeMount: function beforeMount() {
+    var _this = this;
+
+    this._close = function (e) {
+      // 如果点击发生在当前组件内部，则不处理
+      if (_this.$el.contains(e.target)) {
+        return;
+      }
+
+      _this.$emit('hide');
+    };
+
+    document.body.addEventListener('click', this._close);
+  },
+  beforeDestroy: function beforeDestroy() {
+    document.body.removeEventListener('click', this._close);
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ResourcesComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ResourcesComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "ResourcesComponent"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerComponent.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SpinnerComponent.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "SpinnerComponent"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/StatisticsViewComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/StatisticsViewComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageCodeComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageCodeComponent */ "./resources/js/components/ManageCodeComponent.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "StatisticsViewComponent",
+  components: {
+    ManageCodeComponent: _ManageCodeComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/App.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_ManageViewComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/ManageViewComponent */ "./resources/js/components/ManageViewComponent.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ManageViewComponent: _components_ManageViewComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      dropdownOpen: false
+    };
+  },
+  computed: {},
+  methods: {
+    toggleDropdown: function toggleDropdown() {
+      this.dropdownOpen = !this.dropdownOpen;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Create.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Create.vue?vue&type=script&lang=js& ***!
@@ -1752,8 +4727,6 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -3078,6 +6051,18 @@ __webpack_require__.r(__webpack_exports__);
     nextFirstStep: function nextFirstStep() {
       this.secondStep = true;
     },
+    nextSecondStep: function nextSecondStep() {
+      var that = this;
+      axios.post('/api/v1/createNew', {
+        qr_code_text: that.formalUrl
+      }, {
+        responseType: 'blob'
+      }).then(function (res) {
+        console.log(res);
+      })["catch"](function (err) {
+        console.log(err);
+      });
+    },
     websiteChanged: function websiteChanged() {
       this.showQRCode = false;
 
@@ -3102,6 +6087,13 @@ __webpack_require__.r(__webpack_exports__);
         this.barCodeError = false;
         this.barcodeImage = '/api/v1/create?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
       }
+    },
+    backToStepOne: function backToStepOne() {
+      this.secondStep = false;
+      this.modelUrl = '';
+      this.showQRCode = false;
+      this.barCodeError = false;
+      this.errorMsg = '';
     }
   }
 });
@@ -39879,6 +42871,10566 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "qr-manage-bar", attrs: { "ng-switch": "totalSelected" } },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.searchQuery,
+              expression: "searchQuery"
+            }
+          ],
+          staticClass: "qr-manage-bar__search ng-binding ng-hide"
+        },
+        [
+          _vm._v("/\n        Search results for "),
+          _c(
+            "span",
+            _vm._b(
+              { staticClass: "qr-manage-bar__search-query ng-binding" },
+              "span",
+              _vm.searchQuery,
+              false
+            )
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "qr-choice-button",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.isFilterVisible,
+              expression: "isFilterVisible"
+            }
+          ],
+          staticClass: "qr-manage-bar__filter",
+          attrs: { items: "::filterItems", value: "filter" }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "qr-choice-button" },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "qr-choice-button__button",
+                  attrs: {
+                    type: "button",
+                    "ng-class": "getButtonClass()",
+                    "ng-click": "click()"
+                  }
+                },
+                [
+                  _vm._v("All QR Codes"),
+                  _c("span", {
+                    staticClass: "qr-choice-button__caret",
+                    attrs: { "ng-class": "getCaretClass()" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "qr-popup",
+                {
+                  staticClass: "ng-scope ng-isolate-scope",
+                  attrs: {
+                    open: "open",
+                    right: "",
+                    "popup-menu-class": "",
+                    "top-offset": "",
+                    "visible-layer": "",
+                    "min-width": "",
+                    "left-offset": "",
+                    "no-layer": "",
+                    "mobile-mode": ""
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "qr-popup ",
+                      staticStyle: { "z-index": "20000" },
+                      attrs: {
+                        "ng-class": "getPopupClasses()",
+                        "ng-style":
+                          "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                      }
+                    },
+                    [
+                      _c("ng-transclude", [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "qr-popup-menu ng-scope",
+                            attrs: {
+                              "ng-class":
+                                "{'qr-popup-menu--mobile': mobileMode}"
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "qr-popup-menu__header ng-binding"
+                              },
+                              [
+                                _c(
+                                  "span",
+                                  {
+                                    staticClass: "qr-popup-menu__close",
+                                    attrs: {
+                                      "ng-click": "closeThis(); onClose();"
+                                    }
+                                  },
+                                  [_vm._v("×")]
+                                ),
+                                _c("span", {
+                                  staticClass:
+                                    "qr-popup-menu__back icon icon-chevron-left-medium ng-hide",
+                                  attrs: {
+                                    "ng-click": "closeThis(); onClose();",
+                                    "ng-show": "alwaysOpen === 'true'"
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ng-scope",
+                                attrs: {
+                                  "ng-repeat":
+                                    "item in items | filter:isVisible track by $index"
+                                }
+                              },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "qr-popup-menu__item ng-binding qr-popup-menu__item--selected",
+                                    attrs: {
+                                      type: "button",
+                                      "ng-click": "click(item, $index)",
+                                      "ng-show": "item.label",
+                                      "ng-mouseenter":
+                                        "openSubmenu(item, $index)",
+                                      "ng-class": "getItemClass(item)"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__icon icon icon-undefined",
+                                      attrs: {
+                                        "ng-class": "getIconClass(item)",
+                                        "ng-show": "getIconClass(item)"
+                                      }
+                                    }),
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__arrow ng-hide",
+                                      attrs: {
+                                        "ng-class": "getArrowClass(item)",
+                                        "ng-show": "getArrowClass(item)"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      "All QR\n                                    Codes\n                                "
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ng-scope",
+                                attrs: {
+                                  "ng-repeat":
+                                    "item in items | filter:isVisible track by $index"
+                                }
+                              },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "qr-popup-menu__item ng-binding",
+                                    attrs: {
+                                      type: "button",
+                                      "ng-click": "click(item, $index)",
+                                      "ng-show": "item.label",
+                                      "ng-mouseenter":
+                                        "openSubmenu(item, $index)",
+                                      "ng-class": "getItemClass(item)"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__icon icon icon-undefined",
+                                      attrs: {
+                                        "ng-class": "getIconClass(item)",
+                                        "ng-show": "getIconClass(item)"
+                                      }
+                                    }),
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__arrow ng-hide",
+                                      attrs: {
+                                        "ng-class": "getArrowClass(item)",
+                                        "ng-show": "getArrowClass(item)"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      "Active QR\n                                    Codes\n                                "
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ng-scope",
+                                attrs: {
+                                  "ng-repeat":
+                                    "item in items | filter:isVisible track by $index"
+                                }
+                              },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "qr-popup-menu__item ng-binding",
+                                    attrs: {
+                                      type: "button",
+                                      "ng-click": "click(item, $index)",
+                                      "ng-show": "item.label",
+                                      "ng-mouseenter":
+                                        "openSubmenu(item, $index)",
+                                      "ng-class": "getItemClass(item)"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__icon icon icon-undefined",
+                                      attrs: {
+                                        "ng-class": "getIconClass(item)",
+                                        "ng-show": "getIconClass(item)"
+                                      }
+                                    }),
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__arrow ng-hide",
+                                      attrs: {
+                                        "ng-class": "getArrowClass(item)",
+                                        "ng-show": "getArrowClass(item)"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      "Paused QR\n                                    Codes\n                                "
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "qr-popup__layer",
+                    staticStyle: { "z-index": "19999" },
+                    attrs: {
+                      "ng-click": "onLayerClick()",
+                      "ng-class": "getLayerClasses()",
+                      "ng-style": "{zIndex: getLayerZIndex()}"
+                    }
+                  })
+                ]
+              )
+            ],
+            1
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "qr-manage-bar__button ng-isolate-scope",
+          attrs: { "ng-click": "", "is-admin": "isAdmin" },
+          on: { click: _vm.createQRCode }
+        },
+        [_vm._m(1)]
+      ),
+      _vm._v(" "),
+      _c(
+        "qr-choice-button",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: !_vm.searchQuery,
+              expression: "!searchQuery"
+            }
+          ],
+          staticClass: "qr-manage-bar__sort ng-isolate-scope",
+          attrs: { items: "::sortItems", right: "true", value: "sort" }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "qr-choice-button" },
+            [
+              _c(
+                "button",
+                {
+                  staticClass: "qr-choice-button__button ng-binding",
+                  attrs: {
+                    type: "button",
+                    "ng-class": "getButtonClass()",
+                    "ng-click": "click()"
+                  }
+                },
+                [
+                  _vm._v("Last Created"),
+                  _c("span", {
+                    staticClass: "qr-choice-button__caret",
+                    attrs: { "ng-class": "getCaretClass()" }
+                  })
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "qr-popup",
+                {
+                  staticClass: "ng-scope ng-isolate-scope",
+                  attrs: {
+                    open: "open",
+                    right: "true",
+                    "popup-menu-class": "",
+                    "top-offset": "",
+                    "visible-layer": "",
+                    "min-width": "",
+                    "left-offset": "",
+                    "no-layer": "",
+                    "mobile-mode": ""
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "qr-popup  qr-popup--right",
+                      staticStyle: { "z-index": "20000" },
+                      attrs: {
+                        "ng-class": "getPopupClasses()",
+                        "ng-style":
+                          "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                      }
+                    },
+                    [
+                      _c("ng-transclude", [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "qr-popup-menu ng-scope",
+                            attrs: {
+                              "ng-class":
+                                "{'qr-popup-menu--mobile': mobileMode}"
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass: "qr-popup-menu__header ng-binding"
+                              },
+                              [
+                                _c(
+                                  "span",
+                                  {
+                                    staticClass: "qr-popup-menu__close",
+                                    attrs: {
+                                      "ng-click": "closeThis(); onClose();"
+                                    }
+                                  },
+                                  [_vm._v("×")]
+                                ),
+                                _c("span", {
+                                  staticClass:
+                                    "qr-popup-menu__back icon icon-chevron-left-medium ng-hide",
+                                  attrs: {
+                                    "ng-click": "closeThis(); onClose();",
+                                    "ng-show": "alwaysOpen === 'true'"
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ng-scope",
+                                attrs: {
+                                  "ng-repeat":
+                                    "item in items | filter:isVisible track by $index"
+                                }
+                              },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "qr-popup-menu__item ng-binding qr-popup-menu__item--selected",
+                                    attrs: {
+                                      type: "button",
+                                      "ng-click": "click(item, $index)",
+                                      "ng-show": "item.label",
+                                      "ng-mouseenter":
+                                        "openSubmenu(item, $index)",
+                                      "ng-class": "getItemClass(item)"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__icon icon icon-undefined",
+                                      attrs: {
+                                        "ng-class": "getIconClass(item)",
+                                        "ng-show": "getIconClass(item)"
+                                      }
+                                    }),
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__arrow ng-hide",
+                                      attrs: {
+                                        "ng-class": "getArrowClass(item)",
+                                        "ng-show": "getArrowClass(item)"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      "Last\n                                    Created\n                                "
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ng-scope",
+                                attrs: {
+                                  "ng-repeat":
+                                    "item in items | filter:isVisible track by $index"
+                                }
+                              },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "qr-popup-menu__item ng-binding",
+                                    attrs: {
+                                      type: "button",
+                                      "ng-click": "click(item, $index)",
+                                      "ng-show": "item.label",
+                                      "ng-mouseenter":
+                                        "openSubmenu(item, $index)",
+                                      "ng-class": "getItemClass(item)"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__icon icon icon-undefined",
+                                      attrs: {
+                                        "ng-class": "getIconClass(item)",
+                                        "ng-show": "getIconClass(item)"
+                                      }
+                                    }),
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__arrow ng-hide",
+                                      attrs: {
+                                        "ng-class": "getArrowClass(item)",
+                                        "ng-show": "getArrowClass(item)"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      "Name\n                                "
+                                    )
+                                  ]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ng-scope",
+                                attrs: {
+                                  "ng-repeat":
+                                    "item in items | filter:isVisible track by $index"
+                                }
+                              },
+                              [
+                                _c(
+                                  "button",
+                                  {
+                                    staticClass:
+                                      "qr-popup-menu__item ng-binding",
+                                    attrs: {
+                                      type: "button",
+                                      "ng-click": "click(item, $index)",
+                                      "ng-show": "item.label",
+                                      "ng-mouseenter":
+                                        "openSubmenu(item, $index)",
+                                      "ng-class": "getItemClass(item)"
+                                    }
+                                  },
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__icon icon icon-undefined",
+                                      attrs: {
+                                        "ng-class": "getIconClass(item)",
+                                        "ng-show": "getIconClass(item)"
+                                      }
+                                    }),
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup-menu__arrow ng-hide",
+                                      attrs: {
+                                        "ng-class": "getArrowClass(item)",
+                                        "ng-show": "getArrowClass(item)"
+                                      }
+                                    }),
+                                    _vm._v(
+                                      "Most\n                                    Scanned\n                                "
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass: "qr-popup__layer",
+                    staticStyle: { "z-index": "19999" },
+                    attrs: {
+                      "ng-click": "onLayerClick()",
+                      "ng-class": "getLayerClasses()",
+                      "ng-style": "{zIndex: getLayerZIndex()}"
+                    }
+                  })
+                ]
+              )
+            ],
+            1
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "qr-multidropdown",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.isFilterVisible,
+              expression: "isFilterVisible"
+            }
+          ],
+          staticClass: "ng-isolate-scope",
+          attrs: {
+            "filter-items": "::filterItems",
+            "sort-items": "::sortItems",
+            filter: "filter",
+            sort: "sort"
+          }
+        },
+        [
+          _c("div", { staticClass: "qr-manage-bar__multidropdown" }, [
+            _c(
+              "button",
+              {
+                staticClass: "qr-choice-button__button",
+                attrs: {
+                  type: "button",
+                  "ng-class": "getButtonClass()",
+                  "ng-click": "click()"
+                }
+              },
+              [
+                _c("div", { staticClass: "icon-qr-filters" }),
+                _vm._v(" "),
+                _c("span", {
+                  staticClass: "qr-choice-button__caret",
+                  attrs: { "ng-class": "getCaretClass()" }
+                })
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "qr-manage-bar__multidropdown__menu ng-hide",
+              staticStyle: { "max-width": "300px" },
+              attrs: {
+                "ng-style": "!showFilter && {'max-width':'300px'}",
+                "ng-hide": "!open"
+              }
+            },
+            [
+              _c(
+                "qr-choice-button",
+                {
+                  staticClass:
+                    "qr-manage-bar__multidropdown__filter ng-isolate-scope ng-hide",
+                  attrs: {
+                    items: "filterItems",
+                    value: "filter",
+                    "ng-show": "showFilter"
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "qr-choice-button" },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "qr-choice-button__button ng-binding",
+                          attrs: {
+                            type: "button",
+                            "ng-class": "getButtonClass()",
+                            "ng-click": "click()"
+                          }
+                        },
+                        [
+                          _vm._v("All QR\n                        Codes"),
+                          _c("span", {
+                            staticClass: "qr-choice-button__caret",
+                            attrs: { "ng-class": "getCaretClass()" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "qr-popup",
+                        {
+                          staticClass: "ng-scope ng-isolate-scope",
+                          attrs: {
+                            open: "open",
+                            right: "",
+                            "popup-menu-class": "",
+                            "top-offset": "",
+                            "visible-layer": "",
+                            "min-width": "",
+                            "left-offset": "",
+                            "no-layer": "",
+                            "mobile-mode": ""
+                          }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "qr-popup ",
+                              staticStyle: { "z-index": "20000" },
+                              attrs: {
+                                "ng-class": "getPopupClasses()",
+                                "ng-style":
+                                  "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                              }
+                            },
+                            [
+                              _c("ng-transclude", [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "qr-popup-menu ng-scope",
+                                    attrs: {
+                                      "ng-class":
+                                        "{'qr-popup-menu--mobile': mobileMode}"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-popup-menu__header ng-binding"
+                                      },
+                                      [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass: "qr-popup-menu__close",
+                                            attrs: {
+                                              "ng-click":
+                                                "closeThis(); onClose();"
+                                            }
+                                          },
+                                          [_vm._v("×")]
+                                        ),
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-popup-menu__back icon icon-chevron-left-medium ng-hide",
+                                          attrs: {
+                                            "ng-click":
+                                              "closeThis(); onClose();",
+                                            "ng-show": "alwaysOpen === 'true'"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "ng-scope",
+                                        attrs: {
+                                          "ng-repeat":
+                                            "item in items | filter:isVisible track by $index"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "qr-popup-menu__item ng-binding qr-popup-menu__item--selected",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-click": "click(item, $index)",
+                                              "ng-show": "item.label",
+                                              "ng-mouseenter":
+                                                "openSubmenu(item, $index)",
+                                              "ng-class": "getItemClass(item)"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__icon icon icon-undefined",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getIconClass(item)",
+                                                "ng-show": "getIconClass(item)"
+                                              }
+                                            }),
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__arrow ng-hide",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getArrowClass(item)",
+                                                "ng-show": "getArrowClass(item)"
+                                              }
+                                            }),
+                                            _vm._v(
+                                              "All\n                                            QR Codes\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "ng-scope",
+                                        attrs: {
+                                          "ng-repeat":
+                                            "item in items | filter:isVisible track by $index"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "qr-popup-menu__item ng-binding",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-click": "click(item, $index)",
+                                              "ng-show": "item.label",
+                                              "ng-mouseenter":
+                                                "openSubmenu(item, $index)",
+                                              "ng-class": "getItemClass(item)"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__icon icon icon-undefined",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getIconClass(item)",
+                                                "ng-show": "getIconClass(item)"
+                                              }
+                                            }),
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__arrow ng-hide",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getArrowClass(item)",
+                                                "ng-show": "getArrowClass(item)"
+                                              }
+                                            }),
+                                            _vm._v(
+                                              "Active\n                                            QR Codes\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "ng-scope",
+                                        attrs: {
+                                          "ng-repeat":
+                                            "item in items | filter:isVisible track by $index"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "qr-popup-menu__item ng-binding",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-click": "click(item, $index)",
+                                              "ng-show": "item.label",
+                                              "ng-mouseenter":
+                                                "openSubmenu(item, $index)",
+                                              "ng-class": "getItemClass(item)"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__icon icon icon-undefined",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getIconClass(item)",
+                                                "ng-show": "getIconClass(item)"
+                                              }
+                                            }),
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__arrow ng-hide",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getArrowClass(item)",
+                                                "ng-show": "getArrowClass(item)"
+                                              }
+                                            }),
+                                            _vm._v(
+                                              "Paused\n                                            QR Codes\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", {
+                            staticClass: "qr-popup__layer",
+                            staticStyle: { "z-index": "19999" },
+                            attrs: {
+                              "ng-click": "onLayerClick()",
+                              "ng-class": "getLayerClasses()",
+                              "ng-style": "{zIndex: getLayerZIndex()}"
+                            }
+                          })
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "qr-choice-button",
+                {
+                  staticClass:
+                    "qr-manage-bar__multidropdown__sort ng-isolate-scope qr-manage-bar__multidropdown__sort--single",
+                  attrs: {
+                    items: "sortItems",
+                    right: "true",
+                    value: "sort",
+                    "ng-class": "getSortButtonClass()"
+                  }
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "qr-choice-button" },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "qr-choice-button__button ng-binding",
+                          attrs: {
+                            type: "button",
+                            "ng-class": "getButtonClass()",
+                            "ng-click": "click()"
+                          }
+                        },
+                        [
+                          _vm._v("Last\n                        Created"),
+                          _c("span", {
+                            staticClass: "qr-choice-button__caret",
+                            attrs: { "ng-class": "getCaretClass()" }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "qr-popup",
+                        {
+                          staticClass: "ng-scope ng-isolate-scope",
+                          attrs: {
+                            open: "open",
+                            right: "true",
+                            "popup-menu-class": "",
+                            "top-offset": "",
+                            "visible-layer": "",
+                            "min-width": "",
+                            "left-offset": "",
+                            "no-layer": "",
+                            "mobile-mode": ""
+                          }
+                        },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass: "qr-popup  qr-popup--right",
+                              staticStyle: { "z-index": "20000" },
+                              attrs: {
+                                "ng-class": "getPopupClasses()",
+                                "ng-style":
+                                  "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                              }
+                            },
+                            [
+                              _c("ng-transclude", [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "qr-popup-menu ng-scope",
+                                    attrs: {
+                                      "ng-class":
+                                        "{'qr-popup-menu--mobile': mobileMode}"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-popup-menu__header ng-binding"
+                                      },
+                                      [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass: "qr-popup-menu__close",
+                                            attrs: {
+                                              "ng-click":
+                                                "closeThis(); onClose();"
+                                            }
+                                          },
+                                          [_vm._v("×")]
+                                        ),
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-popup-menu__back icon icon-chevron-left-medium ng-hide",
+                                          attrs: {
+                                            "ng-click":
+                                              "closeThis(); onClose();",
+                                            "ng-show": "alwaysOpen === 'true'"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "ng-scope",
+                                        attrs: {
+                                          "ng-repeat":
+                                            "item in items | filter:isVisible track by $index"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "qr-popup-menu__item ng-binding qr-popup-menu__item--selected",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-click": "click(item, $index)",
+                                              "ng-show": "item.label",
+                                              "ng-mouseenter":
+                                                "openSubmenu(item, $index)",
+                                              "ng-class": "getItemClass(item)"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__icon icon icon-undefined",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getIconClass(item)",
+                                                "ng-show": "getIconClass(item)"
+                                              }
+                                            }),
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__arrow ng-hide",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getArrowClass(item)",
+                                                "ng-show": "getArrowClass(item)"
+                                              }
+                                            }),
+                                            _vm._v(
+                                              "Last\n                                            Created\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "ng-scope",
+                                        attrs: {
+                                          "ng-repeat":
+                                            "item in items | filter:isVisible track by $index"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "qr-popup-menu__item ng-binding",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-click": "click(item, $index)",
+                                              "ng-show": "item.label",
+                                              "ng-mouseenter":
+                                                "openSubmenu(item, $index)",
+                                              "ng-class": "getItemClass(item)"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__icon icon icon-undefined",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getIconClass(item)",
+                                                "ng-show": "getIconClass(item)"
+                                              }
+                                            }),
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__arrow ng-hide",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getArrowClass(item)",
+                                                "ng-show": "getArrowClass(item)"
+                                              }
+                                            }),
+                                            _vm._v(
+                                              "Name\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass: "ng-scope",
+                                        attrs: {
+                                          "ng-repeat":
+                                            "item in items | filter:isVisible track by $index"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "qr-popup-menu__item ng-binding",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-click": "click(item, $index)",
+                                              "ng-show": "item.label",
+                                              "ng-mouseenter":
+                                                "openSubmenu(item, $index)",
+                                              "ng-class": "getItemClass(item)"
+                                            }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__icon icon icon-undefined",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getIconClass(item)",
+                                                "ng-show": "getIconClass(item)"
+                                              }
+                                            }),
+                                            _c("i", {
+                                              staticClass:
+                                                "qr-popup-menu__arrow ng-hide",
+                                              attrs: {
+                                                "ng-class":
+                                                  "getArrowClass(item)",
+                                                "ng-show": "getArrowClass(item)"
+                                              }
+                                            }),
+                                            _vm._v(
+                                              "Most\n                                            Scanned\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ],
+                            1
+                          ),
+                          _vm._v(" "),
+                          _c("div", {
+                            staticClass: "qr-popup__layer",
+                            staticStyle: { "z-index": "19999" },
+                            attrs: {
+                              "ng-click": "onLayerClick()",
+                              "ng-class": "getLayerClasses()",
+                              "ng-style": "{zIndex: getLayerZIndex()}"
+                            }
+                          })
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ]
+              )
+            ],
+            1
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-manage-bar__folder ng-scope",
+        attrs: { "ng-switch-when": "0" }
+      },
+      [
+        _c("span", {
+          staticClass: "qr-manage-bar__folder-icon icon icon-active",
+          attrs: { "ng-class": "getFolderIconClass()" }
+        }),
+        _c(
+          "span",
+          {
+            staticClass: "qr-manage-bar__folder-name ng-binding",
+            attrs: { "ng-bind": "getFolderName()" }
+          },
+          [_vm._v("Active QR Codes")]
+        ),
+        _c(
+          "span",
+          {
+            staticClass: "qr-manage-bar__count ng-binding",
+            attrs: {
+              "ng-show": "getCountString()",
+              "ng-bind": "getCountString()"
+            }
+          },
+          [_vm._v("(2)")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "qr-create-code-button ng-binding",
+        attrs: { "ng-href": "", "ng-click": "checkAccount()" }
+      },
+      [
+        _c("span", {
+          staticClass: "qr-create-code-button__icon icon icon-plus-1"
+        }),
+        _vm._v("Create QR\n        Code")
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "qr-manage-code",
+      attrs: { "ng-click": "", "ng-class": "getCodeClass()" }
+    },
+    [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "qr-manage-code--row-second" }, [
+        _c(
+          "div",
+          { staticClass: "qr-manage-code--row-second--col-left" },
+          [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "qr-code-image",
+              {
+                staticClass: "qr-manage-code__qr ng-isolate-scope",
+                attrs: { url: "value.image_url", "code-id": "value.id" }
+              },
+              [
+                _c("div", { staticClass: "qr-code-image" }, [
+                  _c("img", {
+                    staticClass: "qr-code-image__image",
+                    attrs: {
+                      "ng-src":
+                        "https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account6092707/qrcodes/17644309.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20190920%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20190920T031749Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=fa3d2e81057dfd7d0c78e1517f43528ef919dc582f0592bc9958bf4646152977",
+                      "ng-show": "imageUrl && !loading",
+                      alt: "",
+                      src:
+                        "https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account6092707/qrcodes/17644309.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20190920%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20190920T031749Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=fa3d2e81057dfd7d0c78e1517f43528ef919dc582f0592bc9958bf4646152977"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "qr-code-image__spinner ng-hide",
+                      attrs: { "ng-show": "loading" }
+                    },
+                    [
+                      _c(
+                        "qr-spinner",
+                        {
+                          staticClass: "ng-isolate-scope",
+                          attrs: { loading: "loading" }
+                        },
+                        [
+                          _c("div", {
+                            staticClass: "qr-spinner ng-hide",
+                            attrs: {
+                              "ng-show": "loading",
+                              "ng-style": "getStyles()"
+                            }
+                          })
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ]
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "qr-manage-code--row-second--col-right" },
+          [
+            _c(
+              "qr-manage-download",
+              {
+                staticClass: "qr-manage-code__download ng-isolate-scope",
+                attrs: {
+                  value: "value",
+                  "is-admin": "isAdmin",
+                  open: "open.download",
+                  "is-demo": "isDemo"
+                }
+              },
+              [
+                _c("div", { staticClass: "qr-manage-download--new" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "qr-manage-download",
+                      attrs: {
+                        "ng-class":
+                          "open.menu ? 'qr-manage-download--active' : ''"
+                      }
+                    },
+                    [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "qr-manage-download__button ng-binding",
+                          attrs: {
+                            type: "button",
+                            "ng-click": "buttonClick()",
+                            "ng-class": "getButtonClass()",
+                            "ng-bind": "getLabel()"
+                          }
+                        },
+                        [_vm._v("Download\n                        ")]
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "qr-manage-download__actions",
+                      attrs: {
+                        "ng-class":
+                          "open.menu ? 'qr-manage-download__actions--active' : ''"
+                      }
+                    },
+                    [
+                      _c(
+                        "qr-download-manage",
+                        {
+                          staticClass: "ng-scope ng-isolate-scope",
+                          attrs: {
+                            items: "::actions",
+                            "ng-if": "windowWidth > 1200",
+                            "is-demo": "isDemo"
+                          }
+                        },
+                        [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "qr-icon-menu__item ng-scope",
+                              attrs: {
+                                "ng-repeat": "item in items track by $index",
+                                "ng-if": "$index <= 2 && isVisible(item)",
+                                "ng-click": "click(item)",
+                                "data-toggle": "tooltip",
+                                "data-placement": "bottom",
+                                title: "",
+                                "data-original-title": "Edit content"
+                              }
+                            },
+                            [
+                              _c("i", {
+                                staticClass:
+                                  "qr-icon-menu__icon icon icon-avatar-edit",
+                                attrs: { "ng-class": "getIconClass(item)" }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "qr-icon-menu__item ng-scope",
+                              attrs: {
+                                "ng-repeat": "item in items track by $index",
+                                "ng-if": "$index <= 2 && isVisible(item)",
+                                "ng-click": "click(item)",
+                                "data-toggle": "tooltip",
+                                "data-placement": "bottom",
+                                title: "",
+                                "data-original-title": "Design QR Code"
+                              }
+                            },
+                            [
+                              _c("i", {
+                                staticClass:
+                                  "qr-icon-menu__icon icon icon-qr-palette",
+                                attrs: { "ng-class": "getIconClass(item)" }
+                              })
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "button",
+                            {
+                              staticClass: "qr-icon-menu__item ng-scope",
+                              attrs: {
+                                "ng-repeat": "item in items track by $index",
+                                "ng-if": "$index <= 2 && isVisible(item)",
+                                "ng-click": "click(item)",
+                                "data-toggle": "tooltip",
+                                "data-placement": "bottom",
+                                title: "",
+                                "data-original-title": "Move to folder"
+                              }
+                            },
+                            [
+                              _c("i", {
+                                staticClass:
+                                  "qr-icon-menu__icon icon icon-qr-folder",
+                                attrs: { "ng-class": "getIconClass(item)" }
+                              })
+                            ]
+                          )
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "button",
+                        {
+                          staticClass: "qr-manage-download__actions-more",
+                          attrs: {
+                            type: "button",
+                            "ng-class": "item.class",
+                            "ng-click": "menuClick()"
+                          }
+                        },
+                        [
+                          _c("span", {
+                            staticClass:
+                              "qr-manage-download__icon icon icon-menu-vertical",
+                            attrs: {
+                              "data-toggle": "tooltip",
+                              "data-placement": "bottom",
+                              title: "",
+                              "data-original-title": ""
+                            }
+                          })
+                        ]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "span",
+      {
+        staticClass: "checkboxes-container qr-manage-code__checkbox ng-hide",
+        attrs: { "ng-show": "checkbox.visible" }
+      },
+      [
+        _c("input", { attrs: { "ng-checked": "selected", type: "checkbox" } }),
+        _c("label", { staticClass: "qr-manage-code__checkbox-label" }, [
+          _c("input", { attrs: { type: "checkbox", "ng-click": "select()" } })
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qr-manage-code--row-first" }, [
+      _c(
+        "div",
+        {
+          staticClass: "qr-manage-code__type ng-binding",
+          attrs: { "ng-bind": "::value.type_name" }
+        },
+        [_vm._v("Website\n        ")]
+      ),
+      _vm._v(" "),
+      _c("span", {
+        staticClass: "qr-manage-code__type-icon icon icon-manage-code-url",
+        attrs: { "ng-class": "getTypeIcon()" }
+      }),
+      _vm._v(" "),
+      _c("div", { attrs: { "ng-switch": "titleEditing" } }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "qr-manage-code__title ng-binding ng-scope qr-manage-code__title--editable",
+            attrs: {
+              "ng-click": "startTitleEdit()",
+              "ng-class": "getTitleClass()",
+              "ng-switch-default": "",
+              "ng-bind": "getVisibleTitle()"
+            }
+          },
+          [_vm._v("\n                http://www.sina.com\n            ")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "qr-manage-code--row-first--col-left" }, [
+        _c("span", {
+          staticClass: "qr-manage-code__folder-icon icon icon-qr-folder-outline"
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "qr-manage-code__folder" }, [
+          _c(
+            "span",
+            {
+              staticClass: "qr-manage-code__folder-name ng-binding",
+              attrs: {
+                "ng-click": "openFolderModal()",
+                "ng-bind": "getFolderName()"
+              }
+            },
+            [_vm._v("No folder")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "qr-manage-code__date ng-binding" }, [
+          _c("span", {
+            staticClass: "qr-manage-code__date-icon icon icon-business-time"
+          }),
+          _vm._v("Sep\n                19, 2019\n            ")
+        ])
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "qr-manage-code__stats qr-manage-code--visible-mobile" },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "qr-manage-code__scans ng-binding",
+              attrs: { "ng-bind": "getTotalScans()" }
+            },
+            [_vm._v("0\n            ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "qr-manage-code__scans-label ng-binding",
+              attrs: { "ng-bind": "::scansLabel" }
+            },
+            [_vm._v("Scans\n            ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "qr-manage-code__insights ng-binding",
+              attrs: {
+                "ng-href": "#!/insights?folder=active&id=10925069",
+                "ng-click": "openInsights($event)",
+                href: "#!/insights?folder=active&id=10925069"
+              }
+            },
+            [
+              _vm._v("Details"),
+              _c("span", {
+                staticClass:
+                  "qr-manage-code__insights-icon icon icon-qr-insights"
+              })
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "qr-manage-code--row-first--col-right" }, [
+        _c("span", {
+          staticClass: "qr-manage-code__status ng-binding ng-hide",
+          attrs: {
+            "ng-show": "getStatus()",
+            "ng-class": "getStatusClass()",
+            "ng-bind": "getStatus()"
+          }
+        }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "qr-manage-code__url",
+            attrs: { "ng-show": "::(getUrl() || !value.trackable)" }
+          },
+          [
+            _c("span", {
+              staticClass: "qr-manage-code__url-icon icon icon-qr-link",
+              attrs: { "ng-show": "::getUrl()" }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "qr-manage-code__url-container" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "qr-manage-code__url-link ng-binding",
+                  attrs: {
+                    "ng-href": "https://qrco.de/bbFoE8",
+                    target: "_blank",
+                    "ng-show": "::getUrl()",
+                    "ng-bind": "getUrl()",
+                    href: "https://qrco.de/bbFoE8"
+                  }
+                },
+                [_vm._v("qrco.de/bbFoE8")]
+              ),
+              _c("i", {
+                staticClass: "qr-manage-code__edit-icon icon icon-avatar-edit",
+                attrs: {
+                  "ng-show": "::getUrl()",
+                  "ng-click": "openShortUrlEdit()",
+                  "data-toggle": "tooltip",
+                  "data-placement": "bottom",
+                  title: "",
+                  "data-original-title": "Edit Short URL"
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass: "qr-manage-code__static ng-binding ng-hide",
+                attrs: {
+                  "ng-hide": "::value.trackable",
+                  "ng-bind": "::staticLabel"
+                }
+              },
+              [_vm._v("Static/Non-trackable")]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "qr-manage-code__target ng-scope",
+                attrs: { "ng-show": "getTarget()", "ng-if": "!isDemo" }
+              },
+              [
+                _c("span", {
+                  staticClass:
+                    "qr-manage-code__target-icon icon icon-qr-link-arrow",
+                  attrs: { "ng-show": "::value.trackable" }
+                }),
+                _c(
+                  "a",
+                  {
+                    staticClass: "ng-binding",
+                    attrs: {
+                      "ng-href": "http://www.sina.com",
+                      target: "_blank",
+                      href: "http://www.sina.com"
+                    }
+                  },
+                  [
+                    _vm._v("www.sina.com"),
+                    _c("span", {
+                      staticClass: "ng-binding",
+                      attrs: { "ng-bind": "getSecondTargetPart()" }
+                    })
+                  ]
+                )
+              ]
+            )
+          ]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-manage-code__stats",
+        attrs: { "ng-show": "::value.trackable" }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "qr-manage-code__scans ng-binding",
+            attrs: { "ng-bind": "getTotalScans()" }
+          },
+          [_vm._v("0\n                ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "qr-manage-code__scans-label ng-binding",
+            attrs: { "ng-bind": "::scansLabel" }
+          },
+          [_vm._v("Scans\n                ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "qr-manage-code__insights ng-binding",
+            attrs: {
+              "ng-href": "#!/insights?folder=active&id=10925069",
+              "ng-click": "openInsights($event)",
+              href: "#!/insights?folder=active&id=10925069"
+            }
+          },
+          [
+            _vm._v("Details"),
+            _c("span", {
+              staticClass: "qr-manage-code__insights-icon icon icon-qr-insights"
+            })
+          ]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "qr-manage-content qr-manage-content--panel-open",
+      attrs: { "data-manage-content": "" }
+    },
+    [
+      _c("div", {
+        staticClass: "qr-manage-content__banner qr-manage-content__banner_open",
+        attrs: { "ng-show": "!isAdmin", "data-alert-banner": "" }
+      }),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "qr-manage-content__items",
+          attrs: { "ng-show": "!statistics.open" }
+        },
+        [
+          _vm.checkbox.visible
+            ? _c(
+                "span",
+                {
+                  staticClass:
+                    "qr-manage-content__checkbox checkboxes-container blue-checkbox"
+                },
+                [
+                  _c("input", {
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.checkbox.checkAllState,
+                        expression: "checkbox.checkAllState"
+                      }
+                    ],
+                    attrs: {
+                      type: "checkbox",
+                      id: "qr-manage-content-checkbox"
+                    },
+                    domProps: {
+                      checked: Array.isArray(_vm.checkbox.checkAllState)
+                        ? _vm._i(_vm.checkbox.checkAllState, null) > -1
+                        : _vm.checkbox.checkAllState
+                    },
+                    on: {
+                      click: function($event) {
+                        return _vm.checkAll()
+                      },
+                      change: function($event) {
+                        var $$a = _vm.checkbox.checkAllState,
+                          $$el = $event.target,
+                          $$c = $$el.checked ? true : false
+                        if (Array.isArray($$a)) {
+                          var $$v = null,
+                            $$i = _vm._i($$a, $$v)
+                          if ($$el.checked) {
+                            $$i < 0 &&
+                              _vm.$set(
+                                _vm.checkbox,
+                                "checkAllState",
+                                $$a.concat([$$v])
+                              )
+                          } else {
+                            $$i > -1 &&
+                              _vm.$set(
+                                _vm.checkbox,
+                                "checkAllState",
+                                $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                              )
+                          }
+                        } else {
+                          _vm.$set(_vm.checkbox, "checkAllState", $$c)
+                        }
+                      }
+                    }
+                  }),
+                  _c("label", {
+                    staticClass: "qr-manage-content__checkbox-label",
+                    attrs: { for: "qr-manage-content-checkbox" }
+                  })
+                ]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _c("manage-bar-component", {
+            staticClass: "ng-isolate-scope",
+            attrs: {
+              "is-admin": "isAdmin",
+              "total-selected": "checkbox.totalSelected",
+              "selected-codes": "checkbox.selectedCodes",
+              "search-query": "getSearchQuery()"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            { attrs: { "ng-hide": "isLoadingCodes" } },
+            [
+              _c("manage-code-component", {
+                staticClass: "ng-scope ng-isolate-scope",
+                attrs: {
+                  "ng-repeat": "code in codes track by code.id",
+                  value: "code",
+                  "is-admin": "isAdmin",
+                  checkbox: "checkbox"
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "qr-manage-content__loading ng-hide",
+                  staticStyle: { "padding-top": "0px" },
+                  attrs: {
+                    "ng-show": "isLoadingCodes",
+                    "ng-style": "getLoadingAreaStyles(windowHeight)"
+                  }
+                },
+                [
+                  _c("spinner-component", {
+                    staticClass: "qr-manage-content__spinner ng-isolate-scope",
+                    attrs: { loading: "isLoadingCodes", size: "32px" }
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "qr-manage-content__loading-message ng-binding",
+                      attrs: { "ng-bind": "::loadingMessage" }
+                    },
+                    [_vm._v("Loading QR Codes...\n                ")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _c("resources-component", {
+                staticClass: "ng-scope ng-isolate-scope",
+                attrs: { "ng-if": "isResourcesVisible()" }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("statistics-view-component", {
+            staticClass: "ng-isolate-scope",
+            attrs: {
+              open: "statistics.open",
+              code: "statistics.code",
+              "is-demo": "statistics.demo"
+            }
+          })
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-manage-content__empty ng-hide",
+        attrs: {
+          "ng-show":
+            "!isLoadingCodes && codes.length === 0 && !getSearchQuery()"
+        }
+      },
+      [
+        _c("span", {
+          staticClass: "qr-manage-content__icon icon icon-active",
+          attrs: { "ng-class": "getFolderIconClass()" }
+        }),
+        _vm._v(" "),
+        _c(
+          "p",
+          {
+            staticClass: "qr-manage-content__empty-text ng-binding",
+            attrs: { "ng-bind": "getEmptyText()" }
+          },
+          [_vm._v("There\n                    are no active QR Codes")]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "qr-manage-content__empty qr-manage-content__empty--search ng-hide",
+        attrs: {
+          "ng-show": "!isLoadingCodes && codes.length === 0 && getSearchQuery()"
+        }
+      },
+      [
+        _c("img", {
+          staticClass: "qr-manage-content__cody",
+          attrs: { "ng-src": "" }
+        }),
+        _vm._v(" "),
+        _c(
+          "p",
+          {
+            staticClass: "qr-manage-content__empty-text ng-binding",
+            attrs: { "ng-bind": "getNoSearchResultsMessage()" }
+          },
+          [
+            _vm._v(
+              'No search results found for "" in this\n                    folder.'
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "qr-manage-content__search-all ng-binding",
+            attrs: {
+              type: "button",
+              "ng-click": "searchAll()",
+              "ng-show": "isSearchAllVisible()",
+              "ng-bind": "::searchInAllLabel"
+            }
+          },
+          [_vm._v("Search in All QR Codes?\n                ")]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "qr-manage-folder",
+      class: { "qr-manage-folder--animated": _vm.animated },
+      attrs: { "ng-switch": "isEditing()" }
+    },
+    [
+      !_vm.isEditing
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                staticClass: "qr-manage-folder__button",
+                attrs: {
+                  "ng-href": "#!/?folder=all",
+                  "ng-class": "getClass()",
+                  href: "#!/?folder=all"
+                }
+              },
+              [
+                _c("span", {
+                  staticClass: "qr-manage-folder__icon icon",
+                  class: _vm.icon
+                }),
+                _vm._v(" "),
+                _c("span", { staticClass: "qr-manage-folder__label" }, [
+                  _vm._v(_vm._s(_vm.value))
+                ]),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.count >= 0,
+                        expression: "count >= 0"
+                      }
+                    ],
+                    staticClass: "qr-manage-folder__count"
+                  },
+                  [_vm._v(" (" + _vm._s(_vm.count) + ")")]
+                ),
+                _vm._v(" "),
+                _vm.menu !== false
+                  ? _c("i", {
+                      staticClass:
+                        "qr-manage-folder__menu icon icon-menu-vertical ng-scope icon-menu-vertical--visible",
+                      class: {
+                        "icon-menu-vertical--visible": _vm.isMenuAvailable
+                      },
+                      on: { click: _vm.clickMenu }
+                    })
+                  : _vm._e()
+              ]
+            )
+          ])
+        : _c("div", { staticClass: "qr-manage-folder__edit" }, [
+            _c("span", {
+              staticClass: "qr-manage-folder__icon icon icon-qr-folder",
+              attrs: { "ng-class": "getIconClass()" }
+            }),
+            _c("input", {
+              staticClass:
+                "qr-manage-folder__input ng-pristine ng-untouched ng-valid",
+              attrs: {
+                "ng-model": "folderName.value",
+                "ng-blur": "finishEditing()",
+                "ng-keyup": "keyUp($event)",
+                "ng-disabled": "sendingRequest"
+              }
+            })
+          ]),
+      _vm._v(" "),
+      _vm.isMenuAvailable
+        ? _c("popup", {
+            attrs: {
+              open: "open",
+              right: "true",
+              "popup-menu-class": "",
+              "top-offset": "-10px",
+              "visible-layer": "",
+              "min-width": "",
+              "left-offset": "",
+              "no-layer": ""
+            },
+            on: {
+              hide: function($event) {
+                _vm.isMenuAvailable = false
+              }
+            }
+          })
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "qr-manage-panel" }, [
+    _c(
+      "div",
+      {
+        staticClass:
+          "qr-manage-panel__scrollable-container ps-container ps-theme-default qr-manage-panel--trial ps-active-y",
+        staticStyle: { "padding-bottom": "109px" },
+        attrs: {
+          "ng-style": "getPanelStyle()",
+          "data-ps-id": "09d73b18-07f2-42f6-f3f7-8146ee24d9de"
+        }
+      },
+      [
+        _c("div", { staticClass: "qr-manage-panel__search" }, [
+          _c("i", {
+            staticClass: "qr-manage-panel__search__icon icon-qr-search"
+          }),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.searchQuery,
+                expression: "searchQuery"
+              }
+            ],
+            staticClass: "qr-manage-panel__search__input",
+            attrs: {
+              placeholder: "Search QR Codes...",
+              "ng-model-options": "{debounce: 300, getterSetter: true}"
+            },
+            domProps: { value: _vm.searchQuery },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.searchQuery = $event.target.value
+              }
+            }
+          }),
+          _c("i", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.searchQuery,
+                expression: "searchQuery"
+              }
+            ],
+            staticClass:
+              "qr-manage-panel__search__icon-delete icon-event-close",
+            on: {
+              click: function($event) {
+                return _vm.searchQuery("")
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c(
+          "h6",
+          {
+            staticClass: "qr-manage-panel__heading",
+            attrs: { "ng-bind": "::qrHeading" }
+          },
+          [_vm._v("My QR Codes")]
+        ),
+        _vm._v(" "),
+        _vm._l(_vm.filters, function(filter) {
+          return _c("manage-folder-component", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: filter.visible,
+                expression: "filter.visible"
+              }
+            ],
+            key: filter.id,
+            attrs: {
+              value: filter.name,
+              icon: filter.icon,
+              count: filter.count,
+              menu: false
+            }
+          })
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "qr-manage-panel__line",
+          attrs: { "ng-class": "lineClass" }
+        }),
+        _vm._v(" "),
+        _c("h6", { staticClass: "qr-manage-panel__heading" }, [
+          _vm._v("My\n            Folders")
+        ]),
+        _vm._v(" "),
+        _vm._l(_vm.getFolders, function(folder) {
+          return _c("manage-folder-component", {
+            key: folder.id,
+            attrs: {
+              value: folder.name,
+              editing: true,
+              icon: folder.icon,
+              animated: true,
+              "is-menu-visible": true
+            }
+          })
+        }),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "qr-manage-panel__add",
+            attrs: { type: "button", "data-ng-disabled": "addingFolder" },
+            on: {
+              click: function($event) {
+                return _vm.addFolder()
+              }
+            }
+          },
+          [
+            _c("span", {
+              staticClass: "qr-manage-panel__icon icon icon-plus-1"
+            }),
+            _vm._v("New Folder\n        ")
+          ]
+        )
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageViewComponent.vue?vue&type=template&id=063d56d8&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ManageViewComponent.vue?vue&type=template&id=063d56d8& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "qr-manage-view" },
+    [
+      _c("manage-panel-component", { attrs: { "is-admin": "isAdmin" } }),
+      _vm._v(" "),
+      _c("manage-content-component", { attrs: { "is-admin": "isAdmin" } })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "qr-open-invoice ng-hide", attrs: { "ng-show": "open" } },
+      [
+        _c("div", { staticClass: "qr-open-invoice__container" }, [
+          _c(
+            "h6",
+            {
+              staticClass: "qr-open-invoice__title ng-binding",
+              attrs: { "ng-bind": "::title" }
+            },
+            [_vm._v("There is an\n        unpaid invoice in your account")]
+          ),
+          _vm._v(" "),
+          _c(
+            "p",
+            {
+              staticClass: "qr-open-invoice__message ng-binding",
+              attrs: { "ng-bind-html": "getMessage()" }
+            },
+            [
+              _c(
+                "a",
+                {
+                  staticClass: "qr-open-invoice__link",
+                  attrs: { href: "/creditcard/payinvoice?invoice_txid=null" }
+                },
+                [
+                  _c("strong", [
+                    _vm._v("Pay now by\n                credit card")
+                  ])
+                ]
+              ),
+              _vm._v(" or go to "),
+              _c(
+                "a",
+                {
+                  staticClass: "qr-open-invoice__link",
+                  attrs: { href: "/billing/?unpaidinvoice" }
+                },
+                [_c("strong", [_vm._v("Billing")])]
+              ),
+              _vm._v("\n            for more information.")
+            ]
+          )
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Popup.vue?vue&type=template&id=a4c6995e&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Popup.vue?vue&type=template&id=a4c6995e&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c(
+        "div",
+        {
+          staticClass: "qr-popup  qr-popup--open qr-popup--right",
+          staticStyle: { "margin-top": "-10px", "z-index": "20000" },
+          attrs: {
+            "ng-class": "getPopupClasses()",
+            "ng-style":
+              "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass: "qr-popup-menu ng-scope",
+              attrs: { "ng-class": "{'qr-popup-menu--mobile': mobileMode}" }
+            },
+            [
+              _c("div", { staticClass: "qr-popup-menu__header ng-binding" }, [
+                _c(
+                  "span",
+                  {
+                    staticClass: "qr-popup-menu__close",
+                    attrs: { "ng-click": "closeThis(); onClose();" }
+                  },
+                  [_vm._v("×")]
+                ),
+                _c("span", {
+                  staticClass:
+                    "qr-popup-menu__back icon icon-chevron-left-medium ng-hide",
+                  attrs: {
+                    "ng-click": "closeThis(); onClose();",
+                    "ng-show": "alwaysOpen === 'true'"
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "ng-scope",
+                  attrs: {
+                    "ng-repeat":
+                      "item in items | filter:isVisible track by $index"
+                  }
+                },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "qr-popup-menu__item ng-binding qr-popup-menu__item--has-icons undefined",
+                      attrs: {
+                        type: "button",
+                        "ng-click": "click(item, $index)",
+                        "ng-show": "item.label",
+                        "ng-mouseenter": "openSubmenu(item, $index)",
+                        "ng-class": "getItemClass(item)"
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass:
+                          "qr-popup-menu__icon icon icon-avatar-edit",
+                        attrs: {
+                          "ng-class": "getIconClass(item)",
+                          "ng-show": "getIconClass(item)"
+                        }
+                      }),
+                      _c("i", {
+                        staticClass: "qr-popup-menu__arrow ng-hide",
+                        attrs: {
+                          "ng-class": "getArrowClass(item)",
+                          "ng-show": "getArrowClass(item)"
+                        }
+                      }),
+                      _vm._v("Rename\n                    ")
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "ng-scope",
+                  attrs: {
+                    "ng-repeat":
+                      "item in items | filter:isVisible track by $index"
+                  }
+                },
+                [
+                  _c(
+                    "button",
+                    {
+                      staticClass:
+                        "qr-popup-menu__item ng-binding qr-popup-menu__item--has-icons undefined",
+                      attrs: {
+                        type: "button",
+                        "ng-click": "click(item, $index)",
+                        "ng-show": "item.label",
+                        "ng-mouseenter": "openSubmenu(item, $index)",
+                        "ng-class": "getItemClass(item)"
+                      }
+                    },
+                    [
+                      _c("i", {
+                        staticClass:
+                          "qr-popup-menu__icon icon icon-action-delete",
+                        attrs: {
+                          "ng-class": "getIconClass(item)",
+                          "ng-show": "getIconClass(item)"
+                        }
+                      }),
+                      _c("i", {
+                        staticClass: "qr-popup-menu__arrow ng-hide",
+                        attrs: {
+                          "ng-class": "getArrowClass(item)",
+                          "ng-show": "getArrowClass(item)"
+                        }
+                      }),
+                      _vm._v("Delete\n                    ")
+                    ]
+                  )
+                ]
+              )
+            ]
+          )
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "qr-resources" },
+    [
+      _c(
+        "qr-modal",
+        {
+          staticClass: "ng-isolate-scope",
+          attrs: { open: "open", "close-icon": "true" }
+        },
+        [
+          _c(
+            "qr-popup",
+            {
+              staticClass: "ng-isolate-scope",
+              attrs: {
+                open: "open",
+                "modal-mode": "true",
+                "auto-close": "",
+                "visible-layer": "true",
+                "no-padding": "",
+                "min-width": "",
+                "left-offset": ""
+              }
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass: "qr-popup  qr-popup--modal",
+                  staticStyle: { "z-index": "20000" },
+                  attrs: {
+                    "ng-class": "getPopupClasses()",
+                    "ng-style":
+                      "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                  }
+                },
+                [
+                  _c(
+                    "ng-transclude",
+                    [
+                      _c("i", {
+                        staticClass:
+                          "qr-popup__close-icon icon-thin-close ng-scope",
+                        attrs: {
+                          "ng-show": "closeIcon",
+                          "ng-click": "closeWindow()"
+                        }
+                      }),
+                      _c(
+                        "h6",
+                        {
+                          staticClass:
+                            "qr-modal__title ng-binding ng-scope ng-hide",
+                          attrs: { "ng-show": "title" }
+                        },
+                        [
+                          _c("span", {
+                            staticClass:
+                              "qr-modal__title-label ng-binding ng-hide",
+                            attrs: {
+                              "ng-show": "titleLabel",
+                              "ng-bind": "titleLabel"
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("p", {
+                        staticClass:
+                          "qr-modal__description ng-binding ng-scope ng-hide",
+                        attrs: {
+                          "ng-show": "description",
+                          "ng-bind": "description"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c("ng-transclude", { staticClass: "ng-scope" }, [
+                        _c("iframe", {
+                          staticClass: "ng-scope",
+                          attrs: {
+                            id: "previewIframe",
+                            "data-ng-src": "about:blank",
+                            src: "about:blank"
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", {
+                        staticClass: "qr-modal__buttons ng-scope ng-hide",
+                        attrs: { "ng-show": "buttons.length > 0" }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", {
+                staticClass: "qr-popup__layer qr-popup__layer--visible",
+                staticStyle: { "z-index": "19999" },
+                attrs: {
+                  "ng-click": "onLayerClick()",
+                  "ng-class": "getLayerClasses()",
+                  "ng-style": "{zIndex: getLayerZIndex()}"
+                }
+              })
+            ]
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2)
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-resources__resource qr-resources__resource--left",
+        attrs: { "ng-click": "!isMobile && openModal(campaignUrl)" }
+      },
+      [
+        _c("i", { staticClass: "icon icon-qr-lightbulb" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "qr-resources__resource__text ng-binding",
+            attrs: { "ng-bind-html": "::campaignText" }
+          },
+          [
+            _vm._v("Need some inspiration? View our favorite\n            "),
+            _c(
+              "a",
+              {
+                staticClass: "qr-resources__resource__link",
+                attrs: {
+                  href:
+                    "https://www.qr-code-generator.com/examples/?utm_campaign=examples"
+                }
+              },
+              [_vm._v("QR\n                Code Campaign Examples")]
+            ),
+            _vm._v(".\n        ")
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-resources__resource",
+        attrs: { "ng-click": "!isMobile && openModal(printUrl)" }
+      },
+      [
+        _c("i", { staticClass: "icon icon-qr-print" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "qr-resources__resource__text ng-binding",
+            attrs: { "ng-bind-html": "::printText" }
+          },
+          [
+            _vm._v("Ready to go live? Read this "),
+            _c(
+              "a",
+              {
+                staticClass: "qr-resources__resource__link",
+                attrs: {
+                  href:
+                    "https://www.qr-code-generator.com/qr-code-marketing/print-qr-codes-correctly/?utm_campaign=print_qr_codes"
+                }
+              },
+              [_vm._v("Top\n            10 Printing Tips")]
+            ),
+            _vm._v(
+              " to get everything right with publishing your Code.\n        "
+            )
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-resources__resource qr-resources__resource--right",
+        attrs: { "ng-click": "!isMobile && openModal(designUrl)" }
+      },
+      [
+        _c("i", { staticClass: "icon icon-qr-brush" }),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "qr-resources__resource__text ng-binding",
+            attrs: { "ng-bind-html": "::designText" }
+          },
+          [
+            _vm._v("Want to get as many scans as possible? "),
+            _c(
+              "a",
+              {
+                staticClass: "qr-resources__resource__link",
+                attrs: {
+                  href:
+                    "https://www.qr-code-generator.com/qr-code-marketing/individual-design-of-qr-codes/?utm_campaign=individual_design"
+                }
+              },
+              [
+                _vm._v(
+                  "Check\n            out the How To Design QR Codes Guide"
+                )
+              ]
+            ),
+            _vm._v(".\n        ")
+          ]
+        )
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", {
+    staticClass: "qr-spinner ng-hide",
+    staticStyle: { width: "32px", height: "32px" },
+    attrs: { "ng-show": "loading", "ng-style": "getStyles()" }
+  })
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "div",
+      {
+        staticClass: "qr-statistics-view ng-hide",
+        attrs: { "ng-class": "getStatisticsClass()", "ng-show": "open" }
+      },
+      [
+        _c("div", { staticClass: "top-header" }, [
+          _c(
+            "div",
+            { staticClass: "code-info" },
+            [
+              _c("manage-code-component", {
+                staticClass: "ng-isolate-scope",
+                attrs: {
+                  value: "code",
+                  "is-admin": "false",
+                  checkbox: "false",
+                  "is-demo": "isDemo"
+                }
+              }),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c("span", {
+                staticClass: "code-status ng-binding ng-hide",
+                attrs: {
+                  "ng-show": "getStatus()",
+                  "ng-class": "getStatusClass()",
+                  "ng-bind": "getStatus()"
+                }
+              })
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "statistics-content" },
+          [
+            _c(
+              "qr-campaign-info",
+              {
+                staticClass: "ng-isolate-scope",
+                attrs: { value: "code", disabled: "isDemo", open: "open" }
+              },
+              [
+                _c(
+                  "qr-campaign-info-modal",
+                  {
+                    staticClass: "ng-isolate-scope",
+                    attrs: {
+                      open: "openCampaignModal",
+                      "campaign-info": "campaign",
+                      items: "items",
+                      "item-images": "itemImages",
+                      "qr-code": "value"
+                    }
+                  },
+                  [
+                    _c(
+                      "qr-modal",
+                      {
+                        staticClass: "qr-campaign-info-modal ng-isolate-scope",
+                        attrs: {
+                          "data-title": "Campaign Info",
+                          open: "open",
+                          buttons: "getButtons()",
+                          "auto-close": "false",
+                          "close-icon": "true"
+                        }
+                      },
+                      [
+                        _c(
+                          "qr-popup",
+                          {
+                            staticClass: "ng-isolate-scope",
+                            attrs: {
+                              open: "open",
+                              "modal-mode": "true",
+                              "auto-close": "false",
+                              "visible-layer": "true",
+                              "no-padding": "true",
+                              "min-width": "",
+                              "left-offset": ""
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-popup  qr-popup--modal qr-popup--no-padding",
+                                staticStyle: { "z-index": "20000" },
+                                attrs: {
+                                  "ng-class": "getPopupClasses()",
+                                  "ng-style":
+                                    "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                                }
+                              },
+                              [
+                                _c(
+                                  "ng-transclude",
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup__close-icon icon-thin-close ng-scope",
+                                      attrs: {
+                                        "ng-show": "closeIcon",
+                                        "ng-click": "closeWindow()"
+                                      }
+                                    }),
+                                    _c(
+                                      "h6",
+                                      {
+                                        staticClass:
+                                          "qr-modal__title ng-binding ng-scope",
+                                        attrs: { "ng-show": "title" }
+                                      },
+                                      [
+                                        _vm._v("Campaign Info"),
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-modal__title-label ng-binding ng-hide",
+                                          attrs: {
+                                            "ng-show": "titleLabel",
+                                            "ng-bind": "titleLabel"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass:
+                                        "qr-modal__description ng-binding ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "description",
+                                        "ng-bind": "description"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("ng-transclude", {
+                                      staticClass: "ng-scope"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-modal__buttons ng-scope",
+                                        attrs: {
+                                          "ng-show": "buttons.length > 0"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            Save\n                                        "
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button qr-modal__button--link",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            Cancel\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass:
+                                "qr-popup__layer qr-popup__layer--visible",
+                              staticStyle: { "z-index": "19999" },
+                              attrs: {
+                                "ng-click": "onLayerClick()",
+                                "ng-class": "getLayerClasses()",
+                                "ng-style": "{zIndex: getLayerZIndex()}"
+                              }
+                            })
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "qr-demo-modal",
+                  {
+                    staticClass: "ng-isolate-scope",
+                    attrs: { open: "openDemoModal" }
+                  },
+                  [
+                    _c(
+                      "qr-modal",
+                      {
+                        staticClass: "ng-isolate-scope",
+                        attrs: {
+                          open: "open",
+                          "data-title": "Feature not available",
+                          buttons: "::buttons",
+                          "close-icon": "true"
+                        }
+                      },
+                      [
+                        _c(
+                          "qr-popup",
+                          {
+                            staticClass: "ng-isolate-scope",
+                            attrs: {
+                              open: "open",
+                              "modal-mode": "true",
+                              "auto-close": "",
+                              "visible-layer": "true",
+                              "no-padding": "true",
+                              "min-width": "",
+                              "left-offset": ""
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-popup  qr-popup--modal qr-popup--no-padding",
+                                staticStyle: { "z-index": "20000" },
+                                attrs: {
+                                  "ng-class": "getPopupClasses()",
+                                  "ng-style":
+                                    "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                                }
+                              },
+                              [
+                                _c(
+                                  "ng-transclude",
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup__close-icon icon-thin-close ng-scope",
+                                      attrs: {
+                                        "ng-show": "closeIcon",
+                                        "ng-click": "closeWindow()"
+                                      }
+                                    }),
+                                    _c(
+                                      "h6",
+                                      {
+                                        staticClass:
+                                          "qr-modal__title ng-binding ng-scope",
+                                        attrs: { "ng-show": "title" }
+                                      },
+                                      [
+                                        _vm._v("Feature not available"),
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-modal__title-label ng-binding ng-hide",
+                                          attrs: {
+                                            "ng-show": "titleLabel",
+                                            "ng-bind": "titleLabel"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass:
+                                        "qr-modal__description ng-binding ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "description",
+                                        "ng-bind": "description"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "ng-transclude",
+                                      { staticClass: "ng-scope" },
+                                      [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "qr-pause-code-modal__content ng-binding ng-scope",
+                                            attrs: { "ng-bind": "::message" }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "This feature is not\n                                            available in the Demo Statistics.\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-modal__buttons ng-scope",
+                                        attrs: {
+                                          "ng-show": "buttons.length > 0"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            OK\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass:
+                                "qr-popup__layer qr-popup__layer--visible",
+                              staticStyle: { "z-index": "19999" },
+                              attrs: {
+                                "ng-click": "onLayerClick()",
+                                "ng-class": "getLayerClasses()",
+                                "ng-style": "{zIndex: getLayerZIndex()}"
+                              }
+                            })
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "qr-campaign-info" }, [
+                  _c("div", { staticClass: "qr-campaign-info__total-scans" }, [
+                    _c("span", { staticClass: "title ng-binding" }, [
+                      _vm._v("Total Scans")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "total-scans ng-binding" }),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "divider" }, [_vm._v("/")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "unique-scans ng-binding" }, [
+                      _vm._v(" Unique")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "qr-campaign-info__menu" }, [
+                    _c(
+                      "div",
+                      { staticClass: "qr-campaign-info__menu__element" },
+                      [
+                        _c("span", { staticClass: "title ng-binding" }, [
+                          _vm._v("Medium")
+                        ]),
+                        _c("i", {
+                          staticClass: "icon icon-qr-plus-squared",
+                          attrs: {
+                            "ng-click": "openCampaignInfoModal()",
+                            "ng-hide": "campaign.imageName"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "add-info",
+                            attrs: {
+                              "ng-switch": "campaign.material",
+                              "ng-click": "openCampaignInfoModal()",
+                              "ng-class": "getLinkStyle(campaign.material)"
+                            }
+                          },
+                          [
+                            _c("i", {
+                              staticClass:
+                                "qr-campaign-info__menu__element__icon icon icon-event-about ng-scope",
+                              attrs: { "ng-switch-when": "" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass: "ng-binding ng-scope",
+                                attrs: { "ng-switch-when": "" }
+                              },
+                              [_vm._v("Add info")]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "qr-campaign-info__menu__element" },
+                      [
+                        _c("span", { staticClass: "title ng-binding" }, [
+                          _vm._v("Print Run")
+                        ]),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "add-info",
+                            attrs: {
+                              "ng-switch": "campaign.printRun",
+                              "ng-click": "openCampaignInfoModal()",
+                              "ng-class": "getLinkStyle(campaign.printRun)"
+                            }
+                          },
+                          [
+                            _c("i", {
+                              staticClass:
+                                "qr-campaign-info__menu__element__icon icon icon-event-about ng-scope",
+                              attrs: { "ng-switch-when": "" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass: "ng-binding ng-scope",
+                                attrs: { "ng-switch-when": "" }
+                              },
+                              [_vm._v("Add info")]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "qr-campaign-info__menu__element" },
+                      [
+                        _c("span", { staticClass: "title ng-binding" }, [
+                          _vm._v("Campaign Start")
+                        ]),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "add-info add-info--edit",
+                            attrs: {
+                              "ng-switch": "campaign.dateStart",
+                              "ng-click": "openCampaignInfoModal()",
+                              "ng-class": "getLinkStyle(campaign.dateStart)"
+                            }
+                          },
+                          [
+                            _c(
+                              "span",
+                              {
+                                staticClass: "ng-binding ng-scope",
+                                attrs: { "ng-switch-default": "" }
+                              },
+                              [_vm._v("Sep 20, 2019")]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "qr-campaign-info__menu__element" },
+                      [
+                        _c("span", { staticClass: "title ng-binding" }, [
+                          _vm._v("Campaign End")
+                        ]),
+                        _c(
+                          "a",
+                          {
+                            staticClass: "add-info",
+                            attrs: {
+                              "ng-switch": "campaign.dateEnd",
+                              "ng-click": "openCampaignInfoModal()",
+                              "ng-class": "getLinkStyle(campaign.dateEnd)"
+                            }
+                          },
+                          [
+                            _c("i", {
+                              staticClass:
+                                "qr-campaign-info__menu__element__icon icon icon-event-about ng-scope",
+                              attrs: { "ng-switch-when": "" }
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "span",
+                              {
+                                staticClass: "ng-binding ng-scope",
+                                attrs: { "ng-switch-when": "" }
+                              },
+                              [_vm._v("Add info")]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "qr-campaign-charts",
+              {
+                staticClass: "ng-isolate-scope",
+                attrs: { value: "code", disabled: "isDemo" }
+              },
+              [
+                _c(
+                  "qr-demo-modal",
+                  {
+                    staticClass: "ng-isolate-scope",
+                    attrs: { open: "openDemoModal" }
+                  },
+                  [
+                    _c(
+                      "qr-modal",
+                      {
+                        staticClass: "ng-isolate-scope",
+                        attrs: {
+                          open: "open",
+                          "data-title": "Feature not available",
+                          buttons: "::buttons",
+                          "close-icon": "true"
+                        }
+                      },
+                      [
+                        _c(
+                          "qr-popup",
+                          {
+                            staticClass: "ng-isolate-scope",
+                            attrs: {
+                              open: "open",
+                              "modal-mode": "true",
+                              "auto-close": "",
+                              "visible-layer": "true",
+                              "no-padding": "true",
+                              "min-width": "",
+                              "left-offset": ""
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-popup  qr-popup--modal qr-popup--no-padding",
+                                staticStyle: { "z-index": "20000" },
+                                attrs: {
+                                  "ng-class": "getPopupClasses()",
+                                  "ng-style":
+                                    "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                                }
+                              },
+                              [
+                                _c(
+                                  "ng-transclude",
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup__close-icon icon-thin-close ng-scope",
+                                      attrs: {
+                                        "ng-show": "closeIcon",
+                                        "ng-click": "closeWindow()"
+                                      }
+                                    }),
+                                    _c(
+                                      "h6",
+                                      {
+                                        staticClass:
+                                          "qr-modal__title ng-binding ng-scope",
+                                        attrs: { "ng-show": "title" }
+                                      },
+                                      [
+                                        _vm._v("Feature not available"),
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-modal__title-label ng-binding ng-hide",
+                                          attrs: {
+                                            "ng-show": "titleLabel",
+                                            "ng-bind": "titleLabel"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass:
+                                        "qr-modal__description ng-binding ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "description",
+                                        "ng-bind": "description"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "ng-transclude",
+                                      { staticClass: "ng-scope" },
+                                      [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "qr-pause-code-modal__content ng-binding ng-scope",
+                                            attrs: { "ng-bind": "::message" }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "This feature is not\n                                            available in the Demo Statistics.\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-modal__buttons ng-scope",
+                                        attrs: {
+                                          "ng-show": "buttons.length > 0"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            OK\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass:
+                                "qr-popup__layer qr-popup__layer--visible",
+                              staticStyle: { "z-index": "19999" },
+                              attrs: {
+                                "ng-click": "onLayerClick()",
+                                "ng-class": "getLayerClasses()",
+                                "ng-style": "{zIndex: getLayerZIndex()}"
+                              }
+                            })
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "qr-datepicker-modal",
+                  {
+                    staticClass: "ng-isolate-scope",
+                    attrs: {
+                      open: "open.modal.datepicker",
+                      from: "apiScanParams.from",
+                      to: "apiScanParams.to",
+                      group: "apiScanParams.group_by"
+                    }
+                  },
+                  [
+                    _c(
+                      "qr-modal",
+                      {
+                        staticClass: "qr-datepicker-modal ng-isolate-scope",
+                        attrs: { open: "open", buttons: "getButtons()" }
+                      },
+                      [
+                        _c(
+                          "qr-popup",
+                          {
+                            staticClass: "ng-isolate-scope",
+                            attrs: {
+                              open: "open",
+                              "modal-mode": "true",
+                              "auto-close": "",
+                              "visible-layer": "true",
+                              "no-padding": "true",
+                              "min-width": "",
+                              "left-offset": ""
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-popup  qr-popup--modal qr-popup--no-padding",
+                                staticStyle: { "z-index": "20000" },
+                                attrs: {
+                                  "ng-class": "getPopupClasses()",
+                                  "ng-style":
+                                    "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                                }
+                              },
+                              [
+                                _c(
+                                  "ng-transclude",
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup__close-icon icon-thin-close ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "closeIcon",
+                                        "ng-click": "closeWindow()"
+                                      }
+                                    }),
+                                    _c(
+                                      "h6",
+                                      {
+                                        staticClass:
+                                          "qr-modal__title ng-binding ng-scope ng-hide",
+                                        attrs: { "ng-show": "title" }
+                                      },
+                                      [
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-modal__title-label ng-binding ng-hide",
+                                          attrs: {
+                                            "ng-show": "titleLabel",
+                                            "ng-bind": "titleLabel"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass:
+                                        "qr-modal__description ng-binding ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "description",
+                                        "ng-bind": "description"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "ng-transclude",
+                                      { staticClass: "ng-scope" },
+                                      [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "qr-datepicker-modal__content ng-scope",
+                                            attrs: {
+                                              "ng-init": "initDatepicker()"
+                                            }
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              { attrs: { id: "dp1" } },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    id:
+                                                      "chartdatetimepickerstart",
+                                                    type: "hidden",
+                                                    value: "2019-09-20"
+                                                  }
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "bootstrap-datetimepicker-widget usetwentyfour dropdown-menu picker-open bottom",
+                                                    staticStyle: {
+                                                      "z-index":
+                                                        "99999999 !important",
+                                                      position: "fixed",
+                                                      top: "1px",
+                                                      left: "0px",
+                                                      right: "auto"
+                                                    },
+                                                    attrs: { id: "qr-calendar" }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "ul",
+                                                      {
+                                                        staticClass:
+                                                          "list-unstyled"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "li",
+                                                          {
+                                                            staticClass:
+                                                              "collapse in"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "div",
+                                                              {
+                                                                staticClass:
+                                                                  "datepicker"
+                                                              },
+                                                              [
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "datepicker-days",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "block"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "thead",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "prev"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ‹\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "picker-switch",
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "5"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                September\n                                                                                2019\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "next disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ›\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Su\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Mo\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Tu\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                We\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Th\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Fr\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Sa\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                25\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                26\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                27\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                28\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                29\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                30\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                31\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                1\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                3\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                4\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                5\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                6\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                7\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                8\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                9\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                10\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                11\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                12\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                13\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                14\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                15\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                16\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                17\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                18\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                19\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day active today"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                20\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                21\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                22\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                23\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                24\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                25\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                26\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                27\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                28\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                29\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                30\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                1\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                3\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                4\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                5\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "datepicker-months",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "thead",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "prev"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ‹\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "picker-switch",
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "5"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2019\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "next disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ›\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "7"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Jan"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Feb"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Mar"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Apr"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "May"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Jun"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Jul"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Aug"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month active"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Sep"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Oct"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Nov"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Dec"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "datepicker-years",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "thead",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "prev"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ‹\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "picker-switch",
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "5"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2010-2019\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "next"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ›\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "7"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year old"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2009"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2010"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2011"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2012"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2013"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2014"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2015"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2016"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2017"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2018"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year active"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2019"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year old disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2020"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "li",
+                                                          {
+                                                            staticClass:
+                                                              "picker-switch accordion-toggle"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                staticClass:
+                                                                  "btn",
+                                                                staticStyle: {
+                                                                  width: "100%"
+                                                                }
+                                                              },
+                                                              [
+                                                                _c("span", {
+                                                                  staticClass:
+                                                                    "glyphicon glyphicon-time"
+                                                                })
+                                                              ]
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "li",
+                                                          {
+                                                            staticClass:
+                                                              "collapse"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "div",
+                                                              {
+                                                                staticClass:
+                                                                  "timepicker"
+                                                              },
+                                                              [
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "timepicker-picker"
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "incrementHours"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-up"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "separator"
+                                                                                  }
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "incrementMinutes"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-up"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "timepicker-hour",
+                                                                                        attrs: {
+                                                                                          "data-action":
+                                                                                            "showHours",
+                                                                                          "data-time-component":
+                                                                                            "hours"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "00"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "separator"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                :\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "timepicker-minute",
+                                                                                        attrs: {
+                                                                                          "data-action":
+                                                                                            "showMinutes",
+                                                                                          "data-time-component":
+                                                                                            "minutes"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "00"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "decrementHours"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-down"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "separator"
+                                                                                  }
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "decrementMinutes"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-down"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "timepicker-hours",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    },
+                                                                    attrs: {
+                                                                      "data-action":
+                                                                        "selectHour"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                00\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                01\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                02\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                03\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                04\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                05\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                06\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                07\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                08\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                09\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                10\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                11\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                12\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                13\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                14\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                15\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                16\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                17\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                18\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                19\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                20\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                21\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                22\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                23\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "timepicker-minutes",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    },
+                                                                    attrs: {
+                                                                      "data-action":
+                                                                        "selectMinute"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                00\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                05\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                10\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                15\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                20\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                25\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                30\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                35\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                40\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                45\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                50\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                55\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "div",
+                                              { attrs: { id: "dp2" } },
+                                              [
+                                                _c("input", {
+                                                  attrs: {
+                                                    id:
+                                                      "chartdatetimepickerend",
+                                                    type: "hidden",
+                                                    value: "2019-09-20"
+                                                  }
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "bootstrap-datetimepicker-widget usetwentyfour dropdown-menu picker-open bottom",
+                                                    staticStyle: {
+                                                      "z-index":
+                                                        "99999999 !important",
+                                                      position: "fixed",
+                                                      top: "1px",
+                                                      left: "0px",
+                                                      right: "auto"
+                                                    },
+                                                    attrs: { id: "qr-calendar" }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "ul",
+                                                      {
+                                                        staticClass:
+                                                          "list-unstyled"
+                                                      },
+                                                      [
+                                                        _c(
+                                                          "li",
+                                                          {
+                                                            staticClass:
+                                                              "collapse in"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "div",
+                                                              {
+                                                                staticClass:
+                                                                  "datepicker"
+                                                              },
+                                                              [
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "datepicker-days",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "block"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "thead",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "prev disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ‹\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "picker-switch",
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "5"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                September\n                                                                                2019\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "next disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ›\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Su\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Mo\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Tu\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                We\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Th\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Fr\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "dow"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                Sa\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                25\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                26\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                27\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                28\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                29\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                30\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day old disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                31\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                1\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                3\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                4\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                5\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                6\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                7\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                8\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                9\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                10\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                11\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                12\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                13\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                14\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                15\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                16\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                17\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                18\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                19\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day active today"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                20\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                21\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                22\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                23\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                24\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                25\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                26\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                27\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                28\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                29\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                30\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                1\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                3\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                4\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "day new disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                5\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "datepicker-months",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "thead",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "prev disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ‹\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "picker-switch",
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "5"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2019\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "next disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ›\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "7"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Jan"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Feb"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Mar"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Apr"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "May"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Jun"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Jul"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Aug"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month active"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Sep"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Oct"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Nov"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "month disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "Dec"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "datepicker-years",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "thead",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "prev disabled"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ‹\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "picker-switch",
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "5"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                2010-2019\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "th",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "next"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                ›\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        ),
+                                                                        _vm._v(
+                                                                          " "
+                                                                        ),
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    attrs: {
+                                                                                      colspan:
+                                                                                        "7"
+                                                                                    }
+                                                                                  },
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year old disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2009"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2010"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2011"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2012"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2013"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2014"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2015"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2016"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2017"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2018"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year active"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2019"
+                                                                                        )
+                                                                                      ]
+                                                                                    ),
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "year old disabled"
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "2020"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "li",
+                                                          {
+                                                            staticClass:
+                                                              "picker-switch accordion-toggle"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "a",
+                                                              {
+                                                                staticClass:
+                                                                  "btn",
+                                                                staticStyle: {
+                                                                  width: "100%"
+                                                                }
+                                                              },
+                                                              [
+                                                                _c("span", {
+                                                                  staticClass:
+                                                                    "glyphicon glyphicon-time"
+                                                                })
+                                                              ]
+                                                            )
+                                                          ]
+                                                        ),
+                                                        _vm._v(" "),
+                                                        _c(
+                                                          "li",
+                                                          {
+                                                            staticClass:
+                                                              "collapse"
+                                                          },
+                                                          [
+                                                            _c(
+                                                              "div",
+                                                              {
+                                                                staticClass:
+                                                                  "timepicker"
+                                                              },
+                                                              [
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "timepicker-picker"
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "incrementHours"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-up"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "separator"
+                                                                                  }
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "incrementMinutes"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-up"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "timepicker-hour",
+                                                                                        attrs: {
+                                                                                          "data-action":
+                                                                                            "showHours",
+                                                                                          "data-time-component":
+                                                                                            "hours"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "00"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "separator"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                :\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "span",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "timepicker-minute",
+                                                                                        attrs: {
+                                                                                          "data-action":
+                                                                                            "showMinutes",
+                                                                                          "data-time-component":
+                                                                                            "minutes"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _vm._v(
+                                                                                          "00"
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "decrementHours"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-down"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "separator"
+                                                                                  }
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "a",
+                                                                                      {
+                                                                                        staticClass:
+                                                                                          "btn",
+                                                                                        attrs: {
+                                                                                          href:
+                                                                                            "#",
+                                                                                          "data-action":
+                                                                                            "decrementMinutes"
+                                                                                        }
+                                                                                      },
+                                                                                      [
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          {
+                                                                                            staticClass:
+                                                                                              "glyphicon glyphicon-chevron-down"
+                                                                                          }
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "timepicker-hours",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    },
+                                                                    attrs: {
+                                                                      "data-action":
+                                                                        "selectHour"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                00\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                01\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                02\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                03\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                04\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                05\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                06\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                07\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                08\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                09\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                10\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                11\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                12\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                13\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                14\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                15\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                16\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                17\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                18\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                19\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                20\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                21\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                22\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "hour"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                23\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                ),
+                                                                _vm._v(" "),
+                                                                _c(
+                                                                  "div",
+                                                                  {
+                                                                    staticClass:
+                                                                      "timepicker-minutes",
+                                                                    staticStyle: {
+                                                                      display:
+                                                                        "none"
+                                                                    },
+                                                                    attrs: {
+                                                                      "data-action":
+                                                                        "selectMinute"
+                                                                    }
+                                                                  },
+                                                                  [
+                                                                    _c(
+                                                                      "table",
+                                                                      {
+                                                                        staticClass:
+                                                                          "table-condensed"
+                                                                      },
+                                                                      [
+                                                                        _c(
+                                                                          "tbody",
+                                                                          [
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                00\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                05\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                10\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                15\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                20\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                25\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                30\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                35\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            ),
+                                                                            _vm._v(
+                                                                              " "
+                                                                            ),
+                                                                            _c(
+                                                                              "tr",
+                                                                              [
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                40\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                45\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                50\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                ),
+                                                                                _vm._v(
+                                                                                  " "
+                                                                                ),
+                                                                                _c(
+                                                                                  "td",
+                                                                                  {
+                                                                                    staticClass:
+                                                                                      "minute"
+                                                                                  },
+                                                                                  [
+                                                                                    _vm._v(
+                                                                                      "\n                                                                                55\n                                                                            "
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          ]
+                                                                        )
+                                                                      ]
+                                                                    )
+                                                                  ]
+                                                                )
+                                                              ]
+                                                            )
+                                                          ]
+                                                        )
+                                                      ]
+                                                    )
+                                                  ]
+                                                )
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-modal__buttons ng-scope",
+                                        attrs: {
+                                          "ng-show": "buttons.length > 0"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            Save\n                                        "
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button qr-modal__button--link",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            Cancel\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass:
+                                "qr-popup__layer qr-popup__layer--visible",
+                              staticStyle: { "z-index": "19999" },
+                              attrs: {
+                                "ng-click": "onLayerClick()",
+                                "ng-class": "getLayerClasses()",
+                                "ng-style": "{zIndex: getLayerZIndex()}"
+                              }
+                            })
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "qr-reset-scans-modal",
+                  {
+                    staticClass: "ng-isolate-scope",
+                    attrs: { open: "open.modal.reset" }
+                  },
+                  [
+                    _c(
+                      "qr-modal",
+                      {
+                        staticClass: "ng-isolate-scope",
+                        attrs: {
+                          open: "open",
+                          "data-title": "Reset Scans",
+                          buttons: "::buttons"
+                        }
+                      },
+                      [
+                        _c(
+                          "qr-popup",
+                          {
+                            staticClass: "ng-isolate-scope",
+                            attrs: {
+                              open: "open",
+                              "modal-mode": "true",
+                              "auto-close": "",
+                              "visible-layer": "true",
+                              "no-padding": "true",
+                              "min-width": "",
+                              "left-offset": ""
+                            }
+                          },
+                          [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-popup  qr-popup--modal qr-popup--no-padding",
+                                staticStyle: { "z-index": "20000" },
+                                attrs: {
+                                  "ng-class": "getPopupClasses()",
+                                  "ng-style":
+                                    "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                                }
+                              },
+                              [
+                                _c(
+                                  "ng-transclude",
+                                  [
+                                    _c("i", {
+                                      staticClass:
+                                        "qr-popup__close-icon icon-thin-close ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "closeIcon",
+                                        "ng-click": "closeWindow()"
+                                      }
+                                    }),
+                                    _c(
+                                      "h6",
+                                      {
+                                        staticClass:
+                                          "qr-modal__title ng-binding ng-scope",
+                                        attrs: { "ng-show": "title" }
+                                      },
+                                      [
+                                        _vm._v("Reset Scans"),
+                                        _c("span", {
+                                          staticClass:
+                                            "qr-modal__title-label ng-binding ng-hide",
+                                          attrs: {
+                                            "ng-show": "titleLabel",
+                                            "ng-bind": "titleLabel"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c("p", {
+                                      staticClass:
+                                        "qr-modal__description ng-binding ng-scope ng-hide",
+                                      attrs: {
+                                        "ng-show": "description",
+                                        "ng-bind": "description"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "ng-transclude",
+                                      { staticClass: "ng-scope" },
+                                      [
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "qr-reset-scans-modal__content ng-binding ng-scope",
+                                            attrs: {
+                                              "ng-bind-html": "::message"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "Resetting your scans\n                                            will make you lose all scan data related to this\n                                            QR Code. Are you sure?\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "qr-modal__buttons ng-scope",
+                                        attrs: {
+                                          "ng-show": "buttons.length > 0"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            Cancel\n                                        "
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "button",
+                                          {
+                                            staticClass:
+                                              "ng-binding ng-scope qr-modal__button qr-modal__button--link",
+                                            attrs: {
+                                              type: "button",
+                                              "ng-repeat": "button in buttons",
+                                              "ng-class":
+                                                "getButtonClass(button)",
+                                              "ng-click": "click(button)",
+                                              "ng-bind": "button.label"
+                                            }
+                                          },
+                                          [
+                                            _vm._v(
+                                              "\n                                            Reset\n                                        "
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c("div", {
+                              staticClass:
+                                "qr-popup__layer qr-popup__layer--visible",
+                              staticStyle: { "z-index": "19999" },
+                              attrs: {
+                                "ng-click": "onLayerClick()",
+                                "ng-class": "getLayerClasses()",
+                                "ng-style": "{zIndex: getLayerZIndex()}"
+                              }
+                            })
+                          ]
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "qr-campaign-charts" }, [
+                  _c(
+                    "button",
+                    {
+                      staticClass: "qr-campaign-charts__date ng-binding",
+                      attrs: { type: "button", "ng-click": "menuDayClick()" }
+                    },
+                    [
+                      _c("span", { staticClass: "icon-qr-calendar" }),
+                      _vm._v("Auto"),
+                      _c("span", {
+                        staticClass: "icon-down-open-mini",
+                        attrs: { "ng-hide": "open.menu.day" }
+                      }),
+                      _c("span", {
+                        staticClass: "icon-up-open-mini ng-hide",
+                        attrs: { "ng-show": "open.menu.day" }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "datePopup" }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "qr-campaign-charts__groupBy ng-binding",
+                      attrs: {
+                        type: "button",
+                        "ng-click": "menuGroupByClick()"
+                      }
+                    },
+                    [
+                      _vm._v("Auto"),
+                      _c("span", {
+                        staticClass: "icon-down-open-mini",
+                        attrs: { "ng-hide": "open.menu.groupBy" }
+                      }),
+                      _c("span", {
+                        staticClass: "icon-up-open-mini ng-hide",
+                        attrs: { "ng-show": "open.menu.groupBy" }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "groupPopup" }),
+                  _vm._v(" "),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "qr-campaign-charts__download ng-binding",
+                      attrs: {
+                        type: "button",
+                        "ng-click": "menuDownloadClick()"
+                      }
+                    },
+                    [
+                      _c("span", { staticClass: "icon-options" }),
+                      _vm._v("Options"),
+                      _c("span", {
+                        staticClass: "icon-down-open-mini",
+                        attrs: { "ng-hide": "open.menu.download" }
+                      }),
+                      _c("span", {
+                        staticClass: "icon-up-open-mini ng-hide",
+                        attrs: { "ng-show": "open.menu.download" }
+                      })
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "qr-campaign-charts__statistics" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "qr-campaign-charts__statistics__element line-chart"
+                      },
+                      [
+                        _c("span", { staticClass: "title ng-binding" }, [
+                          _vm._v("Scans over time")
+                        ]),
+                        _vm._v(" "),
+                        _c("canvas", {
+                          staticClass: "chartjs-render-monitor ng-hide",
+                          staticStyle: {
+                            width: "475px",
+                            height: "330px",
+                            display: "block"
+                          },
+                          attrs: {
+                            "ng-hide": "chartLoading",
+                            id: "scansOverTime",
+                            width: "950",
+                            height: "660"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "qr-campaign-charts__statistics__element--loading",
+                            attrs: { "ng-show": "chartLoading" }
+                          },
+                          [
+                            _c(
+                              "qr-spinner",
+                              {
+                                staticClass:
+                                  "qr-manage-content__spinner ng-isolate-scope",
+                                attrs: { loading: "true", size: "32px" }
+                              },
+                              [
+                                _c("div", {
+                                  staticClass: "qr-spinner",
+                                  staticStyle: {
+                                    width: "32px",
+                                    height: "32px"
+                                  },
+                                  attrs: {
+                                    "ng-show": "loading",
+                                    "ng-style": "getStyles()"
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "loadingMessage ng-binding" },
+                              [_vm._v("Loading Scans")]
+                            )
+                          ],
+                          1
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "qr-campaign-charts__statistics__element horizontal-bar-chart"
+                      },
+                      [
+                        _c("span", { staticClass: "title ng-binding" }, [
+                          _vm._v("Scans by operating system")
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "qr-campaign-charts__statistics__element--loading",
+                            attrs: { "ng-show": "OSLoading" }
+                          },
+                          [
+                            _c(
+                              "qr-spinner",
+                              {
+                                staticClass:
+                                  "qr-manage-content__spinner ng-isolate-scope",
+                                attrs: { loading: "true", size: "32px" }
+                              },
+                              [
+                                _c("div", {
+                                  staticClass: "qr-spinner",
+                                  staticStyle: {
+                                    width: "32px",
+                                    height: "32px"
+                                  },
+                                  attrs: {
+                                    "ng-show": "loading",
+                                    "ng-style": "getStyles()"
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "loadingMessage ng-binding" },
+                              [
+                                _vm._v(
+                                  "Loading Operating\n                                    Systems\n                                "
+                                )
+                              ]
+                            )
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "table",
+                          {
+                            staticClass:
+                              "qr-campaign-charts__statistics__element__table ng-hide",
+                            attrs: { "ng-hide": "OSLoading" }
+                          },
+                          [
+                            _c("thead", [
+                              _c("tr", [
+                                _c(
+                                  "th",
+                                  {
+                                    staticClass: "ng-binding",
+                                    staticStyle: { "min-width": "120px" }
+                                  },
+                                  [_vm._v("OS")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "th",
+                                  {
+                                    staticClass: "ng-binding",
+                                    staticStyle: { width: "67%" }
+                                  },
+                                  [_vm._v("Scans")]
+                                ),
+                                _vm._v(" "),
+                                _c("th", [_vm._v("%")])
+                              ])
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "emptyMessage ng-binding ng-hide",
+                            attrs: {
+                              "ng-show": "!OSLoading && !OSstatistics.length"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "No data available\n                            "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "content-scrollable ps-container ps-theme-default",
+                            attrs: {
+                              "data-chart": "platform",
+                              "data-page": "1",
+                              "data-ps-id":
+                                "b273e3b5-bb19-2dcb-5b43-3b0d9e37a3cd"
+                            }
+                          },
+                          [
+                            _c(
+                              "table",
+                              {
+                                staticClass:
+                                  "qr-campaign-charts__statistics__element__table ng-hide",
+                                attrs: { "ng-hide": "OSLoading" }
+                              },
+                              [_c("tbody")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "contentLoading",
+                                staticStyle: { display: "none" }
+                              },
+                              [
+                                _c(
+                                  "qr-spinner",
+                                  {
+                                    staticClass: "ng-isolate-scope",
+                                    attrs: { loading: "true", size: "22px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "qr-spinner",
+                                      staticStyle: {
+                                        width: "22px",
+                                        height: "22px"
+                                      },
+                                      attrs: {
+                                        "ng-show": "loading",
+                                        "ng-style": "getStyles()"
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "span",
+                                  {
+                                    staticClass: "lzLoadingMessage ng-binding"
+                                  },
+                                  [_vm._v("Loading...")]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ps-scrollbar-x-rail",
+                                staticStyle: { left: "0px", bottom: "0px" }
+                              },
+                              [
+                                _c("div", {
+                                  staticClass: "ps-scrollbar-x",
+                                  staticStyle: { left: "0px", width: "0px" },
+                                  attrs: { tabindex: "0" }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "ps-scrollbar-y-rail",
+                                staticStyle: { top: "0px", right: "0px" }
+                              },
+                              [
+                                _c("div", {
+                                  staticClass: "ps-scrollbar-y",
+                                  staticStyle: { top: "0px", height: "0px" },
+                                  attrs: { tabindex: "0" }
+                                })
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", {
+                      staticClass: "horizontal-line tables--less",
+                      attrs: { "ng-class": "getChartsClass()" }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "vertical-line" }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "show-full",
+                        attrs: { "ng-click": "toggleStatistics()" }
+                      },
+                      [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "ng-binding",
+                            attrs: { "ng-hide": "showFullStatistics" }
+                          },
+                          [
+                            _vm._v("Show full statistics"),
+                            _c("span", { staticClass: "icon-down-open-mini" })
+                          ]
+                        ),
+                        _c(
+                          "span",
+                          {
+                            staticClass: "ng-binding ng-hide",
+                            attrs: { "ng-show": "showFullStatistics" }
+                          },
+                          [
+                            _vm._v("Show less"),
+                            _c("span", { staticClass: "icon-up-open-mini" })
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "tables tables--less",
+                        attrs: { "ng-class": "getChartsClass()" }
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "qr-campaign-charts__statistics__element top-countries"
+                          },
+                          [
+                            _c("span", { staticClass: "title ng-binding" }, [
+                              _vm._v("Scans by top countries")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-campaign-charts__statistics__element--loading",
+                                attrs: { "ng-show": "countryLoading" }
+                              },
+                              [
+                                _c(
+                                  "qr-spinner",
+                                  {
+                                    staticClass:
+                                      "qr-manage-content__spinner ng-isolate-scope",
+                                    attrs: { loading: "true", size: "32px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "qr-spinner",
+                                      staticStyle: {
+                                        width: "32px",
+                                        height: "32px"
+                                      },
+                                      attrs: {
+                                        "ng-show": "loading",
+                                        "ng-style": "getStyles()"
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "loadingMessage ng-binding" },
+                                  [
+                                    _vm._v(
+                                      "Loading\n                                        Countries\n                                    "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              {
+                                staticClass:
+                                  "qr-campaign-charts__statistics__element__table ng-hide",
+                                attrs: { "ng-hide": "countryLoading" }
+                              },
+                              [
+                                _c("thead", [
+                                  _c("tr", [
+                                    _c(
+                                      "th",
+                                      { staticStyle: { width: "10%" } },
+                                      [_vm._v("#")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "th",
+                                      {
+                                        staticClass: "ng-binding",
+                                        staticStyle: { width: "55%" }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "Country\n                                        "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "th",
+                                      {
+                                        staticClass: "ng-binding",
+                                        staticStyle: { width: "25%" }
+                                      },
+                                      [_vm._v("Scans")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "th",
+                                      { staticStyle: { width: "10%" } },
+                                      [_vm._v("%")]
+                                    )
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "emptyMessage ng-binding ng-hide",
+                                attrs: {
+                                  "ng-show":
+                                    "!countryLoading && !countryStatistics.length"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "No data\n                                    available\n                                "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "content-scrollable ps-container ps-theme-default",
+                                attrs: {
+                                  "data-chart": "country",
+                                  "data-page": "1",
+                                  "data-ps-id":
+                                    "da8e3b1d-7cf1-6cc6-55e7-e28bdd5e560d"
+                                }
+                              },
+                              [
+                                _c(
+                                  "table",
+                                  {
+                                    staticClass:
+                                      "qr-campaign-charts__statistics__element__table ng-hide",
+                                    attrs: { "ng-hide": "countryLoading" }
+                                  },
+                                  [_c("tbody")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "contentLoading",
+                                    staticStyle: { display: "none" }
+                                  },
+                                  [
+                                    _c(
+                                      "qr-spinner",
+                                      {
+                                        staticClass: "ng-isolate-scope",
+                                        attrs: { loading: "true", size: "22px" }
+                                      },
+                                      [
+                                        _c("div", {
+                                          staticClass: "qr-spinner",
+                                          staticStyle: {
+                                            width: "22px",
+                                            height: "22px"
+                                          },
+                                          attrs: {
+                                            "ng-show": "loading",
+                                            "ng-style": "getStyles()"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "lzLoadingMessage ng-binding"
+                                      },
+                                      [_vm._v("Loading...")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "ps-scrollbar-x-rail",
+                                    staticStyle: { left: "0px", bottom: "0px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "ps-scrollbar-x",
+                                      staticStyle: {
+                                        left: "0px",
+                                        width: "0px"
+                                      },
+                                      attrs: { tabindex: "0" }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "ps-scrollbar-y-rail",
+                                    staticStyle: { top: "0px", right: "0px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "ps-scrollbar-y",
+                                      staticStyle: {
+                                        top: "0px",
+                                        height: "0px"
+                                      },
+                                      attrs: { tabindex: "0" }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "qr-campaign-charts__statistics__element top-cities"
+                          },
+                          [
+                            _c("span", { staticClass: "title ng-binding" }, [
+                              _vm._v("Scans by top cities")
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "qr-campaign-charts__statistics__element--loading",
+                                attrs: { "ng-show": "cityLoading" }
+                              },
+                              [
+                                _c(
+                                  "qr-spinner",
+                                  {
+                                    staticClass:
+                                      "qr-manage-content__spinner ng-isolate-scope",
+                                    attrs: { loading: "true", size: "32px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "qr-spinner",
+                                      staticStyle: {
+                                        width: "32px",
+                                        height: "32px"
+                                      },
+                                      attrs: {
+                                        "ng-show": "loading",
+                                        "ng-style": "getStyles()"
+                                      }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "loadingMessage ng-binding" },
+                                  [
+                                    _vm._v(
+                                      "Loading Cities\n                                    "
+                                    )
+                                  ]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "table",
+                              {
+                                staticClass:
+                                  "qr-campaign-charts__statistics__element__table ng-hide",
+                                attrs: { "ng-hide": "cityLoading" }
+                              },
+                              [
+                                _c("thead", [
+                                  _c("tr", [
+                                    _c(
+                                      "th",
+                                      { staticStyle: { width: "10%" } },
+                                      [_vm._v("#")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "th",
+                                      {
+                                        staticClass: "ng-binding",
+                                        staticStyle: { width: "55%" }
+                                      },
+                                      [_vm._v("City")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "th",
+                                      {
+                                        staticClass: "ng-binding",
+                                        staticStyle: { width: "25%" }
+                                      },
+                                      [_vm._v("Scans")]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "th",
+                                      { staticStyle: { width: "10%" } },
+                                      [_vm._v("%")]
+                                    )
+                                  ])
+                                ])
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "emptyMessage ng-binding ng-hide",
+                                attrs: {
+                                  "ng-show":
+                                    "!cityLoading && !cityStatistics.length"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "No data\n                                    available\n                                "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "content-scrollable ps-container ps-theme-default",
+                                attrs: {
+                                  "data-chart": "city",
+                                  "data-page": "1",
+                                  "data-ps-id":
+                                    "0197ae3c-6cdc-77d0-8c0c-1f4d669f3308"
+                                }
+                              },
+                              [
+                                _c(
+                                  "table",
+                                  {
+                                    staticClass:
+                                      "qr-campaign-charts__statistics__element__table ng-hide",
+                                    attrs: { "ng-hide": "cityLoading" }
+                                  },
+                                  [_c("tbody")]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "contentLoading",
+                                    staticStyle: { display: "none" }
+                                  },
+                                  [
+                                    _c(
+                                      "qr-spinner",
+                                      {
+                                        staticClass: "ng-isolate-scope",
+                                        attrs: { loading: "true", size: "22px" }
+                                      },
+                                      [
+                                        _c("div", {
+                                          staticClass: "qr-spinner",
+                                          staticStyle: {
+                                            width: "22px",
+                                            height: "22px"
+                                          },
+                                          attrs: {
+                                            "ng-show": "loading",
+                                            "ng-style": "getStyles()"
+                                          }
+                                        })
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "lzLoadingMessage ng-binding"
+                                      },
+                                      [_vm._v("Loading...")]
+                                    )
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "ps-scrollbar-x-rail",
+                                    staticStyle: { left: "0px", bottom: "0px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "ps-scrollbar-x",
+                                      staticStyle: {
+                                        left: "0px",
+                                        width: "0px"
+                                      },
+                                      attrs: { tabindex: "0" }
+                                    })
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "ps-scrollbar-y-rail",
+                                    staticStyle: { top: "0px", right: "0px" }
+                                  },
+                                  [
+                                    _c("div", {
+                                      staticClass: "ps-scrollbar-y",
+                                      staticStyle: {
+                                        top: "0px",
+                                        height: "0px"
+                                      },
+                                      attrs: { tabindex: "0" }
+                                    })
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ]
+                    )
+                  ])
+                ])
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "redesign" }, [
+      _c("i", {
+        staticClass: "icon-thin-close",
+        attrs: { "ng-click": "closeFullPreview()" }
+      }),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "preview active",
+          attrs: { "ng-click": "openFullPreview()" }
+        },
+        [
+          _c("div", { staticClass: "preview-smartphone active" }, [
+            _c("iframe", {
+              staticClass: "code-preview",
+              attrs: { "ng-hide": "fullPreview", scrolling: "no" }
+            }),
+            _vm._v(" "),
+            _c("iframe", {
+              staticClass: "code-preview ng-hide",
+              attrs: { "ng-show": "fullPreview", scrolling: "yes" }
+            })
+          ])
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "div",
+      {
+        staticClass: "qr-navbar ng-scope",
+        attrs: {
+          "ng-style": "getNavbarStyle()",
+          "ng-controller": "qrNavbarCtrl",
+          "ng-init": "route='manage/new'",
+          "data-navbar": ""
+        }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "qr-navbar__element pull-right",
+            attrs: {
+              "ng-show":
+                "route != 'upgrade/index' && route != 'upgrade/paymentform' && route != 'create/index' && route != 'create/new'"
+            }
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "qr-navbar__element" },
+              [
+                _c(
+                  "qr-news-bell",
+                  {
+                    staticClass: "ng-isolate-scope",
+                    attrs: {
+                      "icon-as-svg": "true",
+                      status: "true",
+                      items:
+                        "[{'id':'20','message':'Wondering how to use QR Codes for your business? See great use cases for retailers, restaurants, packaged goods, nonprofits and more.','updated_at':'2019-04-08 08:02:37','icon':'icon-qr-lightbulb','color':'#4F5557','label':'Choose your business','url':'https://www.qr-code-generator.com/qr-codes-for/?utm_source=app_website&utm_medium=notification_bell&utm_campaign=qrcodesfor'},{'id':'19','message':'You can now find all QR Code customization options under Download - plus, we\\'ve added JPG and SVG support for custom QR Codes','updated_at':'2019-02-15 08:35:30','icon':'icon-whitelabeling','color':'#4F5557','label':'','url':''},{'id':'18','message':'How to print QR Codes on flyers, banners, business cards and more','updated_at':'2018-11-30 13:49:07','icon':'icon-graphic-print','color':'#4F5557','label':'View Examples','url':'https://www.qr-code-generator.com/qr-codes-on/?utm_source=app_website&utm_medium=notification_bell&utm_campaign=qrcodeson'}]",
+                      "mobile-mode": "bellMobileMode"
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "qr-news-bell qr-news-bell--mark",
+                        attrs: { "ng-class": "getElementClass()" }
+                      },
+                      [
+                        _c(
+                          "span",
+                          {
+                            staticClass: "qr-news-bell__icon",
+                            attrs: {
+                              "ng-class": "getIconClass()",
+                              "ng-click": "click($event)"
+                            }
+                          },
+                          [
+                            _c(
+                              "svg",
+                              {
+                                attrs: {
+                                  "ng-show": "iconAsSvg",
+                                  width: "20px",
+                                  height: "25px",
+                                  viewBox: "0 0 20 25",
+                                  version: "1.1",
+                                  xmlns: "http://www.w3.org/2000/svg",
+                                  "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                                }
+                              },
+                              [
+                                _c("desc", [_vm._v("Created with Sketch.")]),
+                                _c("defs", [
+                                  _c("path", {
+                                    attrs: {
+                                      d:
+                                        "M932,386.375 C933.375,386.375 934.5,385.25 934.5,383.875 L929.5,383.875 C929.5,385.25 930.6125,386.375 932,386.375 Z M939.5,378.875 L939.5,372.625 C939.5,368.7875 937.45,365.575 933.875,364.725 L933.875,363.875 C933.875,362.8375 933.0375,362 932,362 C930.9625,362 930.125,362.8375 930.125,363.875 L930.125,364.725 C926.5375,365.575 924.5,368.775 924.5,372.625 L924.5,378.875 L922,381.375 L922,382.625 L942,382.625 L942,381.375 L939.5,378.875 Z",
+                                      id: "path-1"
+                                    }
+                                  })
+                                ]),
+                                _c(
+                                  "g",
+                                  {
+                                    attrs: {
+                                      id: "__Icons",
+                                      stroke: "none",
+                                      "stroke-width": "1",
+                                      fill: "none",
+                                      "fill-rule": "evenodd"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "g",
+                                      {
+                                        attrs: {
+                                          id: "Artboard",
+                                          transform:
+                                            "translate(-922.000000, -362.000000)",
+                                          "fill-rule": "nonzero"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "g",
+                                          { attrs: { id: "bell_icon" } },
+                                          [
+                                            _c("use", {
+                                              attrs: {
+                                                "fill-opacity": "0.1",
+                                                fill: "#FFFFFF",
+                                                "fill-rule": "evenodd",
+                                                "xlink:href": "#path-1"
+                                              }
+                                            }),
+                                            _c("path", {
+                                              attrs: {
+                                                "stroke-opacity": "0.3",
+                                                stroke: "#FFFFFF",
+                                                "stroke-width": "1",
+                                                d:
+                                                  "M933.936143,384.375 L930.062965,384.375 C930.284681,385.237066 931.066437,385.875 932,385.875 C932.926416,385.875 933.712301,385.234495 933.936143,384.375 Z M922.5,381.582107 L922.5,382.125 L941.5,382.125 L941.5,381.582107 L939,379.082107 L939,372.625 C939,368.884848 936.994102,365.980543 933.759343,365.21144 L933.375,365.120057 L933.375,363.875 C933.375,363.113642 932.761358,362.5 932,362.5 C931.238642,362.5 930.625,363.113642 930.625,363.875 L930.625,365.120376 L930.240275,365.21153 C926.994919,365.980465 925,368.870331 925,372.625 L925,379.082107 L922.5,381.582107 Z"
+                                              }
+                                            })
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "qr-news-window",
+                          {
+                            staticClass: "ng-isolate-scope",
+                            attrs: {
+                              open: "open",
+                              "mobile-mode": "mobileMode",
+                              items: "items",
+                              right: "true"
+                            }
+                          },
+                          [
+                            _c(
+                              "qr-popup",
+                              {
+                                staticClass: "ng-isolate-scope",
+                                attrs: {
+                                  open: "open",
+                                  "mobile-mode": "false",
+                                  "top-offset": "",
+                                  right: "true"
+                                }
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass: "qr-popup  qr-popup--right",
+                                    staticStyle: { "z-index": "20000" },
+                                    attrs: {
+                                      "ng-class": "getPopupClasses()",
+                                      "ng-style":
+                                        "{marginTop: topOffset, minWidth: minWidth, marginLeft: leftOffset, zIndex: getPopupZIndex()}"
+                                    }
+                                  },
+                                  [
+                                    _c("ng-transclude", [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "qr-news-window ng-scope"
+                                        },
+                                        [
+                                          _c(
+                                            "h6",
+                                            {
+                                              staticClass:
+                                                "qr-news-window__title ng-binding"
+                                            },
+                                            [_vm._v("What's new?")]
+                                          ),
+                                          _c(
+                                            "span",
+                                            {
+                                              staticClass:
+                                                "qr-news-window__close",
+                                              attrs: { "ng-click": "closeIt()" }
+                                            },
+                                            [_vm._v("×")]
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "qr-news-window__content ps-container ps-theme-default",
+                                              attrs: {
+                                                "data-ps-id":
+                                                  "b58551f7-39b0-99d1-c663-26da17535d53"
+                                              }
+                                            },
+                                            [
+                                              _c(
+                                                "qr-news-item",
+                                                {
+                                                  staticClass:
+                                                    "qr-news-window__item ng-scope ng-isolate-scope",
+                                                  attrs: {
+                                                    "ng-repeat":
+                                                      "item in items track by $index",
+                                                    value: "item"
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "qr-news-item"
+                                                    },
+                                                    [
+                                                      _c("span", {
+                                                        staticClass:
+                                                          "qr-news-item__icon icon-qr-lightbulb",
+                                                        staticStyle: {
+                                                          color:
+                                                            "rgb(79, 85, 87)"
+                                                        },
+                                                        attrs: {
+                                                          "ng-class":
+                                                            "value.icon",
+                                                          "ng-style":
+                                                            "{color: value.color}"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__message ng-binding"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "Wondering how\n                                                            to use QR Codes for your business? See great use cases\n                                                            for retailers, restaurants, packaged goods, nonprofits\n                                                            and more.\n                                                        "
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__action ng-binding",
+                                                          attrs: {
+                                                            href:
+                                                              "https://www.qr-code-generator.com/qr-codes-for/?utm_source=app_website&utm_medium=notification_bell&utm_campaign=qrcodesfor",
+                                                            target: "_blank",
+                                                            "ng-show":
+                                                              "value.label && value.url"
+                                                          }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "Choose your\n                                                            business"
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__date ng-binding"
+                                                        },
+                                                        [_vm._v("Apr 8, 2019")]
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "qr-news-item",
+                                                {
+                                                  staticClass:
+                                                    "qr-news-window__item ng-scope ng-isolate-scope",
+                                                  attrs: {
+                                                    "ng-repeat":
+                                                      "item in items track by $index",
+                                                    value: "item"
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "qr-news-item"
+                                                    },
+                                                    [
+                                                      _c("span", {
+                                                        staticClass:
+                                                          "qr-news-item__icon icon-whitelabeling",
+                                                        staticStyle: {
+                                                          color:
+                                                            "rgb(79, 85, 87)"
+                                                        },
+                                                        attrs: {
+                                                          "ng-class":
+                                                            "value.icon",
+                                                          "ng-style":
+                                                            "{color: value.color}"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__message ng-binding"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "You can now\n                                                            find all QR Code customization options under Download -\n                                                            plus, we've added JPG and SVG support for custom QR\n                                                            Codes\n                                                        "
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c("a", {
+                                                        staticClass:
+                                                          "qr-news-item__action ng-binding ng-hide",
+                                                        attrs: {
+                                                          href: "",
+                                                          target: "_blank",
+                                                          "ng-show":
+                                                            "value.label && value.url"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__date ng-binding"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "Feb 15, 2019\n                                                        "
+                                                          )
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "qr-news-item",
+                                                {
+                                                  staticClass:
+                                                    "qr-news-window__item ng-scope ng-isolate-scope",
+                                                  attrs: {
+                                                    "ng-repeat":
+                                                      "item in items track by $index",
+                                                    value: "item"
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "qr-news-item"
+                                                    },
+                                                    [
+                                                      _c("span", {
+                                                        staticClass:
+                                                          "qr-news-item__icon icon-graphic-print",
+                                                        staticStyle: {
+                                                          color:
+                                                            "rgb(79, 85, 87)"
+                                                        },
+                                                        attrs: {
+                                                          "ng-class":
+                                                            "value.icon",
+                                                          "ng-style":
+                                                            "{color: value.color}"
+                                                        }
+                                                      }),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__message ng-binding"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "How to print\n                                                            QR Codes on flyers, banners, business cards and more\n                                                        "
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__action ng-binding",
+                                                          attrs: {
+                                                            href:
+                                                              "https://www.qr-code-generator.com/qr-codes-on/?utm_source=app_website&utm_medium=notification_bell&utm_campaign=qrcodeson",
+                                                            target: "_blank",
+                                                            "ng-show":
+                                                              "value.label && value.url"
+                                                          }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "View\n                                                            Examples"
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "qr-news-item__date ng-binding"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "Nov 30, 2018\n                                                        "
+                                                          )
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "ps-scrollbar-x-rail",
+                                                  staticStyle: {
+                                                    left: "0px",
+                                                    bottom: "0px"
+                                                  }
+                                                },
+                                                [
+                                                  _c("div", {
+                                                    staticClass:
+                                                      "ps-scrollbar-x",
+                                                    staticStyle: {
+                                                      left: "0px",
+                                                      width: "0px"
+                                                    },
+                                                    attrs: { tabindex: "0" }
+                                                  })
+                                                ]
+                                              ),
+                                              _vm._v(" "),
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "ps-scrollbar-y-rail",
+                                                  staticStyle: {
+                                                    top: "0px",
+                                                    right: "6px"
+                                                  }
+                                                },
+                                                [
+                                                  _c("div", {
+                                                    staticClass:
+                                                      "ps-scrollbar-y",
+                                                    staticStyle: {
+                                                      top: "0px",
+                                                      height: "0px"
+                                                    },
+                                                    attrs: { tabindex: "0" }
+                                                  })
+                                                ]
+                                              )
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "qr-news-window__actions",
+                                              attrs: {
+                                                "ng-switch": "isLoading"
+                                              }
+                                            },
+                                            [
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass: "ng-scope",
+                                                  attrs: {
+                                                    "ng-switch-default": ""
+                                                  }
+                                                },
+                                                [
+                                                  _c(
+                                                    "button",
+                                                    {
+                                                      staticClass:
+                                                        "qr-news-window__action",
+                                                      attrs: {
+                                                        type: "button",
+                                                        "ng-click": "loadMore()"
+                                                      }
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        "Load more\n                                                    "
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      )
+                                    ])
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _c("div", {
+                                  staticClass: "qr-popup__layer",
+                                  staticStyle: { "z-index": "19999" },
+                                  attrs: {
+                                    "ng-click": "onLayerClick()",
+                                    "ng-class": "getLayerClasses()",
+                                    "ng-style": "{zIndex: getLayerZIndex()}"
+                                  }
+                                })
+                              ]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _c("div", { staticClass: "qr-navbar__element" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "qr-navbar__dropdown qr-navbar__dropdown__text noselect",
+                  class: { "qr-navbar__dropdown--open": _vm.dropdownOpen },
+                  on: {
+                    click: function($event) {
+                      return _vm.toggleDropdown()
+                    }
+                  }
+                },
+                [
+                  _c("span", [_vm._v("Account")]),
+                  _vm._v(" "),
+                  _c("div", {
+                    staticClass:
+                      "qr-navbar__dropdown__text--icon qr-navbar__dropdown__text--icon--menu-arrow icon-down-open-mini"
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "qr-navbar__dropdown__text--icon qr-navbar__dropdown__text--icon--menu-gear"
+                    },
+                    [
+                      _c(
+                        "svg",
+                        {
+                          attrs: {
+                            width: "27px",
+                            height: "26px",
+                            viewBox: "0 0 22 22",
+                            version: "1.1",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                          }
+                        },
+                        [
+                          _c("title", [_vm._v("Shape")]),
+                          _vm._v(" "),
+                          _c("desc", [_vm._v("Created with Sketch.")]),
+                          _vm._v(" "),
+                          _c("defs", [
+                            _c("path", {
+                              attrs: {
+                                d:
+                                  "M20,9 L18.7,9 C18.5,8.3 18.2,7.6 17.8,6.9 L18.7,6 C19.5,5.2 19.5,4 18.7,3.2 C17.9,2.4 16.7,2.4 15.9,3.2 L15,4.1 C14.4,3.7 13.7,3.4 12.9,3.2 L12.9,2 C12.9,0.9 12,0 10.9,0 C9.8,0 8.9,0.9 8.9,2 L8.9,3.3 C8.3,3.5 7.6,3.7 6.9,4.1 L6.1,3.2 C5.3,2.4 4.1,2.4 3.3,3.2 C2.5,4 2.5,5.2 3.3,6 L4.2,6.9 C3.7,7.6 3.5,8.3 3.3,9 L2,9 C0.9,9 0,9.9 0,11 C0,12.1 0.9,13 2,13 L3.3,13 C3.5,13.7 3.8,14.4 4.2,15.1 L3.3,16 C2.5,16.8 2.5,18 3.3,18.8 C4.1,19.6 5.3,19.6 6.1,18.8 L7,17.9 C7.6,18.3 8.3,18.6 9.1,18.8 L9.1,20 C9.1,21.1 10,22 11.1,22 C12.2,22 13.1,21.1 13.1,20 L13.1,18.7 C13.8,18.5 14.5,18.2 15.2,17.8 L16.1,18.7 C16.9,19.5 18.1,19.5 18.9,18.7 C19.7,17.9 19.7,16.7 18.9,15.9 L18,15 C18.4,14.4 18.7,13.7 18.9,12.9 L20,12.9 C21.1,12.9 22,12 22,10.9 C22,9.9 21.1,9 20,9 Z M11,14 C9.3,14 8,12.7 8,11 C8,9.3 9.3,8 11,8 C12.7,8 14,9.3 14,11 C14,12.7 12.7,14 11,14 Z",
+                                id: "path-1"
+                              }
+                            })
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "g",
+                            {
+                              attrs: {
+                                id: "Artboard",
+                                "fill-rule": "evenodd",
+                                transform:
+                                  "translate(-1201.000000, -110.000000)"
+                              }
+                            },
+                            [
+                              _c(
+                                "g",
+                                {
+                                  attrs: {
+                                    id: "settings-gear-65",
+                                    transform:
+                                      "translate(1201.000000, 110.000000)",
+                                    "fill-rule": "nonzero"
+                                  }
+                                },
+                                [
+                                  _c("g", { attrs: { id: "gear-icon" } }, [
+                                    _c("use", {
+                                      attrs: {
+                                        "fill-opacity": "1",
+                                        fill: "none",
+                                        "fill-rule": "evenodd",
+                                        "xlink:href": "#path-1"
+                                      }
+                                    }),
+                                    _vm._v(" "),
+                                    _c("path", {
+                                      attrs: {
+                                        "fill-opacity": "0.1",
+                                        fill: "#FFFFFF",
+                                        "stroke-opacity": "0.35",
+                                        stroke: "#FFFFFF",
+                                        "stroke-width": "1",
+                                        d:
+                                          "M20,9.5 L18.3228493,9.5 L18.219238,9.13736056 C18.0305773,8.47704797 17.746425,7.81402596 17.3658784,7.14806947 L17.176404,6.81648922 L18.3464466,5.64644661 C18.9511845,5.04170876 18.9511845,4.15829124 18.3464466,3.55355339 C17.7417088,2.94881554 16.8582912,2.94881554 16.2535534,3.55355339 L15.0637089,4.74339784 L14.7226499,4.51602515 C14.1720705,4.14897221 13.5248987,3.87161289 12.7787322,3.68507125 L12.4,3.5903882 L12.4,2 C12.4,1.17614237 11.7238576,0.5 10.9,0.5 C10.0761424,0.5 9.4,1.17614237 9.4,2 L9.4,3.66037961 L9.05811388,3.77434165 C7.69960052,4.22717944 7.65872447,4.24231872 7.14806947,4.53412157 L6.79582579,4.73540367 L6.52629534,4.43218192 L5.74644661,3.55355339 C5.14170876,2.94881554 4.25829124,2.94881554 3.65355339,3.55355339 C3.04881554,4.15829124 3.04881554,5.04170876 3.65355339,5.64644661 L4.85305804,6.84595126 L4.60686674,7.1906191 C4.39990256,7.48036894 4.23979888,7.78429457 4.10287575,8.13282619 C3.99604456,8.40476012 3.92641589,8.62757186 3.78076197,9.13736056 L3.67715071,9.5 L2,9.5 C1.17614237,9.5 0.5,10.1761424 0.5,11 C0.5,11.8238576 1.17614237,12.5 2,12.5 L3.67715071,12.5 L3.78076197,12.8626394 C3.96942271,13.522952 4.25357501,14.185974 4.63412157,14.8519305 L4.823596,15.1835108 L3.65355339,16.3535534 C3.04881554,16.9582912 3.04881554,17.8417088 3.65355339,18.4464466 C4.25829124,19.0511845 5.14170876,19.0511845 5.74644661,18.4464466 L6.93629106,17.2566022 L7.2773501,17.4839749 C7.8279295,17.8510278 8.47510125,18.1283871 9.22126781,18.3149287 L9.6,18.4096118 L9.6,20 C9.6,20.8238576 10.2761424,21.5 11.1,21.5 C11.9238576,21.5 12.6,20.8238576 12.6,20 L12.6,18.3228493 L12.9626394,18.219238 C13.622952,18.0305773 14.285974,17.746425 14.9519305,17.3658784 L15.2835108,17.176404 L16.4535534,18.3464466 C17.0582912,18.9511845 17.9417088,18.9511845 18.5464466,18.3464466 C19.1511845,17.7417088 19.1511845,16.8582912 18.5464466,16.2535534 L17.3566022,15.0637089 L17.5839749,14.7226499 C17.9510278,14.1720705 18.2283871,13.5248987 18.4149287,12.7787322 L18.5096118,12.4 L20,12.4 C20.8238576,12.4 21.5,11.7238576 21.5,10.9 C21.5,10.1646273 20.811636,9.5 20,9.5 Z M11,14.5 C9.02385763,14.5 7.5,12.9761424 7.5,11 C7.5,9.02385763 9.02385763,7.5 11,7.5 C12.9761424,7.5 14.5,9.02385763 14.5,11 C14.5,12.9761424 12.9761424,14.5 11,14.5 Z"
+                                      }
+                                    })
+                                  ])
+                                ]
+                              )
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(5)
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "qr-navbar__trial-banner" })
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { attrs: { id: "page" } },
+      [
+        _c("div", { attrs: { id: "content" } }),
+        _vm._v(" "),
+        _c("manage-view-component", {
+          staticClass: "ng-isolate-scope",
+          attrs: {
+            "is-admin": "''",
+            "aws-credentials":
+              "{'url':'//qrcgcustomers.s3-eu-west-1.amazonaws.com','inputs':{'Content-Type':'','acl':'public-read','success_action_status':'201','policy':'eyJleHBpcmF0aW9uIjoiMjAxOS0wOS0yMFQ5OjE3OjMzWiIsImNvbmRpdGlvbnMiOlt7ImJ1Y2tldCI6InFyY2djdXN0b21lcnMifSx7ImFjbCI6InB1YmxpYy1yZWFkIn0sWyJzdGFydHMtd2l0aCIsIiRrZXkiLCJhY2NvdW50NjA5MjcwN1wvIl0sWyJzdGFydHMtd2l0aCIsIiRDb250ZW50LVR5cGUiLCIiXSx7InN1Y2Nlc3NfYWN0aW9uX3N0YXR1cyI6IjIwMSJ9LHsieC1hbXotY3JlZGVudGlhbCI6IkFLSUFKQjJIUk1YTVlCR1IyS0lRXC8yMDE5MDkyMFwvZXUtd2VzdC0xXC9zM1wvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAxOTA5MjBUMDMxNzMzWiJ9LHsieC1hbXotZXhwaXJlcyI6Ijg2NDAwIn0sWyJzdGFydHMtd2l0aCIsIiRmaWxlbmFtZSIsIiJdLFsic3RhcnRzLXdpdGgiLCIkdmFybmFtZSIsIiJdXX0=','X-amz-credential':'AKIAJB2HRMXMYBGR2KIQ/20190920/eu-west-1/s3/aws4_request','X-amz-algorithm':'AWS4-HMAC-SHA256','X-amz-date':'20190920T031733Z','X-amz-expires':'86400','X-amz-signature':'f9129f390ed64ba38086b61aa544f7d2bc3683b11e1f88ae2ccaa52d47513561'}}"
+          }
+        })
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-navbar__element",
+        attrs: { "ng-hide": "route == 'create/index' || route == 'create/new'" }
+      },
+      [_c("i", { staticClass: "icon-logo-icon qr-navbar__logo" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "qr-navbar__element",
+        attrs: { "ng-hide": "route == 'create/index' || route == 'create/new'" }
+      },
+      [_c("div", { staticClass: "qr-navbar__separator" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qr-navbar__element" }, [
+      _c(
+        "div",
+        {
+          staticClass: "qr-navbar__element qr-navbar__menu noselect",
+          attrs: {
+            "ng-click": "toggleMenu()",
+            "ng-show": "route == 'manage/new'"
+          }
+        },
+        [
+          _c("i", { staticClass: "icon-thin-menu" }),
+          _vm._v(" "),
+          _c("span", [_vm._v("Menu")])
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qr-navbar__element ml-25" }, [
+      _c(
+        "div",
+        {
+          staticClass: "help",
+          attrs: {
+            "data-toggle": "tooltip",
+            "data-trigger": "hover",
+            "data-placement": "bottom",
+            title: "",
+            "data-original-title": "Customer ID:6108935"
+          }
+        },
+        [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://help.qr-code-generator.com/en",
+                onclick:
+                  "_gaq.push(['_trackEvent','Headbar', 'Info', 'open intercom']);",
+                target: "_help"
+              }
+            },
+            [_vm._v("?")]
+          )
+        ]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qr-navbar__element" }, [
+      _c("div", {
+        staticClass: "qr-navbar__separator qr-navbar__separator--left"
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "qr-navbar__account-dropdown-container" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "qr-navbar__scrollable-container ps-container ps-theme-default",
+          attrs: { "data-ps-id": "d8a0effc-e8be-1b88-d31c-6e8f6f0871b5" }
+        },
+        [
+          _c("ul", { staticClass: "qr-navbar__dropdown__container" }, [
+            _c("li", [
+              _c("a", { attrs: { href: "/account/" } }, [
+                _vm._v("\n                                    My Account "),
+                _c("i", { staticClass: "icon-qr-my-account" })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/usermanagement/" } }, [
+                _vm._v(
+                  "\n                                    User Management "
+                ),
+                _c("i", { staticClass: "icon-qr-user-management" })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/whitelabel/" } }, [
+                _vm._v(
+                  "\n                                    Whitelabel Options "
+                ),
+                _c("i", { staticClass: "icon-qr-whitelabel" })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/api/?from=options" } }, [
+                _vm._v("\n                                    API Keys "),
+                _c("i", { staticClass: "icon-options" })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/upgrade/?from=options" } }, [
+                _vm._v(
+                  "\n                                    Features & Pricing "
+                ),
+                _c("i", { staticClass: "icon-qr-features-pricing" })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "https://help.qr-code-generator.com/en",
+                    target: "_help"
+                  }
+                },
+                [
+                  _vm._v("\n                                    Help Center "),
+                  _c("i", { staticClass: "icon-qr-help-center" })
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "divider-container" }, [
+              _c("div", { staticClass: "divider" })
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "/logout/" } }, [
+                _vm._v("\n                                    Logout "),
+                _c("i", { staticClass: "icon-qr-log-out" })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "ps-scrollbar-x-rail",
+              staticStyle: { left: "0px", bottom: "0px" }
+            },
+            [
+              _c("div", {
+                staticClass: "ps-scrollbar-x",
+                staticStyle: { left: "0px", width: "0px" },
+                attrs: { tabindex: "0" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "ps-scrollbar-y-rail",
+              staticStyle: { top: "0px", right: "0px" }
+            },
+            [
+              _c("div", {
+                staticClass: "ps-scrollbar-y",
+                staticStyle: { top: "0px", height: "0px" },
+                attrs: { tabindex: "0" }
+              })
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "qr-popup__layer",
+        attrs: { "ng-click": "onLayerClick()", "ng-class": "getLayerClasses()" }
+      })
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Create.vue?vue&type=template&id=234fd476&scoped=true&":
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Create.vue?vue&type=template&id=234fd476&scoped=true& ***!
@@ -39916,7 +53468,40 @@ var render = function() {
             ],
             staticClass: "qr-navbar__element"
           },
-          [_vm._m(0)]
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect",
+                attrs: { "ng-show": "route != 'manage/new'" }
+              },
+              [
+                _c(
+                  "router-link",
+                  {
+                    attrs: { "ng-click": "goBack($event)", to: { name: "app" } }
+                  },
+                  [
+                    _c("i", { staticClass: "icon-event-back" }),
+                    _vm._v(" "),
+                    _c(
+                      "span",
+                      {
+                        staticClass: "ng-hide",
+                        attrs: {
+                          "ng-show":
+                            "route != 'create/index' && route != 'create/new'"
+                        }
+                      },
+                      [_vm._v("Back")]
+                    )
+                  ]
+                )
+              ],
+              1
+            )
+          ]
         )
       ]
     ),
@@ -39967,7 +53552,7 @@ var render = function() {
                                       "col-lg-12 content-group mb-40 heading__section"
                                   },
                                   [
-                                    _vm._m(1),
+                                    _vm._m(0),
                                     _vm._v(" "),
                                     _c(
                                       "div",
@@ -39976,7 +53561,7 @@ var render = function() {
                                           "content-wrapper text-center"
                                       },
                                       [
-                                        _vm._m(2),
+                                        _vm._m(1),
                                         _vm._v(" "),
                                         _c(
                                           "span",
@@ -40197,7 +53782,7 @@ var render = function() {
                                                   ]
                                                 ),
                                                 _vm._v(" "),
-                                                _vm._m(3)
+                                                _vm._m(2)
                                               ]
                                             )
                                           ]
@@ -40205,7 +53790,7 @@ var render = function() {
                                       ]
                                     ),
                                     _vm._v(" "),
-                                    _vm._m(4)
+                                    _vm._m(3)
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -40982,7 +54567,7 @@ var render = function() {
                                     staticClass: "col-lg-12 content-group mb-40"
                                   },
                                   [
-                                    _vm._m(5),
+                                    _vm._m(4),
                                     _vm._v(" "),
                                     _c(
                                       "div",
@@ -40991,7 +54576,7 @@ var render = function() {
                                           "content-wrapper text-center"
                                       },
                                       [
-                                        _vm._m(6),
+                                        _vm._m(5),
                                         _vm._v(" "),
                                         _c(
                                           "span",
@@ -41026,6 +54611,8 @@ var render = function() {
                                     class: { hidden: !_vm.showDynamic }
                                   },
                                   [
+                                    _vm._m(6),
+                                    _vm._v(" "),
                                     _vm._m(7),
                                     _vm._v(" "),
                                     _vm._m(8),
@@ -41050,9 +54637,7 @@ var render = function() {
                                     _vm._v(" "),
                                     _vm._m(18),
                                     _vm._v(" "),
-                                    _vm._m(19),
-                                    _vm._v(" "),
-                                    _vm._m(20)
+                                    _vm._m(19)
                                   ]
                                 )
                               ]
@@ -41079,7 +54664,7 @@ var render = function() {
                                           "content-wrapper text-center"
                                       },
                                       [
-                                        _vm._m(21),
+                                        _vm._m(20),
                                         _vm._v(" "),
                                         _c(
                                           "span",
@@ -41401,7 +54986,7 @@ var render = function() {
                             }
                           },
                           [
-                            _vm._m(22),
+                            _vm._m(21),
                             _vm._v(" "),
                             _c("input", {
                               attrs: {
@@ -41619,15 +55204,15 @@ var render = function() {
                                     }
                                   },
                                   [
-                                    _vm._m(23),
+                                    _vm._m(22),
                                     _vm._v(" "),
-                                    _vm._m(24),
+                                    _vm._m(23),
                                     _vm._v(" "),
                                     _c(
                                       "div",
                                       { staticClass: "form-container" },
                                       [
-                                        _vm._m(25),
+                                        _vm._m(24),
                                         _vm._v(" "),
                                         _c(
                                           "div",
@@ -41647,7 +55232,7 @@ var render = function() {
                                                       "row form-input-row formly-field"
                                                   },
                                                   [
-                                                    _vm._m(26),
+                                                    _vm._m(25),
                                                     _vm._v(" "),
                                                     _c(
                                                       "div",
@@ -41846,7 +55431,7 @@ var render = function() {
                                       ]
                                     ),
                                     _vm._v(" "),
-                                    _vm._m(27)
+                                    _vm._m(26)
                                   ]
                                 )
                               ]
@@ -41869,7 +55454,7 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._m(28),
+            _vm._m(27),
             _vm._v(" "),
             _c("div", { staticClass: "apply-fixedBottom-footerGenerator" }, [
               _c(
@@ -41952,11 +55537,7 @@ var render = function() {
                                         {
                                           staticClass:
                                             "btn lc btn-generator-prev pull-left",
-                                          on: {
-                                            click: function($event) {
-                                              _vm.secondStep = false
-                                            }
-                                          }
+                                          on: { click: _vm.backToStepOne }
                                         },
                                         [
                                           _c("i", {
@@ -41969,13 +55550,34 @@ var render = function() {
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(29),
+                                      _vm._m(28),
                                       _vm._v(" "),
-                                      _vm._m(30)
+                                      _c(
+                                        "button",
+                                        {
+                                          staticClass:
+                                            "btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button",
+                                          attrs: {
+                                            type: "button",
+                                            "data-style": "expand-left"
+                                          },
+                                          on: { click: _vm.nextSecondStep }
+                                        },
+                                        [
+                                          _c(
+                                            "span",
+                                            { staticClass: "ladda-label" },
+                                            [_vm._v("Next")]
+                                          ),
+                                          _c("span", {
+                                            staticClass: "ladda-spinner"
+                                          })
+                                        ]
+                                      )
                                     ]
                                   ),
                                   _vm._v(" "),
-                                  _vm._m(31)
+                                  _vm._m(29)
                                 ])
                               ]
                             )
@@ -42093,13 +55695,13 @@ var render = function() {
                                 }
                               }),
                               _vm._v(" "),
-                              _vm._m(32)
+                              _vm._m(30)
                             ]
                           ),
                           _vm._v(" "),
                           _c("h3", [_vm._v("Scan this QR Code to preview")]),
                           _vm._v(" "),
-                          _vm._m(33)
+                          _vm._m(31)
                         ]
                       ),
                       _vm._v(" "),
@@ -42163,15 +55765,15 @@ var render = function() {
                                         ]
                                       ),
                                       _vm._v(" "),
-                                      _vm._m(34)
+                                      _vm._m(32)
                                     ]
                                   )
                                 ]
                               ),
                               _vm._v(" "),
-                              _vm._m(35),
+                              _vm._m(33),
                               _vm._v(" "),
-                              _vm._m(36),
+                              _vm._m(34),
                               _vm._v(" "),
                               _c(
                                 "div",
@@ -42196,7 +55798,7 @@ var render = function() {
                         ]
                       ),
                       _vm._v(" "),
-                      _vm._m(37)
+                      _vm._m(35)
                     ]
                   ),
                   _vm._v(" "),
@@ -42236,35 +55838,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect",
-        attrs: { "ng-show": "route != 'manage/new'" }
-      },
-      [
-        _c("a", { attrs: { "ng-click": "goBack($event)", href: "/home" } }, [
-          _c("i", { staticClass: "icon-event-back" }),
-          _vm._v(" "),
-          _c(
-            "span",
-            {
-              staticClass: "ng-hide",
-              attrs: {
-                "ng-show": "route != 'create/index' && route != 'create/new'"
-              }
-            },
-            [_vm._v("Back")]
-          )
-        ])
-      ]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -44133,23 +57706,6 @@ var staticRenderFns = [
             ]
           )
         ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass:
-          "btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button",
-        attrs: { type: "button", "data-style": "expand-left" }
-      },
-      [
-        _c("span", { staticClass: "ladda-label" }, [_vm._v("Next")]),
-        _c("span", { staticClass: "ladda-spinner" })
       ]
     )
   },
@@ -47432,6 +60988,834 @@ window.FileSaver = __webpack_require__(/*! file-saver */ "./node_modules/file-sa
 
 /***/ }),
 
+/***/ "./resources/js/components/ManageBarComponent.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/ManageBarComponent.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageBarComponent_vue_vue_type_template_id_58a8e25a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true& */ "./resources/js/components/ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true&");
+/* harmony import */ var _ManageBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageBarComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ManageBarComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ManageBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ManageBarComponent_vue_vue_type_template_id_58a8e25a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ManageBarComponent_vue_vue_type_template_id_58a8e25a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "58a8e25a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ManageBarComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageBarComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/ManageBarComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageBarComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageBarComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageBarComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true& ***!
+  \***************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageBarComponent_vue_vue_type_template_id_58a8e25a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageBarComponent.vue?vue&type=template&id=58a8e25a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageBarComponent_vue_vue_type_template_id_58a8e25a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageBarComponent_vue_vue_type_template_id_58a8e25a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageCodeComponent.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/ManageCodeComponent.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageCodeComponent_vue_vue_type_template_id_17997890_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true& */ "./resources/js/components/ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true&");
+/* harmony import */ var _ManageCodeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageCodeComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ManageCodeComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ManageCodeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ManageCodeComponent_vue_vue_type_template_id_17997890_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ManageCodeComponent_vue_vue_type_template_id_17997890_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "17997890",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ManageCodeComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageCodeComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/ManageCodeComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageCodeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageCodeComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageCodeComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageCodeComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true&":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true& ***!
+  \****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageCodeComponent_vue_vue_type_template_id_17997890_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageCodeComponent.vue?vue&type=template&id=17997890&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageCodeComponent_vue_vue_type_template_id_17997890_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageCodeComponent_vue_vue_type_template_id_17997890_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageContentComponent.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/ManageContentComponent.vue ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageContentComponent_vue_vue_type_template_id_22991898_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true& */ "./resources/js/components/ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true&");
+/* harmony import */ var _ManageContentComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageContentComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ManageContentComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ManageContentComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ManageContentComponent_vue_vue_type_template_id_22991898_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ManageContentComponent_vue_vue_type_template_id_22991898_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "22991898",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ManageContentComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageContentComponent.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/ManageContentComponent.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageContentComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageContentComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageContentComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageContentComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/components/ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true& ***!
+  \*******************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageContentComponent_vue_vue_type_template_id_22991898_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageContentComponent.vue?vue&type=template&id=22991898&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageContentComponent_vue_vue_type_template_id_22991898_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageContentComponent_vue_vue_type_template_id_22991898_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageFolderComponent.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/ManageFolderComponent.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageFolderComponent_vue_vue_type_template_id_274e2ca2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true& */ "./resources/js/components/ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true&");
+/* harmony import */ var _ManageFolderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageFolderComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ManageFolderComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ManageFolderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ManageFolderComponent_vue_vue_type_template_id_274e2ca2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ManageFolderComponent_vue_vue_type_template_id_274e2ca2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "274e2ca2",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ManageFolderComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageFolderComponent.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/ManageFolderComponent.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageFolderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageFolderComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageFolderComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageFolderComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/components/ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true& ***!
+  \******************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageFolderComponent_vue_vue_type_template_id_274e2ca2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageFolderComponent.vue?vue&type=template&id=274e2ca2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageFolderComponent_vue_vue_type_template_id_274e2ca2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageFolderComponent_vue_vue_type_template_id_274e2ca2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ManagePanelComponent.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/ManagePanelComponent.vue ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManagePanelComponent_vue_vue_type_template_id_08f8fe09_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true& */ "./resources/js/components/ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true&");
+/* harmony import */ var _ManagePanelComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManagePanelComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ManagePanelComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ManagePanelComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ManagePanelComponent_vue_vue_type_template_id_08f8fe09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ManagePanelComponent_vue_vue_type_template_id_08f8fe09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "08f8fe09",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ManagePanelComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ManagePanelComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/ManagePanelComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManagePanelComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ManagePanelComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManagePanelComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManagePanelComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/components/ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true& ***!
+  \*****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManagePanelComponent_vue_vue_type_template_id_08f8fe09_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManagePanelComponent.vue?vue&type=template&id=08f8fe09&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManagePanelComponent_vue_vue_type_template_id_08f8fe09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManagePanelComponent_vue_vue_type_template_id_08f8fe09_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageViewComponent.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/ManageViewComponent.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ManageViewComponent_vue_vue_type_template_id_063d56d8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ManageViewComponent.vue?vue&type=template&id=063d56d8& */ "./resources/js/components/ManageViewComponent.vue?vue&type=template&id=063d56d8&");
+/* harmony import */ var _ManageViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ManageViewComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ManageViewComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ManageViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ManageViewComponent_vue_vue_type_template_id_063d56d8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ManageViewComponent_vue_vue_type_template_id_063d56d8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ManageViewComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageViewComponent.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/ManageViewComponent.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageViewComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageViewComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ManageViewComponent.vue?vue&type=template&id=063d56d8&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/ManageViewComponent.vue?vue&type=template&id=063d56d8& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageViewComponent_vue_vue_type_template_id_063d56d8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ManageViewComponent.vue?vue&type=template&id=063d56d8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ManageViewComponent.vue?vue&type=template&id=063d56d8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageViewComponent_vue_vue_type_template_id_063d56d8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ManageViewComponent_vue_vue_type_template_id_063d56d8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/OpenInvoiceComponent.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/OpenInvoiceComponent.vue ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _OpenInvoiceComponent_vue_vue_type_template_id_b16752b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true& */ "./resources/js/components/OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true&");
+/* harmony import */ var _OpenInvoiceComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OpenInvoiceComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/OpenInvoiceComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _OpenInvoiceComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _OpenInvoiceComponent_vue_vue_type_template_id_b16752b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _OpenInvoiceComponent_vue_vue_type_template_id_b16752b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "b16752b6",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/OpenInvoiceComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/OpenInvoiceComponent.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/components/OpenInvoiceComponent.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_OpenInvoiceComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./OpenInvoiceComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/OpenInvoiceComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_OpenInvoiceComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true&":
+/*!*****************************************************************************************************!*\
+  !*** ./resources/js/components/OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true& ***!
+  \*****************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OpenInvoiceComponent_vue_vue_type_template_id_b16752b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/OpenInvoiceComponent.vue?vue&type=template&id=b16752b6&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OpenInvoiceComponent_vue_vue_type_template_id_b16752b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_OpenInvoiceComponent_vue_vue_type_template_id_b16752b6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Popup.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Popup.vue ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Popup_vue_vue_type_template_id_a4c6995e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popup.vue?vue&type=template&id=a4c6995e&scoped=true& */ "./resources/js/components/Popup.vue?vue&type=template&id=a4c6995e&scoped=true&");
+/* harmony import */ var _Popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Popup.vue?vue&type=script&lang=js& */ "./resources/js/components/Popup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Popup_vue_vue_type_template_id_a4c6995e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Popup_vue_vue_type_template_id_a4c6995e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "a4c6995e",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Popup.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Popup.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Popup.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Popup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Popup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Popup.vue?vue&type=template&id=a4c6995e&scoped=true&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/Popup.vue?vue&type=template&id=a4c6995e&scoped=true& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_template_id_a4c6995e_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Popup.vue?vue&type=template&id=a4c6995e&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Popup.vue?vue&type=template&id=a4c6995e&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_template_id_a4c6995e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Popup_vue_vue_type_template_id_a4c6995e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ResourcesComponent.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/ResourcesComponent.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ResourcesComponent_vue_vue_type_template_id_26d79603_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true& */ "./resources/js/components/ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true&");
+/* harmony import */ var _ResourcesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ResourcesComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/ResourcesComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ResourcesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ResourcesComponent_vue_vue_type_template_id_26d79603_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ResourcesComponent_vue_vue_type_template_id_26d79603_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "26d79603",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ResourcesComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ResourcesComponent.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/ResourcesComponent.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ResourcesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ResourcesComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ResourcesComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ResourcesComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true& ***!
+  \***************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ResourcesComponent_vue_vue_type_template_id_26d79603_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ResourcesComponent.vue?vue&type=template&id=26d79603&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ResourcesComponent_vue_vue_type_template_id_26d79603_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ResourcesComponent_vue_vue_type_template_id_26d79603_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerComponent.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/SpinnerComponent.vue ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SpinnerComponent_vue_vue_type_template_id_1c7d574f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true& */ "./resources/js/components/SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true&");
+/* harmony import */ var _SpinnerComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SpinnerComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/SpinnerComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _SpinnerComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SpinnerComponent_vue_vue_type_template_id_1c7d574f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SpinnerComponent_vue_vue_type_template_id_1c7d574f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "1c7d574f",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SpinnerComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerComponent.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/SpinnerComponent.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./SpinnerComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true& ***!
+  \*************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerComponent_vue_vue_type_template_id_1c7d574f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerComponent.vue?vue&type=template&id=1c7d574f&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerComponent_vue_vue_type_template_id_1c7d574f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerComponent_vue_vue_type_template_id_1c7d574f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/StatisticsViewComponent.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/StatisticsViewComponent.vue ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _StatisticsViewComponent_vue_vue_type_template_id_69adef4c_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true& */ "./resources/js/components/StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true&");
+/* harmony import */ var _StatisticsViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StatisticsViewComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/StatisticsViewComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _StatisticsViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _StatisticsViewComponent_vue_vue_type_template_id_69adef4c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _StatisticsViewComponent_vue_vue_type_template_id_69adef4c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "69adef4c",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/StatisticsViewComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/StatisticsViewComponent.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/StatisticsViewComponent.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StatisticsViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./StatisticsViewComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/StatisticsViewComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_StatisticsViewComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/components/StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true& ***!
+  \********************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StatisticsViewComponent_vue_vue_type_template_id_69adef4c_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/StatisticsViewComponent.vue?vue&type=template&id=69adef4c&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StatisticsViewComponent_vue_vue_type_template_id_69adef4c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_StatisticsViewComponent_vue_vue_type_template_id_69adef4c_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/App.vue":
+/*!************************************!*\
+  !*** ./resources/js/pages/App.vue ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=41ac2cb0&scoped=true& */ "./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&");
+/* harmony import */ var _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js& */ "./resources/js/pages/App.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "41ac2cb0",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/App.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/App.vue?vue&type=script&lang=js&":
+/*!*************************************************************!*\
+  !*** ./resources/js/pages/App.vue?vue&type=script&lang=js& ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./App.vue?vue&type=template&id=41ac2cb0&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/App.vue?vue&type=template&id=41ac2cb0&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_41ac2cb0_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/pages/Create.vue":
 /*!***************************************!*\
   !*** ./resources/js/pages/Create.vue ***!
@@ -47556,7 +61940,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: '/',
     name: 'app',
-    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('App', __webpack_require__(/*! ./pages/Create.vue */ "./resources/js/pages/Create.vue")["default"])
+    component: vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('App', __webpack_require__(/*! ./pages/App.vue */ "./resources/js/pages/App.vue")["default"])
   }, {
     path: '/create',
     name: 'create',

@@ -24,7 +24,7 @@ export default new VueRouter({
         {
             path: '/',
             name: 'app',
-            component: Vue.component( 'App', require( './pages/Create.vue' ).default )
+            component: Vue.component( 'App', require( './pages/App.vue' ).default )
         },
         {
             path: '/create',

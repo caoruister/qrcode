@@ -5,13 +5,11 @@
             <div class="qr-navbar__element" v-show="!secondStep">
                 <div class="qr-navbar__element qr-navbar__menu qr-navbar__menu__back-button noselect"
                      ng-show="route != 'manage/new'">
-                    <a ng-click="goBack($event)" href="/home">
+                    <router-link ng-click="goBack($event)" :to="{ name: 'app'}">
                         <i class="icon-event-back"></i>
-
                         <span ng-show="route != 'create/index' &amp;&amp; route != 'create/new'"
                               class="ng-hide">Back</span>
-
-                    </a>
+                    </router-link>
                 </div>
             </div>
         </div>
@@ -1144,7 +1142,7 @@
                                             <div class="section-content section-content_generator-footer">
                                                 <div class="grid">
                                                     <div class="col footer__left">
-                                                        <button class="btn lc btn-generator-prev pull-left" v-on:click="secondStep = false"><i
+                                                        <button class="btn lc btn-generator-prev pull-left" v-on:click="backToStepOne"><i
                                                                 class="icon icon-chevron-left-medium pull-left"></i>Back
                                                         </button>
                                                         <div class="footer__view-mobile" data-generate-mobile-bar="">
@@ -1178,7 +1176,7 @@
                                                         </div>
                                                         <button type="button"
                                                                 class="btn green lc big block btn-generator-save-directly pull-right col-lg-6 ladda-button"
-                                                                data-style="expand-left"><span
+                                                                data-style="expand-left" v-on:click="nextSecondStep"><span
                                                                 class="ladda-label">Next</span><span
                                                                 class="ladda-spinner"></span></button>
                                                     </div>
@@ -1325,7 +1323,21 @@
             nextFirstStep: function () {
                 this.secondStep = true;
             },
-            websiteChanged: function() {
+            nextSecondStep: function () {
+                let that = this;
+
+                axios.post('/api/v1/createNew', {
+                    qr_code_text: that.formalUrl,
+                }, {
+                    responseType: 'blob'
+                }).then(res => {
+                    console.log(res)
+
+                }).catch(err => {
+                    console.log(err)
+                });
+            },
+            websiteChanged: function () {
                 this.showQRCode = false;
 
                 if (!/(https?|ftp|file):\/\/[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]/i.test(this.formalUrl)) {
@@ -1336,7 +1348,7 @@
                     this.errorMsg = '';
                 }
             },
-            genQRCode: function() {
+            genQRCode: function () {
                 this.showQRCode = true;
 
                 if (!this.formalUrl) {
@@ -1349,6 +1361,13 @@
                     this.barCodeError = false;
                     this.barcodeImage = '/api/v1/create?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
                 }
+            },
+            backToStepOne: function () {
+                this.secondStep = false;
+                this.modelUrl = '';
+                this.showQRCode = false;
+                this.barCodeError = false;
+                this.errorMsg = '';
             }
         }
     }

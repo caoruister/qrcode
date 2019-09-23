@@ -21,4 +21,5 @@ Route::group([
     'expires' => 5
 ], function () {
     Route::match(['get', 'post'], 'v1/create', 'QRGeneratorController@create');
+    Route::match(['get', 'post'], 'v1/createNew', 'QRGeneratorController@createNew');
 });
