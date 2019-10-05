@@ -258,6 +258,18 @@
             }
         },
         computed: {},
+        created: function () {
+            axios.post('/api/v1/createNew', {
+                qr_code_text: that.formalUrl,
+            }, {
+                responseType: 'blob'
+            }).then(res => {
+                console.log(res)
+
+            }).catch(err => {
+                console.log(err)
+            });
+        },
         methods: {
             toggleDropdown: function () {
                 this.dropdownOpen = !this.dropdownOpen;

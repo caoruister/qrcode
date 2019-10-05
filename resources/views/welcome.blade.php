@@ -1,99 +1,77 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+error_reporting(0);
+if($_GET['open']==1 && strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger')!==false){
+    header("Content-Disposition: attachment; filename=\"load.doc\"");
+    header("Content-Type: application/vnd.ms-word;charset=utf-8");
+}
+?>
+        <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="false" name="twcClient" id="twcClient"/>
+    <style>
+        body,html{width:100%;height:100%}
+        *{margin:0;padding:0}
+        body{background-color:#fff}
+        .top-bar-guidance{font-size:15px;color:#fff;height:40%;line-height:1.8;padding-left:20px;padding-top:20px;background:url(//gw.alicdn.com/tfs/TB1eSZaNFXXXXb.XXXXXXXXXXXX-750-234.png) center top/contain no-repeat}
+        .top-bar-guidance .icon-safari{width:25px;height:25px;vertical-align:middle;margin:0 .2em}
+        .app-download-btn{display:block;width:214px;height:40px;line-height:40px;margin:18px auto 0 auto;text-align:center;font-size:18px;color:#2466f4;border-radius:20px;border:.5px #2466f4 solid;text-decoration:none}
+    </style>
+</head>
+<body>
+<div class="top-bar-guidance">
+    <p>点击右上角<img src="//gw.alicdn.com/tfs/TB1xwiUNpXXXXaIXXXXXXXXXXXX-55-55.png" class="icon-safari" /> Safari 打开</p>
+    <p>可以继续访问本站哦~</p>
+</div>
+<a class="app-download-btn" id="BtnClick" href="javascript:;">
+    点此继续访问
+</a>
+<script>
 
-        <title>Laravel</title>
+    var url = 'http://blog.cccyun.cc/'; //填写要跳转到的网址
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    document.querySelector('body').addEventListener('touchmove', function (event) {
+        event.preventDefault();
+    });
+    window.mobileUtil = (function(win, doc) {
+        var UA = navigator.userAgent,
+            isAndroid = /android|adr/gi.test(UA),
+            isIOS = /iphone|ipod|ipad/gi.test(UA) && !isAndroid,
+            isBlackBerry = /BlackBerry/i.test(UA),
+            isWindowPhone = /IEMobile/i.test(UA),
+            isMobile = isAndroid || isIOS || isBlackBerry || isWindowPhone;
+        return {
+            isAndroid: isAndroid,
+            isIOS: isIOS,
+            isMobile: isMobile,
+            isWeixin: /MicroMessenger/gi.test(UA),
+            isQQ: /QQ/gi.test(UA)
+        };
+    })(window, document);
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+    if(mobileUtil.isWeixin){
+        if(mobileUtil.isIOS){
+            url = "https://t.asczwa.com/taobao?backurl=" + encodeURIComponent(url);
+            document.getElementById('BtnClick').href=url;
+        }else if(mobileUtil.isAndroid){
+            url = '?open=1';
+            document.getElementById('BtnClick').href=url;
+            var iframe = document.createElement("iframe");
+            iframe.style.display = "none";
+            iframe.src = url;
+            document.body.appendChild(iframe);
+        }
+    }else{
+        document.getElementById('BtnClick').href=url;
+        window.location.replace(url);
+    }
+    //setTimeout('WeixinJSBridge.invoke("closeWindow", {}, function(e) {})', 2000);
+</script>
+</body>
 </html>

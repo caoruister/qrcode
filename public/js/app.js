@@ -4709,6 +4709,17 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   computed: {},
+  created: function created() {
+    axios.post('/api/v1/createNew', {
+      qr_code_text: that.formalUrl
+    }, {
+      responseType: 'blob'
+    }).then(function (res) {
+      console.log(res);
+    })["catch"](function (err) {
+      console.log(err);
+    });
+  },
   methods: {
     toggleDropdown: function toggleDropdown() {
       this.dropdownOpen = !this.dropdownOpen;
@@ -6085,7 +6096,7 @@ __webpack_require__.r(__webpack_exports__);
         this.errorMsg = 'Website is not a valid URL.';
       } else {
         this.barCodeError = false;
-        this.barcodeImage = '/api/v1/create?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
+        this.barcodeImage = '/api/qrcode?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
       }
     },
     backToStepOne: function backToStepOne() {
@@ -60968,10 +60979,25 @@ try {
  */
 
 
+window.FileSaver = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
 window.qs = __webpack_require__(/*! qs */ "./node_modules/qs/lib/index.js");
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.FileSaver = __webpack_require__(/*! file-saver */ "./node_modules/file-saver/dist/FileSaver.min.js");
+/**
+ * Next we will register the CSRF Token as a common header with Axios so that
+ * all outgoing HTTP requests automatically have it attached. This is just
+ * a simple convenience so we don't have to attach every token manually.
+ */
+
+var token = document.head.querySelector('meta[name="csrf-token"]');
+
+if (token) {
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+} else {
+  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+}
+
+window.axios.defaults.headers.common['Accept'] = 'application/prs.qrcode.v1+json';
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting

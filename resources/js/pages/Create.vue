@@ -1359,7 +1359,7 @@
                     this.errorMsg = 'Website is not a valid URL.';
                 } else {
                     this.barCodeError = false;
-                    this.barcodeImage = '/api/v1/create?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
+                    this.barcodeImage = '/api/qrcode?frame_name=no-frame&image_format=PNG&image_width=500&download=1&qr_code_text=' + this.formalUrl;
                 }
             },
             backToStepOne: function () {
