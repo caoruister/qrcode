@@ -32,9 +32,17 @@ if($_GET['open']==1 && strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger')!==f
 <a class="app-download-btn" id="BtnClick" href="javascript:;">
     点此继续访问
 </a>
+
+
+<iframe id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="300"
+        height="200"
+        src="https://www.48-365365.com/">
+</iframe>
 <script>
 
-    var url = 'http://blog.cccyun.cc/'; //填写要跳转到的网址
+    var url = 'https://www.48-365365.com/'; //填写要跳转到的网址
 
     document.querySelector('body').addEventListener('touchmove', function (event) {
         event.preventDefault();
